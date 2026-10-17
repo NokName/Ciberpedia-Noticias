@@ -1,31 +1,6 @@
 {
- "generado": "2026-10-17T11:31:31Z",
+ "generado": "2026-10-17T11:39:07Z",
  "noticias": [
-  {
-   "fecha": "Clase",
-   "texto": "Esta semana en clase: reverse shell y cómo estabilizarla. Repásalo en el capítulo Amenazas.",
-   "ts": 1792236691088
-  },
-  {
-   "fecha": "Recuerda",
-   "texto": "Practica solo en laboratorios o con autorización por escrito.",
-   "ts": 1792236691087
-  },
-  {
-   "fecha": "Consejo",
-   "texto": "Un hash no es cifrado: es de un solo sentido. Para 'romperlo' se prueba por fuerza o diccionario.",
-   "ts": 1792233091086
-  },
-  {
-   "fecha": "Consejo",
-   "texto": "El modelo OSI tiene 7 capas; recuerda que el cifrado TLS vive sobre la capa de transporte.",
-   "ts": 1792229491086
-  },
-  {
-   "fecha": "Consejo",
-   "texto": "HTTPS protege el transporte, no la aplicación: una web con HTTPS puede ser vulnerable a XSS o SQLi.",
-   "ts": 1792225891086
-  },
   {
    "fecha": "16 oct",
    "texto": "INCIBE-CERT: Gestión incorrecta de mayúsculas y minúsculas en Wazuh Manager",
@@ -83,18 +58,39 @@
    "ts": 1791974168000
   },
   {
-   "fecha": "14 oct",
-   "texto": "KEV: CVE-2026-105134 en Ahsay AhsayCBS se está explotando. Parchea antes del 2026-10-17.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
-   "ts": 1791936000000
-  },
-  {
    "fecha": "7 oct",
    "texto": "Hispasec: Atacantes aprovechan un fallo crítico en Atlassian Data Center tras publicarse una prueba de concepto",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto",
    "ts": 1791385378000
+  },
+  {
+   "fecha": "6 oct",
+   "texto": "Hispasec: Dos fallos en LibreOffice y OpenOffice permiten ejecutar código al abrir hojas de cálculo sin avisos de macros",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros/?utm_source=rss&utm_medium=rss&utm_campaign=dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros",
+   "ts": 1791292109000
+  },
+  {
+   "fecha": "5 oct",
+   "texto": "Hispasec: Una vulnerabilidad crítica en Rejetto HFS permite falsificar sesiones de administrador y ejecutar código",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo/?utm_source=rss&utm_medium=rss&utm_campaign=una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo",
+   "ts": 1791205149000
+  },
+  {
+   "fecha": "2 oct",
+   "texto": "Hispasec: Un fallo en Steam para Windows permite escalar privilegios a SYSTEM sin UAC",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac",
+   "ts": 1790939872000
+  },
+  {
+   "fecha": "30 sep",
+   "texto": "Hispasec: Una campaña explota dos zero-days críticos en Citrix NetScaler para instalar web shells y moverse por la red",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/una-campana-explota-dos-zero-days-criticos-en-citrix-netscaler-para-instalar-web-shells-y-moverse-por-la-red/?utm_source=rss&utm_medium=rss&utm_campaign=una-campana-explota-dos-zero-days-criticos-en-citrix-netscaler-para-instalar-web-shells-y-moverse-por-la-red",
+   "ts": 1790780911000
   }
  ]
 }
