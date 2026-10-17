@@ -1,15 +1,14 @@
-"""Genera noticias.json para el noticiero de la Ciberpedia.
+"""Genera noticias.json: solo NOTICIAS reales, totalmente automático.
 
-Fuentes de noticias (dinámicas, cambian solas en cada ejecución):
-  - INCIBE-CERT: avisos de alerta temprana (RSS)
-  - Hispasec "una-al-día": noticias de seguridad en español (RSS)
-  - ciberseguridad.com: blog/noticias de seguridad en español (RSS)
+No hay nada que editar a mano. Las noticias se recogen de fuentes fiables,
+con PREFERENCIA a Hispasec y a las más recientes:
+
+  - Hispasec "una-al-día": noticias de seguridad en español (RSS)  [preferente]
+  - INCIBE-CERT: avisos de alerta temprana del CERT español (RSS)
   - CISA KEV: vulnerabilidades explotadas de verdad (JSON)
 
-Fuentes propias:
-  - consejos.json: bote de consejos; cada día se muestran unos pocos DISTINTOS
-    (rotación por día del año), así no se repiten siempre los mismos.
-  - fijas.json: mensajes fijos puntuales (p. ej. el tema de la semana), opcional.
+Los CONSEJOS ya no viven aquí: los genera la tarea programada a partir de las
+propias fichas de la Ciberpedia, así que se amplían solos según crece el libro.
 
 Solo usa la biblioteca estándar de Python. Si una fuente falla, sigue con las demás.
 """
@@ -55,22 +54,17 @@ def rss(url, prefijo, fuente, max_items):
     return out
 
 
+def hispasec(max_items=6):  # fuente preferente: le damos más espacio
+    return rss("https://feeds.feedburner.com/hispasec/zCAd",
+               "Hispasec", "hispasec.com", max_items)
+
+
 def incibe(max_items=4):
     return rss("https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
                "INCIBE-CERT", "incibe.es", max_items)
 
 
-def hispasec(max_items=4):
-    return rss("https://feeds.feedburner.com/hispasec/zCAd",
-               "Hispasec", "hispasec.com", max_items)
-
-
-def ciberseguridad(max_items=2):
-    return rss("https://ciberseguridad.com/feed/",
-               "ciberseguridad.com", "ciberseguridad.com", max_items)
-
-
-def cisa_kev(max_items=4):
+def cisa_kev(max_items=3):
     datos = json.loads(bajar("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"))
     vulns = sorted(datos.get("vulnerabilities", []), key=lambda v: v.get("dateAdded", ""), reverse=True)
     out = []
@@ -86,51 +80,10 @@ def cisa_kev(max_items=4):
     return out
 
 
-def consejos(cuantos=3):
-    """Elige unos pocos consejos DISTINTOS cada día, rotando por el día del año.
-
-    Así el noticiero no repite siempre los mismos consejos: el subconjunto
-    cambia a diario y recorre todo el bote antes de empezar de nuevo.
-    """
-    f = AQUI / "consejos.json"
-    if not f.exists():
-        return []
-    bote = json.loads(f.read_text(encoding="utf-8"))
-    if not bote:
-        return []
-    dia = time.gmtime().tm_yday  # 1..366
-    n = min(cuantos, len(bote))
-    inicio = (dia * n) % len(bote)
-    ahora = int(time.time() * 1000)
-    out = []
-    for k in range(n):
-        texto = bote[(inicio + k) % len(bote)]
-        # ts un poco por debajo de "ahora" para que queden intercalados, no siempre arriba
-        out.append({"fecha": "Consejo", "texto": texto, "ts": ahora - (k + 1) * 3600_000})
-    return out
-
-
-def fijas():
-    f = AQUI / "fijas.json"
-    if not f.exists():
-        return []
-    ahora = int(time.time() * 1000)
-    # Las fijas van delante: les damos la marca de tiempo más reciente
-    lista = json.loads(f.read_text(encoding="utf-8"))
-    return [dict(n, ts=n.get("ts", ahora + len(lista) - i)) for i, n in enumerate(lista)]
-
-
 def main():
     noticias, fallos = [], []
-    fuentes = (
-        ("INCIBE", incibe),
-        ("Hispasec", hispasec),
-        ("ciberseguridad.com", ciberseguridad),
-        ("CISA KEV", cisa_kev),
-        ("consejos", consejos),
-        ("fijas", fijas),
-    )
-    for nombre, fuente in fuentes:
+    # Orden = preferencia: Hispasec primero.
+    for nombre, fuente in (("Hispasec", hispasec), ("INCIBE", incibe), ("CISA KEV", cisa_kev)):
         try:
             noticias += fuente()
         except Exception as e:  # una fuente caída no rompe el resto
@@ -144,6 +97,7 @@ def main():
         if clave not in vistas:
             vistas.add(clave)
             unicas.append(n)
+    # Más recientes primero (= más relevantes)
     unicas.sort(key=lambda n: n.get("ts", 0), reverse=True)
     salida = {"generado": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "noticias": unicas[:15]}
     (AQUI / "noticias.json").write_text(json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8")
