@@ -4,6 +4,6 @@ Cada día, GitHub Actions ejecuta `generar_noticias.py`, que junta avisos de INC
 
 La Ciberpedia lee este archivo desde:
 
-    https://raw.githubusercontent.com/TU-USUARIO/ciberpedia-noticias/main/noticias.json
+    https://raw.githubusercontent.com/NokName/ciberpedia-noticias/main/noticias.json
 
 Para cambiar tus mensajes (clase, consejos), edita `fijas.json`. Para forzar una actualización: pestaña Actions → "Actualizar noticias" → Run workflow.
