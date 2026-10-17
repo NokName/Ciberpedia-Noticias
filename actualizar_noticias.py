@@ -61,7 +61,11 @@ CRITICA = (
     "critic", "rce", "ejecucion remota", "ejecucion de codigo", "remote code", "code execution",
     "omision de autenticacion", "authentication bypass", "0-day", "zero-day", "dia cero",
 )
-EXPLOTADA = ("explotad", "explotacion activa", "exploited", "in the wild", "0-day", "zero-day", "dia cero")
+EXPLOTADA = (
+    "explotada activamente", "explotado activamente", "explotadas activamente", "explotados activamente",
+    "explotacion activa", "se esta explotando", "ya se explota", "se explota", "explota ", "exploited",
+    "in the wild", "0-day", "zero-day", "dia cero",
+)
 PARAMS_BASURA = re.compile(r"^(utm_|fbclid$|gclid$|mc_|_hs|ref$|ref_src$|source$|feature$|igshid$|yclid$|msclkid$)", re.I)
 
 
@@ -109,7 +113,8 @@ def noticia(titulo, url, fuente, ts, extra=""):
     todo = t + " " + plano(limpiar_texto(extra))
     if tiene(t, RELLENO) or not tiene(todo, RELEVANTE):
         return None
-    urgente = tiene(todo, CRITICA) and tiene(todo, EXPLOTADA)
+    # Urgente solo si el propio titular dice que es crítica y que se está explotando
+    urgente = tiene(t, CRITICA) and tiene(t, EXPLOTADA)
     n = {"fecha": fecha_corta(ts), "texto": titulo, "fuente": fuente, "url": limpiar_url(url), "ts": int(ts * 1000)}
     if urgente:
         n["urgente"] = True
