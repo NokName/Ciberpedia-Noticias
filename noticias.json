@@ -1,0 +1,78 @@
+{
+ "generado": "2026-10-17T10:54:31Z",
+ "noticias": [
+  {
+   "fecha": "Clase",
+   "texto": "Esta semana en clase: reverse shell y cómo estabilizarla. Repásalo en el capítulo Amenazas.",
+   "ts": 1792234471354
+  },
+  {
+   "fecha": "Recuerda",
+   "texto": "Practica solo en laboratorios o con autorización por escrito.",
+   "ts": 1792234471353
+  },
+  {
+   "fecha": "16 oct",
+   "texto": "INCIBE-CERT: Gestión incorrecta de mayúsculas y minúsculas en Wazuh Manager",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/gestion-incorrecta-de-mayusculas-y-minusculas-en-wazuh-manager",
+   "ts": 1792136252000
+  },
+  {
+   "fecha": "16 oct",
+   "texto": "INCIBE-CERT: Múltiples vulnerabilidades en Next.js de Vercel",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-nextjs-de-vercel",
+   "ts": 1792136251000
+  },
+  {
+   "fecha": "16 oct",
+   "texto": "INCIBE-CERT: Omisión de autenticación mediante suplantación en Remote Support de BeyondTrust",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-mediante-suplantacion-en-remote-support-de-beyondtrust",
+   "ts": 1792136249000
+  },
+  {
+   "fecha": "16 oct",
+   "texto": "INCIBE-CERT: Inyección SQL en Profleet de TSG",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-profleet-de-tsg",
+   "ts": 1792135639000
+  },
+  {
+   "fecha": "16 oct",
+   "texto": "INCIBE-CERT: Server-Side Request Forgery en la exportación a PDF de Wegow",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/server-side-request-forgery-en-la-exportacion-pdf-de-wegow",
+   "ts": 1792135500000
+  },
+  {
+   "fecha": "16 oct",
+   "texto": "KEV: CVE-2026-102764 en BeyondTrust Remote Support se está explotando. Parchea antes del 2026-10-19.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+   "ts": 1792108800000
+  },
+  {
+   "fecha": "16 oct",
+   "texto": "KEV: CVE-2025-61624 en Fortinet Multiple Products se está explotando. Parchea antes del 2026-10-19.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+   "ts": 1792108800000
+  },
+  {
+   "fecha": "15 oct",
+   "texto": "KEV: CVE-2026-21589 en Atlassian Multiple Products se está explotando. Parchea antes del 2026-10-18.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+   "ts": 1792022400000
+  },
+  {
+   "fecha": "14 oct",
+   "texto": "KEV: CVE-2026-105134 en Ahsay AhsayCBS se está explotando. Parchea antes del 2026-10-17.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+   "ts": 1791936000000
+  }
+ ]
+}
