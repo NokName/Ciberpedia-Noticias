@@ -1,93 +1,93 @@
 {
- "generado": "2026-10-17T11:39:07Z",
+ "generado": "2026-10-17T12:00:34Z",
  "noticias": [
   {
    "fecha": "16 oct",
-   "texto": "INCIBE-CERT: Gestión incorrecta de mayúsculas y minúsculas en Wazuh Manager",
+   "texto": "Gestión incorrecta de mayúsculas y minúsculas en Wazuh Manager",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/gestion-incorrecta-de-mayusculas-y-minusculas-en-wazuh-manager",
    "ts": 1792136252000
   },
   {
    "fecha": "16 oct",
-   "texto": "INCIBE-CERT: Múltiples vulnerabilidades en Next.js de Vercel",
+   "texto": "Múltiples vulnerabilidades en Next.js de Vercel",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-nextjs-de-vercel",
    "ts": 1792136251000
   },
   {
    "fecha": "16 oct",
-   "texto": "INCIBE-CERT: Omisión de autenticación mediante suplantación en Remote Support de BeyondTrust",
+   "texto": "Omisión de autenticación mediante suplantación en Remote Support de BeyondTrust",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-mediante-suplantacion-en-remote-support-de-beyondtrust",
    "ts": 1792136249000
   },
   {
    "fecha": "16 oct",
-   "texto": "INCIBE-CERT: Inyección SQL en Profleet de TSG",
+   "texto": "Inyección SQL en Profleet de TSG",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-profleet-de-tsg",
    "ts": 1792135639000
   },
   {
    "fecha": "16 oct",
-   "texto": "KEV: CVE-2026-102764 en BeyondTrust Remote Support se está explotando. Parchea antes del 2026-10-19.",
+   "texto": "CVE-2026-102764 en BeyondTrust Remote Support se está explotando. Parchea antes del 2026-10-19.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
    "ts": 1792108800000
   },
   {
    "fecha": "16 oct",
-   "texto": "KEV: CVE-2025-61624 en Fortinet Multiple Products se está explotando. Parchea antes del 2026-10-19.",
+   "texto": "CVE-2025-61624 en Fortinet Multiple Products se está explotando. Parchea antes del 2026-10-19.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
    "ts": 1792108800000
   },
   {
    "fecha": "15 oct",
-   "texto": "KEV: CVE-2026-21589 en Atlassian Multiple Products se está explotando. Parchea antes del 2026-10-18.",
+   "texto": "CVE-2026-21589 en Atlassian Multiple Products se está explotando. Parchea antes del 2026-10-18.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
    "ts": 1792022400000
   },
   {
    "fecha": "14 oct",
-   "texto": "Hispasec: Un ciberataque apaga vitrinas frigoríficas en supermercados franceses",
+   "texto": "Un ciberataque apaga vitrinas frigoríficas en supermercados franceses",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses/?utm_source=rss&utm_medium=rss&utm_campaign=un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses",
    "ts": 1791974168000
   },
   {
    "fecha": "7 oct",
-   "texto": "Hispasec: Atacantes aprovechan un fallo crítico en Atlassian Data Center tras publicarse una prueba de concepto",
+   "texto": "Atacantes aprovechan un fallo crítico en Atlassian Data Center tras publicarse una prueba de concepto",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto",
    "ts": 1791385378000
   },
   {
    "fecha": "6 oct",
-   "texto": "Hispasec: Dos fallos en LibreOffice y OpenOffice permiten ejecutar código al abrir hojas de cálculo sin avisos de macros",
+   "texto": "Dos fallos en LibreOffice y OpenOffice permiten ejecutar código al abrir hojas de cálculo sin avisos de macros",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros/?utm_source=rss&utm_medium=rss&utm_campaign=dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros",
    "ts": 1791292109000
   },
   {
    "fecha": "5 oct",
-   "texto": "Hispasec: Una vulnerabilidad crítica en Rejetto HFS permite falsificar sesiones de administrador y ejecutar código",
+   "texto": "Una vulnerabilidad crítica en Rejetto HFS permite falsificar sesiones de administrador y ejecutar código",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo/?utm_source=rss&utm_medium=rss&utm_campaign=una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo",
    "ts": 1791205149000
   },
   {
    "fecha": "2 oct",
-   "texto": "Hispasec: Un fallo en Steam para Windows permite escalar privilegios a SYSTEM sin UAC",
+   "texto": "Un fallo en Steam para Windows permite escalar privilegios a SYSTEM sin UAC",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac",
    "ts": 1790939872000
   },
   {
    "fecha": "30 sep",
-   "texto": "Hispasec: Una campaña explota dos zero-days críticos en Citrix NetScaler para instalar web shells y moverse por la red",
+   "texto": "Una campaña explota dos zero-days críticos en Citrix NetScaler para instalar web shells y moverse por la red",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/una-campana-explota-dos-zero-days-criticos-en-citrix-netscaler-para-instalar-web-shells-y-moverse-por-la-red/?utm_source=rss&utm_medium=rss&utm_campaign=una-campana-explota-dos-zero-days-criticos-en-citrix-netscaler-para-instalar-web-shells-y-moverse-por-la-red",
    "ts": 1790780911000
