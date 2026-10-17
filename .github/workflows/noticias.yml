@@ -5,7 +5,9 @@ on:
     - cron: "17 6 * * *"   # todos los días a las 06:17 UTC (08:17 en Madrid en verano)
   push:
     paths:
-      - fijas.json          # se ejecuta también al editar los mensajes fijos
+      - fijas.json          # se ejecuta al editar los mensajes fijos
+      - consejos.json       # ...y al editar el bote de consejos
+      - generar_noticias.py # ...y al cambiar el generador
   workflow_dispatch:        # botón "Run workflow" para lanzarlo a mano
 
 permissions:
