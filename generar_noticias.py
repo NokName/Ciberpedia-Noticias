@@ -35,8 +35,12 @@ def fecha_corta(ts):
     return f"{t.tm_mday} {MESES[t.tm_mon - 1]}"
 
 
-def rss(url, prefijo, fuente, max_items):
-    """Lee un RSS genérico y devuelve items ya normalizados."""
+def rss(url, fuente, max_items):
+    """Lee un RSS genérico y devuelve items ya normalizados.
+
+    El texto es solo el titular (sin prefijo): la fuente se muestra aparte,
+    como enlace al final de cada noticia en el noticiero.
+    """
     raiz = ET.fromstring(bajar(url))
     out = []
     for it in raiz.iter("item"):
@@ -47,7 +51,7 @@ def rss(url, prefijo, fuente, max_items):
         except Exception:
             ts = time.time()
         if titulo:
-            out.append({"fecha": fecha_corta(ts), "texto": f"{prefijo}: {titulo}",
+            out.append({"fecha": fecha_corta(ts), "texto": titulo,
                         "fuente": fuente, "url": enlace, "ts": int(ts * 1000)})
         if len(out) >= max_items:
             break
@@ -55,13 +59,11 @@ def rss(url, prefijo, fuente, max_items):
 
 
 def hispasec(max_items=6):  # fuente preferente: le damos más espacio
-    return rss("https://feeds.feedburner.com/hispasec/zCAd",
-               "Hispasec", "hispasec.com", max_items)
+    return rss("https://feeds.feedburner.com/hispasec/zCAd", "hispasec.com", max_items)
 
 
 def incibe(max_items=4):
-    return rss("https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
-               "INCIBE-CERT", "incibe.es", max_items)
+    return rss("https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed", "incibe.es", max_items)
 
 
 def cisa_kev(max_items=3):
@@ -72,7 +74,7 @@ def cisa_kev(max_items=3):
         ts = time.mktime(time.strptime(v["dateAdded"], "%Y-%m-%d"))
         out.append({
             "fecha": fecha_corta(ts),
-            "texto": f"KEV: {v['cveID']} en {v.get('vendorProject', '')} {v.get('product', '')} se está explotando. Parchea antes del {v.get('dueDate', '?')}.",
+            "texto": f"{v['cveID']} en {v.get('vendorProject', '')} {v.get('product', '')} se está explotando. Parchea antes del {v.get('dueDate', '?')}.",
             "fuente": "cisa.gov",
             "url": "https://nvd.nist.gov/vuln/detail/" + v["cveID"],
             "ts": int(ts * 1000),
