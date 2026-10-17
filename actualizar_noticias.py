@@ -31,7 +31,9 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 AQUI = pathlib.Path(__file__).parent
 SALIDA = AQUI / "noticias.json"
 MAX_NOTICIAS = 12
-MAX_POR_FUENTE = {"hispasec.com": 5, "incibe.es": 5, "cisa.gov": 4}
+# Hispasec va primero y ocupa la mayor parte; INCIBE y CISA rellenan el resto
+PRIORIDAD = {"hispasec.com": 0, "incibe.es": 1, "cisa.gov": 2}
+MAX_POR_FUENTE = {"hispasec.com": 8, "incibe.es": 3, "cisa.gov": 2}
 UA = {"User-Agent": "Mozilla/5.0 (ciberpedia-noticias; +https://github.com/NokName/Ciberpedia-Noticias)"}
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 
@@ -61,7 +63,11 @@ CRITICA = (
     "critic", "rce", "ejecucion remota", "ejecucion de codigo", "remote code", "code execution",
     "omision de autenticacion", "authentication bypass", "0-day", "zero-day", "dia cero",
 )
-EXPLOTADA = ("explotad", "explotacion activa", "exploited", "in the wild", "0-day", "zero-day", "dia cero")
+EXPLOTADA = (
+    "explotada activamente", "explotado activamente", "explotadas activamente", "explotados activamente",
+    "explotacion activa", "se esta explotando", "ya se explota", "se explota", "explota ", "exploited",
+    "in the wild", "0-day", "zero-day", "dia cero",
+)
 PARAMS_BASURA = re.compile(r"^(utm_|fbclid$|gclid$|mc_|_hs|ref$|ref_src$|source$|feature$|igshid$|yclid$|msclkid$)", re.I)
 
 
@@ -109,7 +115,8 @@ def noticia(titulo, url, fuente, ts, extra=""):
     todo = t + " " + plano(limpiar_texto(extra))
     if tiene(t, RELLENO) or not tiene(todo, RELEVANTE):
         return None
-    urgente = tiene(todo, CRITICA) and tiene(todo, EXPLOTADA)
+    # Urgente solo si el propio titular dice que es crítica y que se está explotando
+    urgente = tiene(t, CRITICA) and tiene(t, EXPLOTADA)
     n = {"fecha": fecha_corta(ts), "texto": titulo, "fuente": fuente, "url": limpiar_url(url), "ts": int(ts * 1000)}
     if urgente:
         n["urgente"] = True
@@ -174,8 +181,8 @@ def leer_kev(raw):
 
 
 def seleccionar(noticias):
-    """Sin duplicados (por URL o texto), variado por fuente y como mucho 12."""
-    noticias.sort(key=lambda n: (n.get("urgente", False), n["ts"]), reverse=True)
+    """Sin duplicados (por URL o texto), Hispasec primero y como mucho 12."""
+    noticias.sort(key=lambda n: (PRIORIDAD.get(n["fuente"], 9), not n.get("urgente", False), -n["ts"]))
     vistas, por_fuente, out = set(), {}, []
     for n in noticias:
         claves = {plano(n["texto"])} | ({n["url"].lower()} if n["url"] else set())
@@ -188,6 +195,14 @@ def seleccionar(noticias):
         out.append(n)
         if len(out) >= MAX_NOTICIAS:
             break
+    # Si Hispasec trae pocas, las demás fuentes completan hasta 12
+    for n in noticias:
+        if len(out) >= MAX_NOTICIAS:
+            break
+        claves = {plano(n["texto"])} | ({n["url"].lower()} if n["url"] else set())
+        if not claves & vistas:
+            vistas |= claves
+            out.append(n)
     return out
 
 
