@@ -1,15 +1,30 @@
 {
- "generado": "2026-10-17T10:54:31Z",
+ "generado": "2026-10-17T11:31:31Z",
  "noticias": [
   {
    "fecha": "Clase",
    "texto": "Esta semana en clase: reverse shell y cómo estabilizarla. Repásalo en el capítulo Amenazas.",
-   "ts": 1792234471354
+   "ts": 1792236691088
   },
   {
    "fecha": "Recuerda",
    "texto": "Practica solo en laboratorios o con autorización por escrito.",
-   "ts": 1792234471353
+   "ts": 1792236691087
+  },
+  {
+   "fecha": "Consejo",
+   "texto": "Un hash no es cifrado: es de un solo sentido. Para 'romperlo' se prueba por fuerza o diccionario.",
+   "ts": 1792233091086
+  },
+  {
+   "fecha": "Consejo",
+   "texto": "El modelo OSI tiene 7 capas; recuerda que el cifrado TLS vive sobre la capa de transporte.",
+   "ts": 1792229491086
+  },
+  {
+   "fecha": "Consejo",
+   "texto": "HTTPS protege el transporte, no la aplicación: una web con HTTPS puede ser vulnerable a XSS o SQLi.",
+   "ts": 1792225891086
   },
   {
    "fecha": "16 oct",
@@ -41,13 +56,6 @@
   },
   {
    "fecha": "16 oct",
-   "texto": "INCIBE-CERT: Server-Side Request Forgery en la exportación a PDF de Wegow",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/server-side-request-forgery-en-la-exportacion-pdf-de-wegow",
-   "ts": 1792135500000
-  },
-  {
-   "fecha": "16 oct",
    "texto": "KEV: CVE-2026-102764 en BeyondTrust Remote Support se está explotando. Parchea antes del 2026-10-19.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
@@ -69,10 +77,24 @@
   },
   {
    "fecha": "14 oct",
+   "texto": "Hispasec: Un ciberataque apaga vitrinas frigoríficas en supermercados franceses",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses/?utm_source=rss&utm_medium=rss&utm_campaign=un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses",
+   "ts": 1791974168000
+  },
+  {
+   "fecha": "14 oct",
    "texto": "KEV: CVE-2026-105134 en Ahsay AhsayCBS se está explotando. Parchea antes del 2026-10-17.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
    "ts": 1791936000000
+  },
+  {
+   "fecha": "7 oct",
+   "texto": "Hispasec: Atacantes aprovechan un fallo crítico en Atlassian Data Center tras publicarse una prueba de concepto",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto",
+   "ts": 1791385378000
   }
  ]
 }
