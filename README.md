@@ -4,17 +4,17 @@ Todo es automático: no hay que editar nada.
 
 ## Cómo funciona
 
-**1. Noticias (este repo).** Cada 5 horas, GitHub Actions ejecuta `generar_noticias.py`, que recoge noticias reales de seguridad y las guarda en `noticias.json`, con **preferencia a Hispasec** y a las más recientes:
+Cada 6 horas, GitHub Actions (`.github/workflows/actualizar.yml`) ejecuta `actualizar_noticias.py`, que:
 
-- **Hispasec «una-al-día»** — noticias de seguridad en español (fuente preferente).
-- **INCIBE-CERT** — avisos de alerta temprana del CERT español.
-- **CISA KEV** — vulnerabilidades explotadas de verdad.
+- Lee las fuentes oficiales: **Hispasec «Una al día»**, **INCIBE-CERT** (avisos de alerta temprana) y el catálogo **CISA KEV**.
+- Se queda solo con noticias de ciberseguridad y pentesting relevantes (vulnerabilidades, RCE, SQLi, Linux/Windows/Active Directory/Docker, explotación activa) y descarta el relleno.
+- Limpia las URLs (`?utm_...`), quita duplicados y marca `urgente: true` solo si la vulnerabilidad es crítica y se está explotando.
+- Genera `noticias.json` **desde cero** con un máximo de 12 noticias (nunca acumula) y sin consejos: los consejos los saca el propio visor de las fichas de la Ciberpedia, uno distinto cada día.
+- Solo hace commit si las noticias han cambiado de verdad.
 
-La Ciberpedia lee el resultado desde:
+La Ciberpedia lee el resultado (sin configurar nada) desde:
 
-    https://raw.githubusercontent.com/NokName/ciberpedia-noticias/main/noticias.json
-
-**2. Consejos (automáticos, desde la propia Ciberpedia).** Una tarea programada (cada 5 horas) lee las fichas de la Ciberpedia, saca consejos de sus resúmenes rotándolos, los junta con las noticias y lo escribe todo en el noticiero del artefacto. Según crece el libro, los consejos se amplían solos. No hay archivo que mantener.
+    https://raw.githubusercontent.com/NokName/Ciberpedia-Noticias/main/noticias.json
 
 ## Forzar una actualización a mano
 

@@ -1,0 +1,35 @@
+name: Actualizar noticias
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # cada 6 horas
+  workflow_dispatch:        # botón "Run workflow" para lanzarlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-noticias
+  cancel-in-progress: false
+
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar noticias.json desde cero
+        run: python actualizar_noticias.py
+      - name: Commit y push solo si hay cambios reales
+        run: |
+          git config user.name "ciberpedia-bot"
+          git config user.email "ciberpedia-bot@users.noreply.github.com"
+          git add noticias.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios: no hay commit."
+          else
+            git commit -m "Noticias $(date -u +'%F %H:%M') UTC"
+            git push
+          fi
