@@ -22,7 +22,6 @@ Pestaña **Actions** → «Actualizar noticias» → **Run workflow**.
 
 ## App Android (carpeta `app/`)
 
-- `app/Ciberpedia.apk`: la APK pública para compañeros. Al abrirse mira `app/version.json` y, si `version` es mayor que la instalada, ofrece descargar la nueva.
-- Solo se instala encima una APK firmada con la clave de Noc, así que nadie más puede sacar actualizaciones.
-- La APK de administrador **no** se sube aquí: vive en el proyecto de Claude.
-- Para publicar una versión: sube la APK nueva y aumenta `version` en `app/version.json` (en el mismo commit). El workflow de noticias no toca esta carpeta.
+- `app/Ciberpedia.apk`: la app de la Ciberpedia para Android.
+- `app/version.json`: la versión publicada. La app lo consulta al abrirse y avisa si hay una nueva.
+- El workflow de noticias no toca esta carpeta.
