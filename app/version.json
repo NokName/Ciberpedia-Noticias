@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "nombre": "1.2",
+  "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
+  "notas": "Ciberpedia 1.2: título más grande, cabecera que no se descoloca al cambiar la letra, filtro de nivel con más aire y fichas protegidas."
+}
