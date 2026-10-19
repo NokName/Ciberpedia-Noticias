@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "nombre": "1.3",
+  "version": 5,
+  "nombre": "1.4",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.3: fichas mucho mejor protegidas y tamaños del título y la cabecera mejorados en móvil y PC."
+  "notas": "Ciberpedia 1.4: 271 fichas de ciberseguridad, nuevos conceptos y contenidos ampliados, 9 temas e iconos, mejoras de consulta y funcionamiento sin conexión."
 }
