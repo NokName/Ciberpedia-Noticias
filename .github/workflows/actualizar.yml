@@ -2,7 +2,7 @@ name: Actualizar noticias
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # cada 6 horas
+    - cron: "17 */6 * * *"  # cada 6 horas, fuera del pico de inicio de hora
   workflow_dispatch:        # botón "Run workflow" para lanzarlo a mano
 
 permissions:
@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Comprobar el generador
+        run: python -m unittest discover -s tests
       - name: Generar noticias.json desde cero
         run: python actualizar_noticias.py
       - name: Commit y push solo si hay cambios reales

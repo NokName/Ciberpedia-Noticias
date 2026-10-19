@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-19T11:45:46Z",
+ "generado": "2026-10-19T23:42:22Z",
  "noticias": [
   {
    "fecha": "19 oct",
@@ -24,14 +24,14 @@
   },
   {
    "fecha": "16 oct",
-   "texto": "CVE-2026-102764 en BeyondTrust Remote Support se está explotando. Parchea antes del 2026-10-19.",
+   "texto": "CVE-2026-102764 en BeyondTrust Remote Support se está explotando. Plazo de CISA: 2026-10-19.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
    "ts": 1792108800000
   },
   {
    "fecha": "16 oct",
-   "texto": "CVE-2025-61624 en Fortinet Multiple Products se está explotando. Parchea antes del 2026-10-19.",
+   "texto": "CVE-2025-61624 en Fortinet Multiple Products se está explotando. Plazo de CISA: 2026-10-19.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
    "ts": 1792108800000
