@@ -207,6 +207,9 @@ def main():
     elegidas = seleccionar(noticias)
     if not elegidas:
         raise SystemExit("Ninguna fuente dio noticias válidas; se mantiene el noticias.json anterior.")
+    if fallos:
+        print("Actualización parcial: se conserva noticias.json para evitar perder fuentes temporalmente.")
+        return
     try:
         anterior = json.loads(SALIDA.read_text(encoding="utf-8")).get("noticias")
     except Exception:
