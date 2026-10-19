@@ -32,7 +32,7 @@ SALIDA = AQUI / "noticias.json"
 MAX_NOTICIAS = 12
 # Hispasec tiene preferencia real en la selección; INCIBE y CISA completan el resto
 PRIORIDAD = {"hispasec.com": 0, "incibe.es": 1, "cisa.gov": 2}
-MAX_POR_FUENTE = {"hispasec.com": 8, "incibe.es": 3, "cisa.gov": 2}
+MAX_POR_FUENTE = {"hispasec.com": 7, "incibe.es": 3, "cisa.gov": 2}
 UA = {"User-Agent": "Mozilla/5.0 (ciberpedia-noticias; +https://github.com/NokName/Ciberpedia-Noticias)"}
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 
