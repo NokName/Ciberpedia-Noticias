@@ -17,6 +17,7 @@ Qué hace en cada ejecución:
 
 Solo usa la biblioteca estándar de Python.
 """
+import calendar
 import json
 import pathlib
 import re
@@ -25,6 +26,7 @@ import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
+from datetime import datetime, timezone
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 AQUI = pathlib.Path(__file__).parent
@@ -118,13 +120,17 @@ def leer_rss(xml, fuente):
         # FeedBurner guarda el enlace original en feedburner:origLink
         url = hijo(it, "origLink") or hijo(it, "link") or hijo(it, "guid", "id")
         fecha = hijo(it, "pubDate", "published", "updated", "date")
+        if not fecha:
+            continue
         try:
-            ts = parsedate_to_datetime(fecha).timestamp()
+            parsed = parsedate_to_datetime(fecha)
+            ts = parsed.replace(tzinfo=timezone.utc).timestamp() if parsed.tzinfo is None else parsed.timestamp()
         except Exception:
             try:
-                ts = time.mktime(time.strptime(fecha[:10], "%Y-%m-%d"))
+                parsed = datetime.fromisoformat(fecha.replace("Z", "+00:00"))
+                ts = parsed.replace(tzinfo=timezone.utc).timestamp() if parsed.tzinfo is None else parsed.timestamp()
             except Exception:
-                ts = time.time()
+                continue
         extra = hijo(it, "description", "summary", "content") + " " + " ".join(
             (c.text or "") for c in it if c.tag.rsplit("}", 1)[-1] == "category")
         n = noticia(hijo(it, "title"), url, fuente, ts, extra)
@@ -138,12 +144,14 @@ def leer_kev(raw):
     vulns = sorted(datos.get("vulnerabilities", []), key=lambda v: v.get("dateAdded", ""), reverse=True)
     out = []
     for v in vulns[:10]:
-        ts = time.mktime(time.strptime(v["dateAdded"], "%Y-%m-%d"))
+        if not v.get("dateAdded") or not v.get("cveID"):
+            continue
+        ts = calendar.timegm(time.strptime(v["dateAdded"], "%Y-%m-%d"))
         prod = f"{v.get('vendorProject', '')} {v.get('product', '')}".strip()
-        desc = plano(f"{v.get('vulnerabilityName', '')} {v.get('shortDescription', '')}")
+        plazo = f" Plazo de CISA: {v['dueDate']}." if v.get("dueDate") else ""
         n = {
             "fecha": fecha_corta(ts),
-            "texto": f"{v['cveID']} en {prod} se está explotando. Parchea antes del {v.get('dueDate', '?')}.",
+            "texto": f"{v['cveID']} en {prod} se está explotando.{plazo}",
             "fuente": "cisa.gov",
             "url": "https://nvd.nist.gov/vuln/detail/" + v["cveID"],
             "ts": int(ts * 1000),
@@ -153,7 +161,7 @@ def leer_kev(raw):
 
 
 def seleccionar(noticias):
-    """Prioriza hasta 8 de Hispasec, completa con INCIBE/CISA y evita duplicados."""
+    """Prioriza hasta 7 de Hispasec, completa con INCIBE/CISA y evita duplicados."""
     ordenadas = sorted(noticias, key=lambda n: (-n["ts"], PRIORIDAD.get(n["fuente"], 9)))
     vistas, por_fuente, out = set(), {}, []
 
@@ -177,28 +185,43 @@ def seleccionar(noticias):
 
 
 def main():
-    noticias, fallos = [], []
+    try:
+        anterior = json.loads(SALIDA.read_text(encoding="utf-8")).get("noticias")
+        if not isinstance(anterior, list):
+            anterior = []
+    except Exception:
+        anterior = []
+    noticias, fallos, fuentes_fallidas, fuentes_ok = [], [], set(), 0
     for nombre, url, fuente in FUENTES_RSS:
         try:
-            noticias += leer_rss(bajar(url), fuente)
+            nuevas = leer_rss(bajar(url), fuente)
+            if not nuevas:
+                raise ValueError("el feed no contiene noticias válidas")
+            noticias += nuevas
+            fuentes_ok += 1
         except Exception as e:  # una fuente caída no rompe el resto
             fallos.append(f"{nombre}: {e}")
+            fuentes_fallidas.add(fuente)
     try:
-        noticias += leer_kev(bajar(KEV_URL))
+        nuevas = leer_kev(bajar(KEV_URL))
+        if not nuevas:
+            raise ValueError("el catálogo no contiene vulnerabilidades válidas")
+        noticias += nuevas
+        fuentes_ok += 1
     except Exception as e:
         fallos.append(f"CISA KEV: {e}")
+        fuentes_fallidas.add("cisa.gov")
     if fallos:
         print("Fallos:", "; ".join(fallos))
+    if not fuentes_ok:
+        raise SystemExit("Todas las fuentes fallaron; se mantiene el noticias.json anterior.")
+    # Si falla una fuente, mantener sus últimas entradas sin bloquear las demás.
+    noticias += [n for n in anterior if isinstance(n, dict) and n.get("fuente") in fuentes_fallidas]
     elegidas = seleccionar(noticias)
     if not elegidas:
         raise SystemExit("Ninguna fuente dio noticias válidas; se mantiene el noticias.json anterior.")
     if fallos:
-        print("Actualización parcial: se conserva noticias.json para evitar perder fuentes temporalmente.")
-        return
-    try:
-        anterior = json.loads(SALIDA.read_text(encoding="utf-8")).get("noticias")
-    except Exception:
-        anterior = None
+        print("Actualización parcial: se conservan las últimas noticias de las fuentes fallidas.")
     if anterior == elegidas:
         print("Estás al día: no hay noticias nuevas.")
         return

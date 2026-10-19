@@ -1,0 +1,23 @@
+name: Validar noticiero
+
+on:
+  pull_request:
+    paths:
+      - actualizar_noticias.py
+      - noticias.json
+      - tests/**
+      - .github/workflows/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -v
