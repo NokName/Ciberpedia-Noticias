@@ -11,7 +11,7 @@ Qué hace en cada ejecución:
      (vulnerabilidades, RCE, SQLi, Linux/Windows/AD/Docker, explotación activa)
      y descarta el relleno (eventos, cursos, webinars...).
   3. Limpia las URLs (quita ?utm_..., fbclid, etc.) y elimina duplicados.
-  4. Marca urgente=true solo si es crítica Y se está explotando.
+  4. Ordena por fecha; no utiliza etiquetas de urgencia.
   5. Escribe un noticias.json NUEVO con un máximo de 12 noticias.
      Nunca añade al archivo anterior y no incluye consejos (los pone el visor).
   6. Si las noticias no han cambiado, no toca el archivo (así no hay commit).
@@ -115,11 +115,7 @@ def noticia(titulo, url, fuente, ts, extra=""):
     todo = t + " " + plano(limpiar_texto(extra))
     if tiene(t, RELLENO) or not tiene(todo, RELEVANTE):
         return None
-    # Urgente solo si el propio titular dice que es crítica y que se está explotando
-    urgente = tiene(t, CRITICA) and tiene(t, EXPLOTADA)
     n = {"fecha": fecha_corta(ts), "texto": titulo, "fuente": fuente, "url": limpiar_url(url), "ts": int(ts * 1000)}
-    if urgente:
-        n["urgente"] = True
     return n
 
 
@@ -173,16 +169,13 @@ def leer_kev(raw):
             "url": "https://nvd.nist.gov/vuln/detail/" + v["cveID"],
             "ts": int(ts * 1000),
         }
-        # Todo el KEV se explota de verdad; urgente solo si además es crítica
-        if tiene(desc, CRITICA) or v.get("knownRansomwareCampaignUse") == "Known":
-            n["urgente"] = True
         out.append(n)
     return out
 
 
 def seleccionar(noticias):
-    """Sin duplicados (por URL o texto), Hispasec primero y como mucho 12."""
-    noticias.sort(key=lambda n: (PRIORIDAD.get(n["fuente"], 9), not n.get("urgente", False), -n["ts"]))
+    """Sin duplicados, más recientes primero, con cupos para diversidad de fuentes."""
+    noticias.sort(key=lambda n: (-n["ts"], PRIORIDAD.get(n["fuente"], 9)))
     vistas, por_fuente, out = set(), {}, []
     for n in noticias:
         claves = {plano(n["texto"])} | ({n["url"].lower()} if n["url"] else set())
@@ -195,15 +188,7 @@ def seleccionar(noticias):
         out.append(n)
         if len(out) >= MAX_NOTICIAS:
             break
-    # Si Hispasec trae pocas, las demás fuentes completan hasta 12
-    for n in noticias:
-        if len(out) >= MAX_NOTICIAS:
-            break
-        claves = {plano(n["texto"])} | ({n["url"].lower()} if n["url"] else set())
-        if not claves & vistas:
-            vistas |= claves
-            out.append(n)
-    return out
+    return sorted(out, key=lambda n: -n["ts"])
 
 
 def main():
@@ -227,11 +212,11 @@ def main():
     except Exception:
         anterior = None
     if anterior == elegidas:
-        print("Sin cambios en las noticias.")
+        print("Estás al día: no hay noticias nuevas.")
         return
     salida = {"generado": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "noticias": elegidas}
     SALIDA.write_text(json.dumps(salida, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(elegidas)} noticias escritas ({sum(1 for n in elegidas if n.get('urgente'))} urgentes).")
+    print(f"{len(elegidas)} noticias escritas, ordenadas por fecha.")
 
 
 if __name__ == "__main__":
