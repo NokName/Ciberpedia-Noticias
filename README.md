@@ -8,9 +8,9 @@ Cada 6 horas, GitHub Actions (`.github/workflows/actualizar.yml`) ejecuta `actua
 
 - Lee las fuentes oficiales: **Hispasec «Una al día»**, **INCIBE-CERT** (avisos de alerta temprana) y el catálogo **CISA KEV**.
 - Se queda solo con noticias de ciberseguridad y pentesting relevantes (vulnerabilidades, RCE, SQLi, Linux/Windows/Active Directory/Docker, explotación activa) y descarta el relleno.
-- Limpia las URLs (`?utm_...`), quita duplicados y marca `urgente: true` solo si la vulnerabilidad es crítica y se está explotando.
+- Limpia las URLs (`?utm_...`), quita duplicados y ordena por fecha (más recientes primero). No utiliza la etiqueta `urgente`. Hispasec tiene un cupo preferente de hasta 8 noticias; INCIBE y CISA aportan diversidad.
 - Genera `noticias.json` **desde cero** con un máximo de 12 noticias (nunca acumula) y sin consejos: los consejos los saca el propio visor de las fichas de la Ciberpedia, uno distinto cada día.
-- Solo hace commit si las noticias han cambiado de verdad.
+- Solo hace commit si las noticias han cambiado de verdad. Si no cambian, el registro de Actions indica «Estás al día». Este mensaje todavía no aparece dentro de la APK: requiere una modificación posterior del visor canónico.
 
 La Ciberpedia lee el resultado (sin configurar nada) desde:
 
