@@ -1,26 +1,26 @@
 {
- "generado": "2026-10-19T01:46:21Z",
+ "generado": "2026-10-19T11:45:46Z",
  "noticias": [
+  {
+   "fecha": "19 oct",
+   "texto": "Validación incorrecta del origen en Remote Support de BeyondTrust",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/validacion-incorrecta-del-origen-en-remote-support-de-beyondtrust",
+   "ts": 1792394835000
+  },
+  {
+   "fecha": "19 oct",
+   "texto": "Ausencia de verificación de integridad en MobaXterm de Mobatek",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ausencia-de-verificacion-de-integridad-en-mobaxterm-de-mobatek",
+   "ts": 1792393435000
+  },
   {
    "fecha": "16 oct",
    "texto": "Gestión incorrecta de mayúsculas y minúsculas en Wazuh Manager",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/gestion-incorrecta-de-mayusculas-y-minusculas-en-wazuh-manager",
    "ts": 1792136252000
-  },
-  {
-   "fecha": "16 oct",
-   "texto": "Múltiples vulnerabilidades en Next.js de Vercel",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-nextjs-de-vercel",
-   "ts": 1792136251000
-  },
-  {
-   "fecha": "16 oct",
-   "texto": "Omisión de autenticación mediante suplantación en Remote Support de BeyondTrust",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-mediante-suplantacion-en-remote-support-de-beyondtrust",
-   "ts": 1792136249000
   },
   {
    "fecha": "16 oct",
