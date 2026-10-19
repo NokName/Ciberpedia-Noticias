@@ -10,6 +10,15 @@ import actualizar_noticias as gen
 
 
 class GeneradorNoticiasTests(unittest.TestCase):
+    def test_json_publicado_tiene_formato_orden_y_fuentes_validas(self):
+        datos = json.loads((Path(__file__).resolve().parent.parent / "noticias.json").read_text(encoding="utf-8"))
+        noticias = datos["noticias"]
+        self.assertTrue(1 <= len(noticias) <= gen.MAX_NOTICIAS)
+        self.assertEqual([n["ts"] for n in noticias], sorted((n["ts"] for n in noticias), reverse=True))
+        self.assertEqual(len({n["url"] for n in noticias}), len(noticias))
+        self.assertTrue(all(n["fuente"] in gen.PRIORIDAD and n["texto"] and n["fecha"] for n in noticias))
+        self.assertTrue(all("urgente" not in n for n in noticias))
+
     def test_fechas_kev_son_utc_y_el_plazo_no_se_presenta_como_futuro(self):
         feed = {"vulnerabilities": [{
             "dateAdded": "2026-10-16", "dueDate": "2026-10-19",
