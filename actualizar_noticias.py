@@ -7,9 +7,8 @@ Fuentes oficiales de ciberseguridad:
 
 Qué hace en cada ejecución:
   1. Descarga las tres fuentes (si una falla, sigue con las demás).
-  2. Se queda solo con noticias de ciberseguridad/pentesting relevantes
-     (vulnerabilidades, RCE, SQLi, Linux/Windows/AD/Docker, explotación activa)
-     y descarta el relleno (eventos, cursos, webinars...).
+  2. Incluye noticias, curiosidades, investigación y novedades de ciberseguridad.
+     Hispasec es la fuente preferente; solo descarta contenido promocional evidente.
   3. Limpia las URLs (quita ?utm_..., fbclid, etc.) y elimina duplicados.
   4. Ordena por fecha; no utiliza etiquetas de urgencia.
   5. Escribe un noticias.json NUEVO con un máximo de 12 noticias.
@@ -31,7 +30,7 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 AQUI = pathlib.Path(__file__).parent
 SALIDA = AQUI / "noticias.json"
 MAX_NOTICIAS = 12
-# Hispasec va primero y ocupa la mayor parte; INCIBE y CISA rellenan el resto
+# Hispasec tiene preferencia real en la selección; INCIBE y CISA completan el resto
 PRIORIDAD = {"hispasec.com": 0, "incibe.es": 1, "cisa.gov": 2}
 MAX_POR_FUENTE = {"hispasec.com": 8, "incibe.es": 3, "cisa.gov": 2}
 UA = {"User-Agent": "Mozilla/5.0 (ciberpedia-noticias; +https://github.com/NokName/Ciberpedia-Noticias)"}
@@ -43,30 +42,11 @@ FUENTES_RSS = (
 )
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
-# Palabras (sin tildes, en minúsculas) que hacen relevante una noticia
-RELEVANTE = (
-    "vulnerab", "cve-", "rce", "ejecucion remota", "ejecucion de codigo", "remote code", "code execution",
-    "inyeccion", "sql", "xss", "cross-site", "deserializ", "path traversal", "recorrido de directorio",
-    "omision de autenticacion", "bypass", "escalada de privilegios", "elevacion de privilegios",
-    "privilege escalation", "desbordamiento", "overflow", "explot", "exploit", "0-day", "zero-day",
-    "dia cero", "linux", "kernel", "windows", "active directory", "kerberos", "ldap", "ntlm", "docker",
-    "kubernetes", "contenedor", "ransomware", "malware", "backdoor", "puerta trasera", "botnet",
-    "parche", "actualizacion de seguridad", "critic", "ataque", "brecha", "filtracion", "credenciales",
-    "troyano", "phishing", "apt", "pentest",
-)
-# Relleno que se descarta aunque coincida alguna palabra
-RELLENO = (
-    "webinar", "curso", "jornada", "evento", "congreso", "podcast", "entrevista", "sorteo", "premio",
-    "oferta de empleo", "convocatoria", "inscripcion", "resumen semanal", "boletin", "newsletter",
-)
-CRITICA = (
-    "critic", "rce", "ejecucion remota", "ejecucion de codigo", "remote code", "code execution",
-    "omision de autenticacion", "authentication bypass", "0-day", "zero-day", "dia cero",
-)
-EXPLOTADA = (
-    "explotada activamente", "explotado activamente", "explotadas activamente", "explotados activamente",
-    "explotacion activa", "se esta explotando", "ya se explota", "se explota", "explota ", "exploited",
-    "in the wild", "0-day", "zero-day", "dia cero",
+# Las fuentes son especializadas en ciberseguridad: no exigir palabras clave.
+# Solo se excluyen anuncios puramente promocionales, no noticias ni curiosidades.
+PROMOCIONAL = (
+    "inscripciones abiertas", "inscripcion abierta", "apuntate al webinar",
+    "registrate en el webinar", "plazas disponibles", "oferta de empleo",
 )
 PARAMS_BASURA = re.compile(r"^(utm_|fbclid$|gclid$|mc_|_hs|ref$|ref_src$|source$|feature$|igshid$|yclid$|msclkid$)", re.I)
 
@@ -107,13 +87,12 @@ def fecha_corta(ts):
 
 
 def noticia(titulo, url, fuente, ts, extra=""):
-    """Devuelve la noticia normalizada, o None si es relleno o no es de seguridad."""
+    """Conserva noticias y curiosidades de fuentes especializadas; evita promociones."""
     titulo = limpiar_texto(titulo)
     if not titulo:
         return None
     t = plano(titulo)
-    todo = t + " " + plano(limpiar_texto(extra))
-    if tiene(t, RELLENO) or not tiene(todo, RELEVANTE):
+    if tiene(t, PROMOCIONAL):
         return None
     n = {"fecha": fecha_corta(ts), "texto": titulo, "fuente": fuente, "url": limpiar_url(url), "ts": int(ts * 1000)}
     return n
@@ -174,20 +153,26 @@ def leer_kev(raw):
 
 
 def seleccionar(noticias):
-    """Sin duplicados, más recientes primero, con cupos para diversidad de fuentes."""
-    noticias.sort(key=lambda n: (-n["ts"], PRIORIDAD.get(n["fuente"], 9)))
+    """Prioriza hasta 8 de Hispasec, completa con INCIBE/CISA y evita duplicados."""
+    ordenadas = sorted(noticias, key=lambda n: (-n["ts"], PRIORIDAD.get(n["fuente"], 9)))
     vistas, por_fuente, out = set(), {}, []
-    for n in noticias:
+
+    def agregar(n):
         claves = {plano(n["texto"])} | ({n["url"].lower()} if n["url"] else set())
-        if claves & vistas:
-            continue
-        if por_fuente.get(n["fuente"], 0) >= MAX_POR_FUENTE.get(n["fuente"], 4):
-            continue
-        vistas |= claves
+        if claves & vistas or por_fuente.get(n["fuente"], 0) >= MAX_POR_FUENTE.get(n["fuente"], 4):
+            return
+        vistas.update(claves)
         por_fuente[n["fuente"]] = por_fuente.get(n["fuente"], 0) + 1
         out.append(n)
-        if len(out) >= MAX_NOTICIAS:
-            break
+
+    # Reservar preferentemente espacio a Hispasec, incluso si las otras
+    # fuentes publicaron entradas más recientes.
+    for n in ordenadas:
+        if n["fuente"] == "hispasec.com" and len(out) < MAX_NOTICIAS:
+            agregar(n)
+    for n in ordenadas:
+        if n["fuente"] != "hispasec.com" and len(out) < MAX_NOTICIAS:
+            agregar(n)
     return sorted(out, key=lambda n: -n["ts"])
 
 
