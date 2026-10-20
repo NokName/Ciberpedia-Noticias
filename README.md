@@ -4,7 +4,7 @@ La actualización se ejecuta automáticamente mientras GitHub Actions esté acti
 
 ## Cómo funciona
 
-Cada 6 horas, GitHub Actions (`.github/workflows/actualizar.yml`) ejecuta `actualizar_noticias.py`, que:
+Cada hora, GitHub Actions (`.github/workflows/actualizar.yml`) ejecuta `actualizar_noticias.py`, que:
 
 - Lee las fuentes oficiales: **Hispasec «Una al día»**, **INCIBE-CERT** (avisos de alerta temprana) y el catálogo **CISA KEV**.
 - Conserva las noticias, investigaciones y curiosidades de las fuentes especializadas; solo descarta anuncios claramente promocionales.
@@ -12,7 +12,7 @@ Cada 6 horas, GitHub Actions (`.github/workflows/actualizar.yml`) ejecuta `actua
 - Genera `noticias.json` **desde cero** con un máximo de 12 noticias (nunca acumula) y sin consejos: los consejos los saca el propio visor de las fichas de la Ciberpedia, uno distinto cada día.
 - Solo hace commit si las noticias han cambiado de verdad. Si no cambian, el registro de Actions indica «Estás al día». Este mensaje todavía no aparece dentro de la APK: requiere una modificación posterior del visor canónico.
 - Si una fuente falla, conserva sus últimas entradas y actualiza las demás. Si fallan todas, no modifica el JSON y el workflow termina con error.
-- El horario es a los minutos 17 de las 00:00, 06:00, 12:00 y 18:00 UTC. GitHub puede retrasar alguna ejecución programada; el historial de Actions permite comprobarlo. GitHub desactiva workflows programados en repositorios públicos tras 60 días sin actividad.
+- El horario es al minuto 17 de cada hora UTC. GitHub puede retrasar alguna ejecución programada; el historial de Actions permite comprobarlo. GitHub desactiva workflows programados en repositorios públicos tras 60 días sin actividad.
 
 La Ciberpedia lee el resultado (sin configurar nada) desde:
 
