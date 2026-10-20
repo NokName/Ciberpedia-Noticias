@@ -1,6 +1,13 @@
 {
- "generado": "2026-10-19T23:42:22Z",
+ "generado": "2026-10-20T11:39:27Z",
  "noticias": [
+  {
+   "fecha": "20 oct",
+   "texto": "Múltiples vulnerabilidades en FacturaScripts",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-facturascripts",
+   "ts": 1792480487000
+  },
   {
    "fecha": "19 oct",
    "texto": "Validación incorrecta del origen en Remote Support de BeyondTrust",
@@ -14,13 +21,6 @@
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ausencia-de-verificacion-de-integridad-en-mobaxterm-de-mobatek",
    "ts": 1792393435000
-  },
-  {
-   "fecha": "16 oct",
-   "texto": "Gestión incorrecta de mayúsculas y minúsculas en Wazuh Manager",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/gestion-incorrecta-de-mayusculas-y-minusculas-en-wazuh-manager",
-   "ts": 1792136252000
   },
   {
    "fecha": "16 oct",
