@@ -1,19 +1,19 @@
 {
- "generado": "2026-10-21T07:41:41Z",
+ "generado": "2026-10-21T18:40:27Z",
  "noticias": [
+  {
+   "fecha": "21 oct",
+   "texto": "[Actualización 21/10/2026] Múltiples vulnerabilidades en PHP",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-php",
+   "ts": 1792590791000
+  },
   {
    "fecha": "21 oct",
    "texto": "Múltiples vulnerabilidades en productos de Oracle",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-oracle",
    "ts": 1792563046000
-  },
-  {
-   "fecha": "20 oct",
-   "texto": "Múltiples vulnerabilidades en PHP",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-php",
-   "ts": 1792504391000
   },
   {
    "fecha": "20 oct",
