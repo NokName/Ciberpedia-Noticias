@@ -1,6 +1,13 @@
 {
- "generado": "2026-10-21T18:40:27Z",
+ "generado": "2026-10-21T22:23:22Z",
  "noticias": [
+  {
+   "fecha": "21 oct",
+   "texto": "PHP publica parches de urgencia por dos fallos críticos PHP2Shell con intentos de explotación",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/php-publica-parches-de-urgencia-por-dos-fallos-criticos-php2shell-con-intentos-de-explotacion/",
+   "ts": 1792611711000
+  },
   {
    "fecha": "21 oct",
    "texto": "[Actualización 21/10/2026] Múltiples vulnerabilidades en PHP",
@@ -77,13 +84,6 @@
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/una-campana-explota-dos-zero-days-criticos-en-citrix-netscaler-para-instalar-web-shells-y-moverse-por-la-red/",
    "ts": 1790780911000
-  },
-  {
-   "fecha": "29 sep",
-   "texto": "Una campaña automatizada saquea servidores de desarrollo Vite expuestos para robar secretos de AWS y Azure",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/una-campana-automatizada-saquea-servidores-de-desarrollo-vite-expuestos-para-robar-secretos-de-aws-y-azure/",
-   "ts": 1790688199000
   }
  ]
 }
