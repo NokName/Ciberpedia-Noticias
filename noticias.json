@@ -1,6 +1,20 @@
 {
- "generado": "2026-10-20T21:38:46Z",
+ "generado": "2026-10-21T07:41:41Z",
  "noticias": [
+  {
+   "fecha": "21 oct",
+   "texto": "Múltiples vulnerabilidades en productos de Oracle",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-oracle",
+   "ts": 1792563046000
+  },
+  {
+   "fecha": "20 oct",
+   "texto": "Múltiples vulnerabilidades en PHP",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-php",
+   "ts": 1792504391000
+  },
   {
    "fecha": "20 oct",
    "texto": "Múltiples vulnerabilidades en FacturaScripts",
@@ -21,20 +35,6 @@
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
    "ts": 1792454400000
-  },
-  {
-   "fecha": "19 oct",
-   "texto": "Validación incorrecta del origen en Remote Support de BeyondTrust",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/validacion-incorrecta-del-origen-en-remote-support-de-beyondtrust",
-   "ts": 1792394835000
-  },
-  {
-   "fecha": "19 oct",
-   "texto": "Ausencia de verificación de integridad en MobaXterm de Mobatek",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ausencia-de-verificacion-de-integridad-en-mobaxterm-de-mobatek",
-   "ts": 1792393435000
   },
   {
    "fecha": "14 oct",
