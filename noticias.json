@@ -1,12 +1,13 @@
 {
- "generado": "2026-10-21T22:23:22Z",
+ "generado": "2026-10-22T01:32:59Z",
  "noticias": [
   {
    "fecha": "21 oct",
    "texto": "PHP publica parches de urgencia por dos fallos críticos PHP2Shell con intentos de explotación",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/php-publica-parches-de-urgencia-por-dos-fallos-criticos-php2shell-con-intentos-de-explotacion/",
-   "ts": 1792611711000
+   "ts": 1792611711000,
+   "urgente": true
   },
   {
    "fecha": "21 oct",
