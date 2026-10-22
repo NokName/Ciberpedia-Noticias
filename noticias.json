@@ -1,6 +1,27 @@
 {
- "generado": "2026-10-22T01:32:59Z",
+ "generado": "2026-10-22T13:49:02Z",
  "noticias": [
+  {
+   "fecha": "22 oct",
+   "texto": "Múltiples vulnerabilidades en productos de Apache",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-apache",
+   "ts": 1792664935000
+  },
+  {
+   "fecha": "22 oct",
+   "texto": "Múltiples vulnerabilidades en productos de Cisco",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-cisco-18",
+   "ts": 1792655922000
+  },
+  {
+   "fecha": "22 oct",
+   "texto": "Impacto de vulnerabilidades críticas de PHP en productos Fortinet",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-fortinet",
+   "ts": 1792655921000
+  },
   {
    "fecha": "21 oct",
    "texto": "PHP publica parches de urgencia por dos fallos críticos PHP2Shell con intentos de explotación",
@@ -8,27 +29,6 @@
    "url": "https://unaaldia.hispasec.com/php-publica-parches-de-urgencia-por-dos-fallos-criticos-php2shell-con-intentos-de-explotacion/",
    "ts": 1792611711000,
    "urgente": true
-  },
-  {
-   "fecha": "21 oct",
-   "texto": "[Actualización 21/10/2026] Múltiples vulnerabilidades en PHP",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-php",
-   "ts": 1792590791000
-  },
-  {
-   "fecha": "21 oct",
-   "texto": "Múltiples vulnerabilidades en productos de Oracle",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-oracle",
-   "ts": 1792563046000
-  },
-  {
-   "fecha": "20 oct",
-   "texto": "Múltiples vulnerabilidades en FacturaScripts",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-facturascripts",
-   "ts": 1792480487000
   },
   {
    "fecha": "20 oct",
