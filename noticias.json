@@ -1,6 +1,13 @@
 {
- "generado": "2026-10-22T13:49:02Z",
+ "generado": "2026-10-22T18:34:28Z",
  "noticias": [
+  {
+   "fecha": "22 oct",
+   "texto": "Node.js corrige un fallo en Brotli que abre la puerta a ejecución remota de código",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/node-js-corrige-un-fallo-en-brotli-que-abre-la-puerta-a-ejecucion-remota-de-codigo/",
+   "ts": 1792676227000
+  },
   {
    "fecha": "22 oct",
    "texto": "Múltiples vulnerabilidades en productos de Apache",
@@ -78,13 +85,6 @@
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac/",
    "ts": 1790939872000
-  },
-  {
-   "fecha": "30 sep",
-   "texto": "Una campaña explota dos zero-days críticos en Citrix NetScaler para instalar web shells y moverse por la red",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/una-campana-explota-dos-zero-days-criticos-en-citrix-netscaler-para-instalar-web-shells-y-moverse-por-la-red/",
-   "ts": 1790780911000
   }
  ]
 }
