@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "nombre": "1.5",
+  "version": 7,
+  "nombre": "1.6",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.5: 294 fichas y 17 tutoriales disponibles sin conexión; nuevos contenidos de JWT, OAuth 2.0, SSRF, PHP y herramientas de Kali; mejoras de navegación y consulta de noticias."
+  "notas": "Ciberpedia 1.6: avisos en el móvil cuando sale una versión nueva o una noticia urgente, aunque la app esté cerrada; 294 fichas y noticias sin conexión actualizadas."
 }
