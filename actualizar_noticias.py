@@ -10,7 +10,8 @@ Qué hace en cada ejecución:
   2. Incluye noticias, curiosidades, investigación y novedades de ciberseguridad.
      Hispasec es la fuente preferente; solo descarta contenido promocional evidente.
   3. Limpia las URLs (quita ?utm_..., fbclid, etc.) y elimina duplicados.
-  4. Ordena por fecha; no utiliza etiquetas de urgencia.
+  4. Ordena por fecha y marca como "urgente" solo lo más grave y reciente de Hispasec
+     (día cero, explotación activa, parches de urgencia, ransomware...): como mucho 2.
   5. Escribe un noticias.json NUEVO con un máximo de 12 noticias.
      Nunca añade al archivo anterior y no incluye consejos (los pone el visor).
   6. Si las noticias no han cambiado, no toca el archivo (así no hay commit).
@@ -50,6 +51,17 @@ PROMOCIONAL = (
     "inscripciones abiertas", "inscripcion abierta", "apuntate al webinar",
     "registrate en el webinar", "plazas disponibles", "oferta de empleo",
 )
+# "urgente" solo para lo más relevante: Hispasec, de los últimos 3 días y con palabras fuertes.
+# CISA KEV e INCIBE son avisos rutinarios (todo KEV "se explota"), así que nunca se marcan.
+FUENTES_URGENTES = ("hispasec.com",)
+MAX_URGENTES = 2
+HORAS_URGENTE = 72
+URGENTE_FUERTE = (
+    "zero-day", "zero day", "0-day", "0day", "dia cero", "de urgencia", "urgente", "emergencia",
+    "se explota", "explotan", "explotado", "explotada", "explotacion activa", "activamente",
+    "ransomware", "ciberataque", "secuestr", "filtracion masiva", "millones de",
+)
+URGENTE_DEBIL = ("critic", "grave", "remota", "sin parche")
 PARAMS_BASURA = re.compile(r"^(utm_|fbclid$|gclid$|mc_|_hs|ref$|ref_src$|source$|feature$|igshid$|yclid$|msclkid$)", re.I)
 
 
@@ -160,6 +172,25 @@ def leer_kev(raw):
     return out
 
 
+def puntos_urgencia(n):
+    t = plano(n.get("texto", ""))
+    return 2 * sum(p in t for p in URGENTE_FUERTE) + sum(p in t for p in URGENTE_DEBIL)
+
+
+def marcar_urgentes(noticias, ahora=None):
+    """Marca como urgente, como mucho, las MAX_URGENTES noticias más graves y recientes."""
+    ahora = time.time() if ahora is None else ahora
+    for n in noticias:
+        n.pop("urgente", None)
+    candidatas = [n for n in noticias
+                  if n.get("fuente") in FUENTES_URGENTES
+                  and ahora * 1000 - n.get("ts", 0) <= HORAS_URGENTE * 3600 * 1000
+                  and puntos_urgencia(n) >= 2]
+    for n in sorted(candidatas, key=lambda n: (-puntos_urgencia(n), -n["ts"]))[:MAX_URGENTES]:
+        n["urgente"] = True
+    return noticias
+
+
 def seleccionar(noticias):
     """Prioriza hasta 7 de Hispasec, completa con INCIBE/CISA y evita duplicados."""
     ordenadas = sorted(noticias, key=lambda n: (-n["ts"], PRIORIDAD.get(n["fuente"], 9)))
@@ -181,7 +212,7 @@ def seleccionar(noticias):
     for n in ordenadas:
         if n["fuente"] != "hispasec.com" and len(out) < MAX_NOTICIAS:
             agregar(n)
-    return sorted(out, key=lambda n: -n["ts"])
+    return marcar_urgentes(sorted(out, key=lambda n: -n["ts"]))
 
 
 def main():
@@ -216,7 +247,7 @@ def main():
     if not fuentes_ok:
         raise SystemExit("Todas las fuentes fallaron; se mantiene el noticias.json anterior.")
     # Si falla una fuente, mantener sus últimas entradas sin bloquear las demás.
-    noticias += [n for n in anterior if isinstance(n, dict) and n.get("fuente") in fuentes_fallidas]
+    noticias += [dict(n) for n in anterior if isinstance(n, dict) and n.get("fuente") in fuentes_fallidas]
     elegidas = seleccionar(noticias)
     if not elegidas:
         raise SystemExit("Ninguna fuente dio noticias válidas; se mantiene el noticias.json anterior.")
