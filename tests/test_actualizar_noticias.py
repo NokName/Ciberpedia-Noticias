@@ -17,7 +17,28 @@ class GeneradorNoticiasTests(unittest.TestCase):
         self.assertEqual([n["ts"] for n in noticias], sorted((n["ts"] for n in noticias), reverse=True))
         self.assertEqual(len({n["url"] for n in noticias}), len(noticias))
         self.assertTrue(all(n["fuente"] in gen.PRIORIDAD and n["texto"] and n["fecha"] for n in noticias))
-        self.assertTrue(all("urgente" not in n for n in noticias))
+        urgentes = [n for n in noticias if n.get("urgente")]
+        self.assertLessEqual(len(urgentes), gen.MAX_URGENTES)
+        self.assertTrue(all(n["fuente"] in gen.FUENTES_URGENTES for n in urgentes))
+
+    def test_urgente_solo_lo_mas_grave_y_reciente_de_hispasec(self):
+        ahora = 1792600000
+        h = lambda texto, horas=1, fuente="hispasec.com": {"texto": texto, "fuente": fuente, "url": "https://e/" + texto, "ts": (ahora - horas * 3600) * 1000}
+        noticias = [
+            h("PHP publica parches de urgencia por dos fallos críticos"),
+            h("Una campaña explota un zero-day en Citrix"),
+            h("Atacantes aprovechan un fallo crítico en Atlassian"),  # solo palabra débil
+            h("Ransomware en hospitales", horas=100),  # demasiado antigua
+            h("CVE-2026-1 en Plex se está explotando", fuente="cisa.gov"),
+            h("Un nuevo ciberataque afecta a bancos"),  # tercera: excede el máximo
+        ]
+        gen.marcar_urgentes(noticias, ahora)
+        marcadas = [n["texto"] for n in noticias if n.get("urgente")]
+        self.assertEqual(len(marcadas), 2)
+        self.assertIn("Una campaña explota un zero-day en Citrix", marcadas)
+        self.assertNotIn("Atacantes aprovechan un fallo crítico en Atlassian", marcadas)
+        self.assertNotIn("Ransomware en hospitales", marcadas)
+        self.assertNotIn("CVE-2026-1 en Plex se está explotando", marcadas)
 
     def test_fechas_kev_son_utc_y_el_plazo_no_se_presenta_como_futuro(self):
         feed = {"vulnerabilities": [{
