@@ -1,6 +1,6 @@
 {
-  "version": 7,
-  "nombre": "1.6",
+  "version": 8,
+  "nombre": "1.6.5",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.6: avisos en el móvil cuando sale una versión nueva o una noticia urgente, aunque la app esté cerrada; 294 fichas y noticias sin conexión actualizadas."
+  "notas": "Ciberpedia 1.6.5: 323 fichas revisadas una a una (29 nuevas), capítulo nuevo «Bases de datos», mapa del temario real y mejoras de lectura con letra grande, movimiento reducido y pantallas pequeñas."
 }
