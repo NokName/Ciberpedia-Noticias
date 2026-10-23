@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-23T13:28:42Z",
+ "generado": "2026-10-23T18:23:18Z",
  "noticias": [
   {
    "fecha": "23 oct",
@@ -30,6 +30,13 @@
    "ts": 1792742462000
   },
   {
+   "fecha": "23 oct",
+   "texto": "CVE-2026-114625 en Arista VeloCloud Orchestrator se está explotando. Plazo de CISA: 2026-10-26.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+   "ts": 1792713600000
+  },
+  {
    "fecha": "22 oct",
    "texto": "Node.js corrige un fallo en Brotli que abre la puerta a ejecución remota de código",
    "fuente": "hispasec.com",
@@ -49,13 +56,6 @@
    "texto": "CVE-2026-106931 en EG Secure Solutions SiteGuard Server Edition se está explotando. Plazo de CISA: 2026-10-23.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
-   "ts": 1792454400000
-  },
-  {
-   "fecha": "20 oct",
-   "texto": "CVE-2026-96656 en Plex Media Server se está explotando. Plazo de CISA: 2026-10-23.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
    "ts": 1792454400000
   },
   {
