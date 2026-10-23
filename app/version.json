@@ -1,6 +1,6 @@
 {
-  "version": 8,
-  "nombre": "1.6.5",
+  "version": 9,
+  "nombre": "1.6.6",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.6.5: 323 fichas revisadas una a una (29 nuevas), capítulo nuevo «Bases de datos», mapa del temario real y mejoras de lectura con letra grande, movimiento reducido y pantallas pequeñas."
+  "notas": "Ciberpedia 1.6.6: nuevo apartado 🚩 Flags (buscador de opciones de herramientas y comandos) con tabla de opciones dentro de cada ficha; 9 términos nuevos (distro, gestor de paquetes, variables de entorno, GTFOBins/LOLBAS, SecLists, hashid, shell de enlace, pivoting, linPEAS/winPEAS) y un tutorial de escalada de privilegios en Linux. 332 fichas en total."
 }
