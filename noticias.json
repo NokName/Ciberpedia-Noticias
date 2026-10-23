@@ -1,33 +1,40 @@
 {
- "generado": "2026-10-22T18:34:28Z",
+ "generado": "2026-10-23T13:28:42Z",
  "noticias": [
+  {
+   "fecha": "23 oct",
+   "texto": "Múltiples actualizaciones en productos de Fortinet",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-actualizaciones-en-productos-de-fortinet",
+   "ts": 1792742533000
+  },
+  {
+   "fecha": "23 oct",
+   "texto": "Impacto de vulnerabilidades críticas de PHP en productos de QNAP",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-de-qnap",
+   "ts": 1792742532000
+  },
+  {
+   "fecha": "23 oct",
+   "texto": "Impacto de vulnerabilidades críticas de PHP en productos de Tenable",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-de-tenable",
+   "ts": 1792742531000
+  },
+  {
+   "fecha": "23 oct",
+   "texto": "Node.js corrige fallos graves de TLS y Brotli en sus ramas 26, 24 y 22",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/node-js-corrige-fallos-graves-de-tls-y-brotli-en-sus-ramas-26-24-y-22/",
+   "ts": 1792742462000
+  },
   {
    "fecha": "22 oct",
    "texto": "Node.js corrige un fallo en Brotli que abre la puerta a ejecución remota de código",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/node-js-corrige-un-fallo-en-brotli-que-abre-la-puerta-a-ejecucion-remota-de-codigo/",
    "ts": 1792676227000
-  },
-  {
-   "fecha": "22 oct",
-   "texto": "Múltiples vulnerabilidades en productos de Apache",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-apache",
-   "ts": 1792664935000
-  },
-  {
-   "fecha": "22 oct",
-   "texto": "Múltiples vulnerabilidades en productos de Cisco",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-cisco-18",
-   "ts": 1792655922000
-  },
-  {
-   "fecha": "22 oct",
-   "texto": "Impacto de vulnerabilidades críticas de PHP en productos Fortinet",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-fortinet",
-   "ts": 1792655921000
   },
   {
    "fecha": "21 oct",
@@ -78,13 +85,6 @@
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo/",
    "ts": 1791205149000
-  },
-  {
-   "fecha": "2 oct",
-   "texto": "Un fallo en Steam para Windows permite escalar privilegios a SYSTEM sin UAC",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac/",
-   "ts": 1790939872000
   }
  ]
 }
