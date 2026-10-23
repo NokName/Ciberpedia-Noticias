@@ -1,6 +1,6 @@
 {
-  "version": 9,
-  "nombre": "1.6.6",
+  "version": 10,
+  "nombre": "1.6.7",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.6.6: nuevo apartado 🚩 Flags (buscador de opciones de herramientas y comandos) con tabla de opciones dentro de cada ficha; 9 términos nuevos (distro, gestor de paquetes, variables de entorno, GTFOBins/LOLBAS, SecLists, hashid, shell de enlace, pivoting, linPEAS/winPEAS) y un tutorial de escalada de privilegios en Linux. 332 fichas en total."
+  "notas": "Ciberpedia 1.6.7: se retira la IA local (Ollama / «Pregúntame»), que no se usaba y era poco útil sin conexión. Desaparece el apartado 🤖 Pregúntame y sus ajustes; los Ajustes conservan la configuración de noticias. El resto del contenido (332 fichas, apartado 🚩 Flags, tutoriales) no cambia."
 }
