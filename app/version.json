@@ -1,6 +1,6 @@
 {
-  "version": 10,
-  "nombre": "1.6.7",
+  "version": 11,
+  "nombre": "1.6.8",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.6.7: se retira la IA local (Ollama / «Pregúntame»), que no se usaba y era poco útil sin conexión. Desaparece el apartado 🤖 Pregúntame y sus ajustes; los Ajustes conservan la configuración de noticias. El resto del contenido (332 fichas, apartado 🚩 Flags, tutoriales) no cambia."
+  "notas": "Ciberpedia 1.6.8: capítulo nuevo «🤖 IA» con seguridad de modelos de lenguaje: OWASP Top 10 for LLM, inyección de prompts, alucinaciones y una introducción. 336 fichas, 14 capítulos."
 }
