@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-26T13:18:13Z",
+ "generado": "2026-10-26T23:55:14Z",
  "noticias": [
   {
    "fecha": "26 oct",
@@ -23,25 +23,25 @@
    "ts": 1793010762000
   },
   {
+   "fecha": "26 oct",
+   "texto": "CVE-2026-109618 en PHP Group PHP se está explotando. Plazo de CISA: 2026-10-29.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+   "ts": 1792972800000
+  },
+  {
+   "fecha": "26 oct",
+   "texto": "CVE-2026-109619 en PHP Group PHP se está explotando. Plazo de CISA: 2026-10-29.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+   "ts": 1792972800000
+  },
+  {
    "fecha": "23 oct",
    "texto": "Node.js corrige fallos graves de TLS y Brotli en sus ramas 26, 24 y 22",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/node-js-corrige-fallos-graves-de-tls-y-brotli-en-sus-ramas-26-24-y-22/",
    "ts": 1792742462000
-  },
-  {
-   "fecha": "23 oct",
-   "texto": "CVE-2026-114625 en Arista VeloCloud Orchestrator se está explotando. Plazo de CISA: 2026-10-26.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
-   "ts": 1792713600000
-  },
-  {
-   "fecha": "23 oct",
-   "texto": "CVE-2026-110447 en Collabora Collabora Online – Built-in CODE Server se está explotando. Plazo de CISA: 2026-10-26.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
-   "ts": 1792713600000
   },
   {
    "fecha": "22 oct",
