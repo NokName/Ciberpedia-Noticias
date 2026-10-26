@@ -1,26 +1,26 @@
 {
- "generado": "2026-10-24T20:52:01Z",
+ "generado": "2026-10-26T13:18:13Z",
  "noticias": [
   {
-   "fecha": "23 oct",
-   "texto": "Múltiples actualizaciones en productos de Fortinet",
+   "fecha": "26 oct",
+   "texto": "Cross-Site Scripting reflejado en el software IsMyGym de Zuinq Studio",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-actualizaciones-en-productos-de-fortinet",
-   "ts": 1792742533000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-reflejado-en-el-software-ismygym-de-zuinq-studio",
+   "ts": 1793016075000
   },
   {
-   "fecha": "23 oct",
-   "texto": "Impacto de vulnerabilidades críticas de PHP en productos de QNAP",
+   "fecha": "26 oct",
+   "texto": "Múltiples vulnerabilidades en productos de Broadcom",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-de-qnap",
-   "ts": 1792742532000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-broadcom",
+   "ts": 1793012350000
   },
   {
-   "fecha": "23 oct",
-   "texto": "Impacto de vulnerabilidades críticas de PHP en productos de Tenable",
+   "fecha": "26 oct",
+   "texto": "Impacto de vulnerabilidades críticas de PHP y Java en entornos de Sage CRM",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-de-tenable",
-   "ts": 1792742531000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-y-java-en-entornos-de-sage-crm",
+   "ts": 1793010762000
   },
   {
    "fecha": "23 oct",
