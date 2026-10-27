@@ -1,26 +1,26 @@
 {
- "generado": "2026-10-26T23:55:14Z",
+ "generado": "2026-10-27T10:37:06Z",
  "noticias": [
   {
-   "fecha": "26 oct",
-   "texto": "Cross-Site Scripting reflejado en el software IsMyGym de Zuinq Studio",
+   "fecha": "27 oct",
+   "texto": "Carga sin restricciones de archivos en la aplicación PuMuKIT",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-reflejado-en-el-software-ismygym-de-zuinq-studio",
-   "ts": 1793016075000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/carga-sin-restricciones-de-archivos-en-la-aplicacion-pumukit",
+   "ts": 1793106860000
   },
   {
-   "fecha": "26 oct",
-   "texto": "Múltiples vulnerabilidades en productos de Broadcom",
+   "fecha": "27 oct",
+   "texto": "Múltiples vulnerabilidades en Cloud BI Platform de Sisense",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-broadcom",
-   "ts": 1793012350000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-cloud-bi-platform-de-sisense",
+   "ts": 1793089692000
   },
   {
-   "fecha": "26 oct",
-   "texto": "Impacto de vulnerabilidades críticas de PHP y Java en entornos de Sage CRM",
+   "fecha": "27 oct",
+   "texto": "Escritura fuera de límites en productos de Palo Alto Networks",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-y-java-en-entornos-de-sage-crm",
-   "ts": 1793010762000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-productos-de-palo-alto-networks",
+   "ts": 1793089556000
   },
   {
    "fecha": "26 oct",
