@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-28T16:05:39Z",
+ "generado": "2026-10-28T21:07:13Z",
  "noticias": [
   {
    "fecha": "28 oct",
@@ -23,18 +23,18 @@
    "ts": 1793178361000
   },
   {
-   "fecha": "27 oct",
-   "texto": "CVE-2026-48356 en Adobe Commerce and Magento se está explotando. Plazo de CISA: 2026-11-10.",
+   "fecha": "28 oct",
+   "texto": "CVE-2026-41709 en Broadcom VMware ESX se está explotando. Plazo de CISA: 2026-11-11.",
    "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356",
-   "ts": 1793059200000
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+   "ts": 1793145600000
   },
   {
-   "fecha": "27 oct",
-   "texto": "CVE-2026-111497 en Google Brotli se está explotando. Plazo de CISA: 2026-11-10.",
+   "fecha": "28 oct",
+   "texto": "CVE-2026-46300 en Linux Kernel se está explotando. Plazo de CISA: 2026-10-31.",
    "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
-   "ts": 1793059200000
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+   "ts": 1793145600000
   },
   {
    "fecha": "23 oct",
