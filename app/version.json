@@ -1,6 +1,6 @@
 {
-  "version": 13,
-  "nombre": "1.7.0",
+  "version": 14,
+  "nombre": "1.8.0",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.7.0: recomendaciones completas. 18 términos nuevos (Kerberoasting, AS-REP, Impacket, BloodHound, Responder/LLMNR, GraphQL, ataques JWT, prototype pollution, SSRF a metadatos de la nube, seguridad de contenedores, IAM, buckets S3, foremost/scalpel, Stegsolve, TestDisk/PhotoRec, padding oracle, longitud de clave y cripto post-cuántica). Ejemplos de código en 124 fichas (herramientas, comandos, cripto con openssl, Windows/AD, web, redes). Tutorial nuevo: primera regla de ModSecurity. 371 fichas."
+  "notas": "Ciberpedia 1.8.0: revisión de calidad. Capítulo nuevo «☁️ Nube» (conceptos, IAM, buckets S3, contenedores). Corregidos los asteriscos (**) que salían en el texto, más ejemplos de código y más espacio para que las fichas se lean mejor. 371 fichas, 19 tutoriales."
 }
