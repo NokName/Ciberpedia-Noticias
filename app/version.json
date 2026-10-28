@@ -1,6 +1,6 @@
 {
-  "version": 14,
-  "nombre": "1.8.0",
+  "version": 15,
+  "nombre": "1.8.1",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.8.0: revisión de calidad. Capítulo nuevo «☁️ Nube» (conceptos, IAM, buckets S3, contenedores). Corregidos los asteriscos (**) que salían en el texto, más ejemplos de código y más espacio para que las fichas se lean mejor. 371 fichas, 19 tutoriales."
+  "notas": "Ciberpedia 1.8.1: corrige de verdad los asteriscos (**) que salían en 27 fichas (ModSecurity, zsteg, esteganografía, metodos HTTP…) y rellena el capítulo «☁️ Nube», que en 1.8.0 aparecía vacío: ahora tiene 5 fichas (conceptos de nube, Docker, seguridad de contenedores, IAM, buckets S3). Corregido un título con asteriscos raros y añadidos 17 ejemplos de código. 371 fichas, 19 tutoriales."
 }
