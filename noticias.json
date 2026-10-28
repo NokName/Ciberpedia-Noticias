@@ -1,26 +1,26 @@
 {
- "generado": "2026-10-27T21:21:28Z",
+ "generado": "2026-10-28T16:05:39Z",
  "noticias": [
   {
-   "fecha": "27 oct",
-   "texto": "Carga sin restricciones de archivos en la aplicación PuMuKIT",
+   "fecha": "28 oct",
+   "texto": "Escritura fuera de límites en SDDC Manager de Broadcom",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/carga-sin-restricciones-de-archivos-en-la-aplicacion-pumukit",
-   "ts": 1793106860000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-sddc-manager-de-broadcom",
+   "ts": 1793178364000
   },
   {
-   "fecha": "27 oct",
-   "texto": "Múltiples vulnerabilidades en Cloud BI Platform de Sisense",
+   "fecha": "28 oct",
+   "texto": "Múltiples vulnerabilidades en productos de Citrix",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-cloud-bi-platform-de-sisense",
-   "ts": 1793089692000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-2",
+   "ts": 1793178362000
   },
   {
-   "fecha": "27 oct",
-   "texto": "Escritura fuera de límites en productos de Palo Alto Networks",
+   "fecha": "28 oct",
+   "texto": "Múltiples vulnerabilidades en Fireware OS de WatchGuard",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-productos-de-palo-alto-networks",
-   "ts": 1793089556000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-fireware-os-de-watchguard",
+   "ts": 1793178361000
   },
   {
    "fecha": "27 oct",
