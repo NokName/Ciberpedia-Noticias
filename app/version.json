@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "nombre": "1.6.8",
+  "version": 12,
+  "nombre": "1.6.9",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.6.8: capítulo nuevo «🤖 IA» con seguridad de modelos de lenguaje: OWASP Top 10 for LLM, inyección de prompts, alucinaciones y una introducción. 336 fichas, 14 capítulos."
+  "notas": "Ciberpedia 1.6.9: WAF y ModSecurity a fondo (cómo escribir reglas SecRule: variables, operadores, acciones, transformaciones, fases/IDs, tipos de WAF, OWASP CRS y ajuste de falsos positivos), nuevas herramientas (zsteg, exiftool, binwalk, file/strings/xxd, wafw00f) y esteganografía y métodos HTTP. Ejemplos de código en 12 fichas más. 353 fichas."
 }
