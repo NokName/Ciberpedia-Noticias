@@ -1,6 +1,6 @@
 {
-  "version": 12,
-  "nombre": "1.6.9",
+  "version": 13,
+  "nombre": "1.7.0",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.6.9: WAF y ModSecurity a fondo (cómo escribir reglas SecRule: variables, operadores, acciones, transformaciones, fases/IDs, tipos de WAF, OWASP CRS y ajuste de falsos positivos), nuevas herramientas (zsteg, exiftool, binwalk, file/strings/xxd, wafw00f) y esteganografía y métodos HTTP. Ejemplos de código en 12 fichas más. 353 fichas."
+  "notas": "Ciberpedia 1.7.0: recomendaciones completas. 18 términos nuevos (Kerberoasting, AS-REP, Impacket, BloodHound, Responder/LLMNR, GraphQL, ataques JWT, prototype pollution, SSRF a metadatos de la nube, seguridad de contenedores, IAM, buckets S3, foremost/scalpel, Stegsolve, TestDisk/PhotoRec, padding oracle, longitud de clave y cripto post-cuántica). Ejemplos de código en 124 fichas (herramientas, comandos, cripto con openssl, Windows/AD, web, redes). Tutorial nuevo: primera regla de ModSecurity. 371 fichas."
 }
