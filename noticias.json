@@ -1,26 +1,26 @@
 {
- "generado": "2026-10-28T21:07:13Z",
+ "generado": "2026-10-29T14:23:01Z",
  "noticias": [
   {
-   "fecha": "28 oct",
-   "texto": "Escritura fuera de límites en SDDC Manager de Broadcom",
+   "fecha": "29 oct",
+   "texto": "Múltiples vulnerabilidades en la aplicación de SABBATIC",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-sddc-manager-de-broadcom",
-   "ts": 1793178364000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-la-aplicacion-de-sabbatic",
+   "ts": 1793292435000
   },
   {
-   "fecha": "28 oct",
-   "texto": "Múltiples vulnerabilidades en productos de Citrix",
+   "fecha": "29 oct",
+   "texto": "Escritura fuera de límites en PHP para Windows",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-2",
-   "ts": 1793178362000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-php-para-windows",
+   "ts": 1793263992000
   },
   {
-   "fecha": "28 oct",
-   "texto": "Múltiples vulnerabilidades en Fireware OS de WatchGuard",
+   "fecha": "29 oct",
+   "texto": "Múltiples vulnerabilidades en OpenScape Endpoint Management de Mitel",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-fireware-os-de-watchguard",
-   "ts": 1793178361000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-openscape-endpoint-management-de-mitel",
+   "ts": 1793263990000
   },
   {
    "fecha": "28 oct",
