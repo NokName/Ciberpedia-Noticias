@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-29T14:23:01Z",
+ "generado": "2026-10-29T20:20:07Z",
  "noticias": [
   {
    "fecha": "29 oct",
@@ -23,18 +23,18 @@
    "ts": 1793263990000
   },
   {
-   "fecha": "28 oct",
-   "texto": "CVE-2026-41709 en Broadcom VMware ESX se está explotando. Plazo de CISA: 2026-11-11.",
+   "fecha": "29 oct",
+   "texto": "CVE-2026-97229 en GitLab Community Edition and Enterprise Edition se está explotando. Plazo de CISA: 2026-11-01.",
    "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
-   "ts": 1793145600000
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+   "ts": 1793232000000
   },
   {
-   "fecha": "28 oct",
-   "texto": "CVE-2026-46300 en Linux Kernel se está explotando. Plazo de CISA: 2026-10-31.",
+   "fecha": "29 oct",
+   "texto": "CVE-2026-76418 en Cisco Secure Firewall ASA Software and Cisco Secure FTD Software se está explotando. Plazo de CISA: 2026-11-01.",
    "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
-   "ts": 1793145600000
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+   "ts": 1793232000000
   },
   {
    "fecha": "23 oct",
