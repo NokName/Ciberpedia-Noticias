@@ -1,6 +1,13 @@
 {
- "generado": "2026-10-29T20:20:07Z",
+ "generado": "2026-10-30T14:11:45Z",
  "noticias": [
+  {
+   "fecha": "30 oct",
+   "texto": "Exposición de información en el editor de comentarios de Forocoches",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/exposicion-de-informacion-en-el-editor-de-comentarios-de-forocoches",
+   "ts": 1793348681000
+  },
   {
    "fecha": "29 oct",
    "texto": "Múltiples vulnerabilidades en la aplicación de SABBATIC",
@@ -14,13 +21,6 @@
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-php-para-windows",
    "ts": 1793263992000
-  },
-  {
-   "fecha": "29 oct",
-   "texto": "Múltiples vulnerabilidades en OpenScape Endpoint Management de Mitel",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-openscape-endpoint-management-de-mitel",
-   "ts": 1793263990000
   },
   {
    "fecha": "29 oct",
