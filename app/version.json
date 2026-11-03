@@ -1,6 +1,6 @@
 {
-  "version": 16,
-  "nombre": "1.9.0",
+  "version": 17,
+  "nombre": "1.9.1",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Nuevo capítulo ⚖️ GRC (gobierno, riesgo y cumplimiento): ISO 27001/27002, NIST CSF 2.0, CIS Controls, SOC 2, PCI DSS, ENS, NIS2 y DORA, RGPD, gestión de riesgos, continuidad (RTO/RPO), auditoría y métricas. Pruebas estáticas y dinámicas: SAST, revisión de código, SCA, secretos, IaC, análisis de configuración, IAST, DevSecOps. 41 fichas nuevas (412 en total) y tutorial «Tu primer análisis de riesgos»."
+  "notas": "Ciberpedia 1.9.1: más GRC. Nuevas fichas: SGSI/ISMS, familia ISO 27000 y estándares similares, cómo analizar los riesgos a partir del inventario, la herramienta GLPI (inventario y gestión TI) y DFIR (forense digital y respuesta a incidentes). 417 fichas."
 }
