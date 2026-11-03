@@ -1,6 +1,6 @@
 {
-  "version": 17,
-  "nombre": "1.9.1",
+  "version": 18,
+  "nombre": "1.9.2",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.9.1: más GRC. Nuevas fichas: SGSI/ISMS, familia ISO 27000 y estándares similares, cómo analizar los riesgos a partir del inventario, la herramienta GLPI (inventario y gestión TI) y DFIR (forense digital y respuesta a incidentes). 417 fichas."
+  "notas": "Ciberpedia 1.9.2: capítulo nuevo 🏭 OT (diferencias IT/OT/ICS, SCADA y PLC, modelo Purdue, IEC 62443, protocolos industriales, cómo se protege una planta) y capítulo 🔎 Forense pensado como ruta de aprendizaje (puestos previos y ruta profesional, adquisición, NTFS/ext4, artefactos de Windows y Linux, timeline, memoria, red, móvil, antiforense, triaje con KAPE/Velociraptor e informe pericial). También Sysmon, Sigma/YARA, el modelo de capacidades GRC y el tutorial «Tu primer análisis forense». 439 fichas y 21 tutoriales."
 }
