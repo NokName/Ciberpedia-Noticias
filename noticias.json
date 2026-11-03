@@ -1,12 +1,26 @@
 {
- "generado": "2026-10-30T19:24:30Z",
+ "generado": "2026-11-03T15:10:45Z",
  "noticias": [
   {
-   "fecha": "30 oct",
-   "texto": "Exposición de información en el editor de comentarios de Forocoches",
+   "fecha": "3 nov",
+   "texto": "Uso de memoria después de liberarla en productos de Red Hat",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/exposicion-de-informacion-en-el-editor-de-comentarios-de-forocoches",
-   "ts": 1793348681000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/uso-de-memoria-despues-de-liberarla-en-productos-de-red-hat",
+   "ts": 1793702911000
+  },
+  {
+   "fecha": "3 nov",
+   "texto": "Múltiples vulnerabilidades en Tenable Identity Exposure",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tenable-identity-exposure-0",
+   "ts": 1793702909000
+  },
+  {
+   "fecha": "3 nov",
+   "texto": "Boletín de seguridad de Android: noviembre 2026",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/boletin-de-seguridad-de-android-noviembre-2026",
+   "ts": 1793702908000
   },
   {
    "fecha": "30 oct",
@@ -21,20 +35,6 @@
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
    "ts": 1793318400000
-  },
-  {
-   "fecha": "29 oct",
-   "texto": "Múltiples vulnerabilidades en la aplicación de SABBATIC",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-la-aplicacion-de-sabbatic",
-   "ts": 1793292435000
-  },
-  {
-   "fecha": "29 oct",
-   "texto": "Escritura fuera de límites en PHP para Windows",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-php-para-windows",
-   "ts": 1793263992000
   },
   {
    "fecha": "23 oct",
