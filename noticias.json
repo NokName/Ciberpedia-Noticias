@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-04T17:21:29Z",
+ "generado": "2026-11-04T23:41:56Z",
  "noticias": [
   {
    "fecha": "4 nov",
@@ -23,18 +23,18 @@
    "ts": 1793780735000
   },
   {
+   "fecha": "4 nov",
+   "texto": "CVE-2024-27834 en Apple Multiple Products se está explotando. Plazo de CISA: 2026-11-18.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
+   "ts": 1793750400000
+  },
+  {
    "fecha": "3 nov",
    "texto": "CVE-2026-119977 en WordPress WordPress Core se está explotando. Plazo de CISA: 2026-11-06.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
    "ts": 1793664000000
-  },
-  {
-   "fecha": "30 oct",
-   "texto": "CVE-2026-118527 en Ivanti Connect Secure se está explotando. Plazo de CISA: 2026-11-13.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
-   "ts": 1793318400000
   },
   {
    "fecha": "23 oct",
