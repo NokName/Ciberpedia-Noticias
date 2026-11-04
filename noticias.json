@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-04T09:16:42Z",
+ "generado": "2026-11-04T17:21:29Z",
  "noticias": [
   {
    "fecha": "4 nov",
@@ -9,18 +9,18 @@
    "ts": 1793781853000
   },
   {
-   "fecha": "3 nov",
-   "texto": "Uso de memoria después de liberarla en productos de Red Hat",
+   "fecha": "4 nov",
+   "texto": "Escritura fuera de límites en productos de Citrix",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/uso-de-memoria-despues-de-liberarla-en-productos-de-red-hat",
-   "ts": 1793702911000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-productos-de-citrix",
+   "ts": 1793780736000
   },
   {
-   "fecha": "3 nov",
-   "texto": "Múltiples vulnerabilidades en Tenable Identity Exposure",
+   "fecha": "4 nov",
+   "texto": "Uso de memoria previamente liberada en productos de WatchGuard",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tenable-identity-exposure-0",
-   "ts": 1793702909000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/uso-de-memoria-previamente-liberada-en-productos-de-watchguard",
+   "ts": 1793780735000
   },
   {
    "fecha": "3 nov",
