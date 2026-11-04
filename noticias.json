@@ -1,6 +1,13 @@
 {
- "generado": "2026-11-03T21:01:32Z",
+ "generado": "2026-11-04T09:16:42Z",
  "noticias": [
+  {
+   "fecha": "4 nov",
+   "texto": "Múltiples vulnerabilidades en Coupa Total Spend Management Platform de Coupa",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-coupa-total-spend-management-platform-de-coupa",
+   "ts": 1793781853000
+  },
   {
    "fecha": "3 nov",
    "texto": "Uso de memoria después de liberarla en productos de Red Hat",
@@ -14,13 +21,6 @@
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tenable-identity-exposure-0",
    "ts": 1793702909000
-  },
-  {
-   "fecha": "3 nov",
-   "texto": "Boletín de seguridad de Android: noviembre 2026",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/boletin-de-seguridad-de-android-noviembre-2026",
-   "ts": 1793702908000
   },
   {
    "fecha": "3 nov",
