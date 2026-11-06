@@ -1,26 +1,26 @@
 {
- "generado": "2026-11-05T15:29:13Z",
+ "generado": "2026-11-06T10:55:46Z",
  "noticias": [
+  {
+   "fecha": "6 nov",
+   "texto": "Omisión de autenticación por contraseña en OpenSSH de Alpine Linux",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-por-contrasena-en-openssh-de-alpine-linux",
+   "ts": 1793954726000
+  },
+  {
+   "fecha": "6 nov",
+   "texto": "Inyección SQL en SIREC de Atmira",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-sirec-de-atmira",
+   "ts": 1793953595000
+  },
   {
    "fecha": "5 nov",
    "texto": "Múltiples vulnerabilidades en MatchPoint de TPC Software",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-matchpoint-de-tpc-software",
    "ts": 1793870214000
-  },
-  {
-   "fecha": "5 nov",
-   "texto": "Múltiples vulnerabilidades en AuthPoint Gateway de WatchGuard",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-authpoint-gateway-de-watchguard",
-   "ts": 1793867056000
-  },
-  {
-   "fecha": "4 nov",
-   "texto": "Múltiples vulnerabilidades en Coupa Total Spend Management Platform de Coupa",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-coupa-total-spend-management-platform-de-coupa",
-   "ts": 1793781853000
   },
   {
    "fecha": "4 nov",
