@@ -1,40 +1,40 @@
 {
- "generado": "2026-11-06T23:11:15Z",
+ "generado": "2026-11-09T17:31:50Z",
  "noticias": [
+  {
+   "fecha": "9 nov",
+   "texto": "Múltiples vulnerabilidades en SonicOS de SonicWall",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-sonicos-de-sonicwall",
+   "ts": 1794212115000
+  },
+  {
+   "fecha": "9 nov",
+   "texto": "Cross-site Scripting (XSS) almacenado en Tankuam Places",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-almacenado-en-tankuam-places",
+   "ts": 1794211837000
+  },
+  {
+   "fecha": "9 nov",
+   "texto": "CVE-2026-102895 en GPUStack GPUStack se está explotando. Plazo de CISA: 2026-11-12.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
+   "ts": 1794182400000
+  },
+  {
+   "fecha": "9 nov",
+   "texto": "CVE-2026-123158 en OpenBSD OpenSSH se está explotando. Plazo de CISA: 2026-11-12.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+   "ts": 1794182400000
+  },
   {
    "fecha": "6 nov",
    "texto": "Omisión de autenticación por contraseña en OpenSSH de Alpine Linux",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-por-contrasena-en-openssh-de-alpine-linux",
    "ts": 1793954726000
-  },
-  {
-   "fecha": "6 nov",
-   "texto": "Inyección SQL en SIREC de Atmira",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-sirec-de-atmira",
-   "ts": 1793953595000
-  },
-  {
-   "fecha": "6 nov",
-   "texto": "CVE-2026-19868 en SonicWall SonicOS SSLVPN se está explotando. Plazo de CISA: 2026-11-20.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
-   "ts": 1793923200000
-  },
-  {
-   "fecha": "5 nov",
-   "texto": "Múltiples vulnerabilidades en MatchPoint de TPC Software",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-matchpoint-de-tpc-software",
-   "ts": 1793870214000
-  },
-  {
-   "fecha": "4 nov",
-   "texto": "CVE-2024-27834 en Apple Multiple Products se está explotando. Plazo de CISA: 2026-11-18.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
-   "ts": 1793750400000
   },
   {
    "fecha": "23 oct",
