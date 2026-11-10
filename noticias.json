@@ -1,6 +1,20 @@
 {
- "generado": "2026-11-09T17:31:50Z",
+ "generado": "2026-11-10T23:24:33Z",
  "noticias": [
+  {
+   "fecha": "10 nov",
+   "texto": "CVE-2026-124194 en Microsoft Office se está explotando. Plazo de CISA: 2026-11-24.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
+   "ts": 1794268800000
+  },
+  {
+   "fecha": "10 nov",
+   "texto": "CVE-2026-111793 en Openwave Messaging Limited Webtop Media Transcoder se está explotando. Plazo de CISA: 2026-11-24.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+   "ts": 1794268800000
+  },
   {
    "fecha": "9 nov",
    "texto": "Múltiples vulnerabilidades en SonicOS de SonicWall",
@@ -14,20 +28,6 @@
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-almacenado-en-tankuam-places",
    "ts": 1794211837000
-  },
-  {
-   "fecha": "9 nov",
-   "texto": "CVE-2026-102895 en GPUStack GPUStack se está explotando. Plazo de CISA: 2026-11-12.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
-   "ts": 1794182400000
-  },
-  {
-   "fecha": "9 nov",
-   "texto": "CVE-2026-123158 en OpenBSD OpenSSH se está explotando. Plazo de CISA: 2026-11-12.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
-   "ts": 1794182400000
   },
   {
    "fecha": "6 nov",
