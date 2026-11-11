@@ -1,6 +1,27 @@
 {
- "generado": "2026-11-10T23:24:33Z",
+ "generado": "2026-11-11T15:14:47Z",
  "noticias": [
+  {
+   "fecha": "11 nov",
+   "texto": "Múltiples vulnerabilidades en productos de Ivanti",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-ivanti-5",
+   "ts": 1794397962000
+  },
+  {
+   "fecha": "11 nov",
+   "texto": "Escalada de privilegios en Iperius Backup de Enter",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escalada-de-privilegios-en-iperius-backup-de-enter",
+   "ts": 1794386797000
+  },
+  {
+   "fecha": "11 nov",
+   "texto": "Ejecución remota de código en Confluence Data Center de Atlassian",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ejecucion-remota-de-codigo-en-confluence-data-center-de-atlassian",
+   "ts": 1794386463000
+  },
   {
    "fecha": "10 nov",
    "texto": "CVE-2026-124194 en Microsoft Office se está explotando. Plazo de CISA: 2026-11-24.",
@@ -14,27 +35,6 @@
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
    "ts": 1794268800000
-  },
-  {
-   "fecha": "9 nov",
-   "texto": "Múltiples vulnerabilidades en SonicOS de SonicWall",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-sonicos-de-sonicwall",
-   "ts": 1794212115000
-  },
-  {
-   "fecha": "9 nov",
-   "texto": "Cross-site Scripting (XSS) almacenado en Tankuam Places",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-almacenado-en-tankuam-places",
-   "ts": 1794211837000
-  },
-  {
-   "fecha": "6 nov",
-   "texto": "Omisión de autenticación por contraseña en OpenSSH de Alpine Linux",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-por-contrasena-en-openssh-de-alpine-linux",
-   "ts": 1793954726000
   },
   {
    "fecha": "23 oct",
