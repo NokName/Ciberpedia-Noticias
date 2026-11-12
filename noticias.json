@@ -1,26 +1,26 @@
 {
- "generado": "2026-11-11T15:14:47Z",
+ "generado": "2026-11-12T18:59:05Z",
  "noticias": [
   {
-   "fecha": "11 nov",
-   "texto": "Múltiples vulnerabilidades en productos de Ivanti",
+   "fecha": "12 nov",
+   "texto": "Desbordamiento de búfer en EOS de Arista",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-ivanti-5",
-   "ts": 1794397962000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-en-eos-de-arista",
+   "ts": 1794473209000
   },
   {
-   "fecha": "11 nov",
-   "texto": "Escalada de privilegios en Iperius Backup de Enter",
+   "fecha": "12 nov",
+   "texto": "Múltiples vulnerabilidades en Apache HTTP Server",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escalada-de-privilegios-en-iperius-backup-de-enter",
-   "ts": 1794386797000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-apache-http-server",
+   "ts": 1794473208000
   },
   {
-   "fecha": "11 nov",
-   "texto": "Ejecución remota de código en Confluence Data Center de Atlassian",
+   "fecha": "12 nov",
+   "texto": "Múltiples vulnerabilidades en MiVoice MX-ONE de Mitel",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ejecucion-remota-de-codigo-en-confluence-data-center-de-atlassian",
-   "ts": 1794386463000
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-mivoice-mx-one-de-mitel",
+   "ts": 1794473206000
   },
   {
    "fecha": "10 nov",
