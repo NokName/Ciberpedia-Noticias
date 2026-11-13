@@ -2,8 +2,7 @@
 
 Fuentes de ciberseguridad:
   - Hispasec "Una al día" (RSS)
-  - INCIBE-CERT, avisos de alerta temprana y bitácora de ciberseguridad (RSS)
-  - CCN-CERT, avisos y alertas (RSS)
+  - INCIBE-CERT, avisos de alerta temprana, e INCIBE, avisos para empresas (RSS)
   - WeLiveSecurity en español y Segu-Info, actualidad (RSS)
   - BleepingComputer y The Hacker News, actualidad en inglés, marcada "[EN]" (RSS)
   - CISA KEV, vulnerabilidades explotadas activamente (JSON)
@@ -43,13 +42,13 @@ SALIDA = AQUI / "noticias.json"
 MAX_NOTICIAS = 18
 # Orden de preferencia cuando dos noticias tienen la misma fecha o cuentan lo mismo.
 PRIORIDAD = {
-    "hispasec.com": 0, "incibe.es": 1, "ccn-cert.cni.es": 2, "welivesecurity.com": 3,
-    "segu-info.com.ar": 4, "bleepingcomputer.com": 5, "thehackernews.com": 6, "cisa.gov": 7,
+    "hispasec.com": 0, "incibe.es": 1, "welivesecurity.com": 2,
+    "segu-info.com.ar": 3, "bleepingcomputer.com": 4, "thehackernews.com": 5, "cisa.gov": 6,
 }
-# Cupo por fuente: ninguna puede llenar la lista ella sola. La bitácora de INCIBE
-# tiene cupo propio para que los avisos técnicos no la desplacen.
+# Cupo por fuente: ninguna puede llenar la lista ella sola. Los avisos de INCIBE para
+# empresas tienen cupo propio para que los avisos técnicos no los desplacen.
 MAX_POR_FUENTE = {
-    "hispasec.com": 5, "incibe.es": 2, "incibe.es/bitacora": 2, "ccn-cert.cni.es": 2,
+    "hispasec.com": 5, "incibe.es": 2, "incibe.es/empresas": 2,
     "welivesecurity.com": 3, "segu-info.com.ar": 3, "bleepingcomputer.com": 3,
     "thehackernews.com": 3, "cisa.gov": 2,
 }
@@ -69,21 +68,9 @@ MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "
 FUENTES_RSS = (
     ("Hispasec", ("https://feeds.feedburner.com/hispasec/zCAd",), "hispasec.com"),
     ("INCIBE-CERT", ("https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",), "incibe.es"),
-    ("INCIBE bitácora", (
-        "https://www.incibe.es/incibe-cert/publicaciones/bitacora-de-seguridad/feed",
-        "https://www.incibe.es/incibe-cert/alerta-temprana/bitacora-ciberseguridad/feed",
-        "https://www.incibe.es/incibe-cert/publicaciones/bitacora-de-seguridad/rss",
-        "https://www.incibe.es/empresas/avisos/feed",
-        "https://www.incibe.es/ciudadania/avisos/feed",
-    ), "incibe.es"),
-    ("CCN-CERT", (
-        "https://www.ccn-cert.cni.es/es/seguridad-al-dia/avisos-ccn-cert?format=feed&type=rss",
-        "https://www.ccn-cert.cni.es/es/seguridad-al-dia/alertas-ccn-cert?format=feed&type=rss",
-        "https://www.ccn-cert.cni.es/es/?format=feed&type=rss",
-    ), "ccn-cert.cni.es"),
+    ("INCIBE empresas", ("https://www.incibe.es/empresas/avisos/feed",), "incibe.es"),
     ("WeLiveSecurity", (
         "https://www.welivesecurity.com/es/rss/feed/",
-        "https://feeds.feedburner.com/welivesecurity-la",
     ), "welivesecurity.com"),
     ("Segu-Info", (
         "https://blog.segu-info.com.ar/feeds/posts/default?alt=rss",
@@ -352,9 +339,9 @@ def marcar_urgentes(noticias, ahora=None):
 
 
 def clave_cupo(n):
-    """La bitácora y los avisos generales de INCIBE cuentan aparte de los avisos técnicos de INCIBE-CERT."""
+    """Los avisos de INCIBE para empresas cuentan aparte de los avisos técnicos de INCIBE-CERT."""
     if n.get("fuente") == "incibe.es" and "/alerta-temprana/avisos" not in (n.get("url") or "").lower():
-        return "incibe.es/bitacora"
+        return "incibe.es/empresas"
     return n.get("fuente", "")
 
 
@@ -437,7 +424,7 @@ def main():
             fuentes_ok += 1
         except Exception as e:  # una fuente caída no rompe el resto
             fallos.append(f"{nombre}: {e}")
-            fuentes_fallidas.add("incibe.es/bitacora" if "bitácora" in nombre else fuente)
+            fuentes_fallidas.add("incibe.es/empresas" if "empresas" in nombre else fuente)
     try:
         nuevas = leer_kev(bajar(KEV_URL))
         if not nuevas:

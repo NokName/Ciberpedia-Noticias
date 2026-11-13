@@ -91,8 +91,8 @@ class GeneradorNoticiasTests(unittest.TestCase):
         ahora = 1792600000
         mk = lambda fuente, i, dias=0, texto=None, url=None: {"fecha": "x", "texto": texto or f"{fuente} noticia {i}", "fuente": fuente, "url": url or f"https://{fuente}/{i}", "ts": (ahora - dias * 86400 - i * 60) * 1000}
         noticias = [mk("hispasec.com", i) for i in range(30)] + [mk("incibe.es", i, 1, url=f"https://www.incibe.es/incibe-cert/alerta-temprana/avisos/{i}") for i in range(10)]
-        noticias += [mk("incibe.es", i, 3, url=f"https://www.incibe.es/incibe-cert/publicaciones/bitacora-de-seguridad/{i}") for i in range(5)]
-        for f in ("ccn-cert.cni.es", "welivesecurity.com", "segu-info.com.ar", "bleepingcomputer.com", "thehackernews.com", "cisa.gov"):
+        noticias += [mk("incibe.es", i, 3, url=f"https://www.incibe.es/empresas/avisos/{i}") for i in range(5)]
+        for f in ("welivesecurity.com", "segu-info.com.ar", "bleepingcomputer.com", "thehackernews.com", "cisa.gov"):
             noticias += [mk(f, i, 2) for i in range(6)]
         noticias.append(mk("thehackernews.com", 99, 30, texto="Actualidad caducada"))
         noticias.append(mk("bleepingcomputer.com", 98, 0, texto="Fallo CVE-2026-55555 explotado"))
@@ -119,7 +119,7 @@ class GeneradorNoticiasTests(unittest.TestCase):
             return xml
 
         with patch.object(gen, "bajar", side_effect=bajar):
-            self.assertEqual(len(gen.leer_fuente(("https://mala", "https://buena"), "ccn-cert.cni.es")), 1)
+            self.assertEqual(len(gen.leer_fuente(("https://mala", "https://buena"), "incibe.es")), 1)
 
 
 if __name__ == "__main__":

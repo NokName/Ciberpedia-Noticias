@@ -6,7 +6,7 @@ La actualización se ejecuta automáticamente mientras GitHub Actions esté acti
 
 Cada hora, GitHub Actions (`.github/workflows/actualizar.yml`) ejecuta `actualizar_noticias.py`, que:
 
-- Lee las fuentes oficiales: **Hispasec «Una al día»**, **INCIBE-CERT** (avisos y bitácora de ciberseguridad), **CCN-CERT**, **WeLiveSecurity**, **Segu-Info**, el catálogo **CISA KEV** y, en inglés y marcadas «[EN]», **BleepingComputer** y **The Hacker News**.
+- Lee las fuentes oficiales: **Hispasec «Una al día»**, **INCIBE-CERT** (avisos técnicos), **INCIBE** (avisos para empresas), **WeLiveSecurity**, **Segu-Info**, el catálogo **CISA KEV** y, en inglés y marcadas «[EN]», **BleepingComputer** y **The Hacker News**.
 - Conserva las noticias, investigaciones y curiosidades de las fuentes especializadas; solo descarta anuncios claramente promocionales.
 - Limpia las URLs (`?utm_...`), quita duplicados y ordena por fecha (más recientes primero). No utiliza la etiqueta `urgente`. Hispasec tiene un cupo preferente de hasta 7 noticias; INCIBE y CISA aportan diversidad.
 - Genera `noticias.json` **desde cero** con un máximo de 18 noticias y cupo por fuente (nunca acumula) y sin consejos: los consejos los saca el propio visor de las fichas de la Ciberpedia, uno distinto cada día.
