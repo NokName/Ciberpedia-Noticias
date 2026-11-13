@@ -1,13 +1,69 @@
 {
- "generado": "2026-11-13T16:27:12Z",
+ "generado": "2026-11-13T18:38:22Z",
  "noticias": [
+  {
+   "fecha": "13 nov",
+   "texto": "[EN] German military drone operations disrupted by cyberattack",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+   "ts": 1794591116000,
+   "resumen": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\""
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "[EN] PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+   "ts": 1794588788000,
+   "resumen": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server."
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "[EN] Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+   "ts": 1794586903000,
+   "resumen": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts."
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "AlphaProof Code: verificación formal y matemática de la seguridad de un software",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/alphaproof-code-verificacion-formal-y.html",
+   "ts": 1794585600000,
+   "resumen": "Cómo los investigadores de Google DeepMind crearon un nuevo marco basado en agentes que permitió verificar formalmente el código del protocolo criptográfico de Signal, un desafío de seguridad que durante mucho tiempo se"
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "[EN] New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+   "ts": 1794583625000,
+   "resumen": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out."
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "[EN] How one AI agent exposed five critical enterprise security gaps",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+   "ts": 1794582071000,
+   "resumen": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them."
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "[EN] FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+   "ts": 1794580138000,
+   "resumen": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months."
+  },
   {
    "fecha": "13 nov",
    "texto": "Múltiples vulnerabilidades en productos de Check Point",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-check-point-0",
    "ts": 1794566170000,
-   "resumen": "Check Point ha publicado un boletín sobre 5 vulnerabilidades, 2 de severidad crítica, 2 altas y 1 baja, en sus productos de seguridad. Check Point Research observó ataques entre el 30 de octubre y el 4 de noviembre contra Security Gateways sin parche con el portal Mobile Access expuesto a Internet.\n\nAfecta a: PHP2Shell. Check Point Security Gateways, incluidos Force Firewalls y Cloud Firewalls, de R80 a R82.20 con interfaces web vulnerables.\n\nQué hacer: Instalar cuanto antes el Jumbo Hotfix Accumulator de noviembre en los servidores de gestión y Security Gateways afectados. Priorizar los equipos con el portal Mobile Access expuesto a Internet. R82.20 Take 14 ."
+   "resumen": "Check Point ha publicado un boletín sobre 5 vulnerabilidades, 2 de severidad crítica, 2 altas y 1 baja, en sus productos de seguridad. Check Point Research observó ataques entre el 30 de octubre y el 4 de noviembre contra Security Gateways sin parche con el portal Mobile Access expuesto a Internet.\n\nAfecta a: PHP2Shell. Check Point Security Gateways, incluidos Force Firewalls y Cloud Firewalls, de R80 a R82.20 con interfaces web vulnerables.\n\nQué hacer: Instalar cuanto antes el Jumbo Hotfix Accumulator de noviembre en los servidores de gestión y Security Gateways afectados. Priorizar los equipos con el portal Mobile Access expuesto a Internet. R82.20 Take 14."
   },
   {
    "fecha": "13 nov",
@@ -19,27 +75,67 @@
   },
   {
    "fecha": "13 nov",
-   "texto": "Múltiples vulnerabilidades en OpenKM Community Edition de OpenKM",
+   "texto": "CVE-2026-114713 en UnrealIRCd UnrealIRCd se está explotando. Plazo de CISA: 2026-11-16.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+   "ts": 1794528000000,
+   "resumen": "CISA ha añadido CVE-2026-114713 (UnrealIRCd UnrealIRCd) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-13. Nombre del fallo: UnrealIRCd Improper Neutralization of Delimiters Vulnerability.\n\nDescripción de CISA (en inglés): UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-16)."
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "CVE-2026-123039 en Check Point Multiple Products se está explotando. Plazo de CISA: 2026-11-16.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+   "ts": 1794528000000,
+   "resumen": "CISA ha añadido CVE-2026-123039 (Check Point Multiple Products) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-13. Nombre del fallo: Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability.\n\nDescripción de CISA (en inglés): Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-16)."
+  },
+  {
+   "fecha": "12 nov",
+   "texto": "Falla crítica en el módulo HTTP/2 de Apache (CVE-2026-119618) permite ejecución remota de código sin autenticación",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/falla-critica-en-el-modulo-http2-de.html",
+   "ts": 1794495720000,
+   "resumen": "Esta semana el Proyecto Apache publicó la versión 2.4.71 de su servidor HTTP para corregir una falla crítica en mod_http2, el módulo que implementa el protocolo HTTP/2. El bug, rastreado como"
+  },
+  {
+   "fecha": "12 nov",
+   "texto": "Actualizaciones de seguridad de NOVIEMBRE para todas las empresas",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/actualizaciones-de-seguridad-de.html",
+   "ts": 1794484800000,
+   "resumen": "El martes de actualizaciones de noviembre de 2026 de Microsoft incluye actualizaciones de seguridad para corregir una cifra récord de 1.259 vulnerabilidades, entre ellas una vulnerabilidad de día cero en Microsoft Outlook que está siendo explotada activamente."
+  },
+  {
+   "fecha": "11 nov",
+   "texto": "Validación incorrecta de entradas en AXIS Camera Station de Axis Communications",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-openkm-community-edition-de-openkm",
-   "ts": 1794559373000,
-   "resumen": "INCIBE ha coordinado la publicación de 2 vulnerabilidades de severidad alta que afectan a OpenKM Community Edition de Open Knowledge Management System S.L. (OpenKM), un sistema de gestión documental. Las vulnerabilidades han sido descubiertas por Carlos Alejandro Smith Tay (Las3rs).\n\nAfecta a: OpenKM Community Edition, versiones 6.3.3 a 6.3.13 y 7.0.3; componentes FormUtils / LocalEntityResolver. OpenKM Community Edition, versiones 6.3.12 y 6.3.13; gestión de definiciones de workflow.\n\nQué hacer: Actualizar OpenKM CE 7.0.3 a 7.0.4, ya publicada."
+   "url": "https://www.incibe.es/empresas/avisos/validacion-incorrecta-de-entradas-en-axis-camera-station-de-axis-communications",
+   "ts": 1794386461000,
+   "resumen": "Ryan Vinton, del programa de recompensas de AXIS Camera Station Pro, ha informado sobre una vulnerabilidad crítica que podría permitir a un atacante con permisos limitados comprometer el sistema de videovigilancia. Identificador INCIBE-2026-849\n\nAfecta a: AXIS Camera Station Pro, versiones anteriores a 6.17. AXIS Camera Station 5, versiones anteriores a 5.59 SR 2.\n\nQué hacer: AXIS Camera Station Pro: actualizar a 6.17 o posterior. AXIS Camera Station 5: actualizar a 5.59 SR 2 o posterior. Detalle CVE-2026-13312: el software no comprueba correctamente el tipo de determinados datos de entrada."
   },
   {
    "fecha": "10 nov",
-   "texto": "CVE-2026-124194 en Microsoft Office se está explotando. Plazo de CISA: 2026-11-24.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-   "ts": 1794268800000,
-   "resumen": "CISA ha añadido CVE-2026-124194 (Microsoft Office) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-10. Nombre del fallo: Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability.\n\nDescripción de CISA (en inglés): Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-24)."
+   "texto": "Cereal: cómo Turla se oculta dentro de servidores Microsoft Exchange",
+   "fuente": "welivesecurity.com",
+   "url": "https://www.welivesecurity.com/es/investigaciones/turla-cereal-microsoft-exchange/",
+   "ts": 1794327028000,
+   "resumen": "ESET Research describe el conjunto de herramientas Cereal de Turla, un sofisticado framework para Microsoft Exchange que recopila correos electrónicos, ejecuta comandos en memoria y reutiliza el servidor comprometido como infraestructura de C&C."
   },
   {
-   "fecha": "10 nov",
-   "texto": "CVE-2026-111793 en Openwave Messaging Limited Webtop Media Transcoder se está explotando. Plazo de CISA: 2026-11-24.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
-   "ts": 1794268800000,
-   "resumen": "CISA ha añadido CVE-2026-111793 (Openwave Messaging Limited Webtop Media Transcoder) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-10. Nombre del fallo: Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability.\n\nDescripción de CISA (en inglés): Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-24)."
+   "fecha": "5 nov",
+   "texto": "Ataques a sistemas de refrigeración en Europa: ¿está América Latina preparada para un incidente similar?",
+   "fuente": "welivesecurity.com",
+   "url": "https://www.welivesecurity.com/es/cibercrimen/heladeras-hackeadas-en-europa-esta-america-latina-preparada/",
+   "ts": 1793906953000,
+   "resumen": "En menos de un mes, atacantes elevaron a distancia la temperatura de refrigeradores y cámaras frío de cientos de supermercados europeos y de un banco de sangre en Francia. El mismo tipo de tecnología ya opera en empresas latinoamericanas."
+  },
+  {
+   "fecha": "5 nov",
+   "texto": "¿Qué es el spoofing de email? Cómo funciona y cómo evitarlo",
+   "fuente": "welivesecurity.com",
+   "url": "https://www.welivesecurity.com/es/seguridad-corporativa/spoofing-email/",
+   "ts": 1793884200000,
+   "resumen": "El spoofing de email falsifica la identidad del remitente para que un mensaje parezca provenir de tu propia empresa. Descubre cómo funciona y cómo SPF, DKIM y DMARC ayudan a detectar y bloquear correos falsificados."
   },
   {
    "fecha": "23 oct",
@@ -47,55 +143,7 @@
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/node-js-corrige-fallos-graves-de-tls-y-brotli-en-sus-ramas-26-24-y-22/",
    "ts": 1792742462000,
-   "resumen": "Node.js publicó el 21 de octubre de 2026 versiones de seguridad para 26.x , 24.x y 22.x . El lote corrige vulnerabilidades de severidad alta que afectan a la validación TLS y al decodificador Brotli , además de actualizar dependencias críticas como OpenSSL y Undici . Los equipos que despliegan servicios en Node.js tienen una actualización urgente sobre la mesa: el proyecto publicó el 21 de octubre de 2026 versiones de seguridad para las ramas 26.x , 24.x y 22.x , con correcciones que tocan piezas especialmente sensibles del runtime, desde la validación TLS hasta el tratamiento de contenido comprimido con Brotli ."
-  },
-  {
-   "fecha": "22 oct",
-   "texto": "Node.js corrige un fallo en Brotli que abre la puerta a ejecución remota de código",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/node-js-corrige-un-fallo-en-brotli-que-abre-la-puerta-a-ejecucion-remota-de-codigo/",
-   "ts": 1792676227000,
-   "resumen": "Un fallo de alta severidad en el decodificador Brotli de Node.js puede provocar una escritura fuera de límites y acabar en ejecución remota de código al procesar datos manipulados. Node.js ya ha publicado versiones corregidas para las ramas soportadas: 22.23.4 , 24.22.1 y 26.12.1 . La última tanda de parches de seguridad de Node.js , publicada el 21 de octubre de 2026 , corrige un defecto serio en el decodificador Brotli que puede desembocar en ejecución remota de código ."
-  },
-  {
-   "fecha": "21 oct",
-   "texto": "PHP publica parches de urgencia por dos fallos críticos PHP2Shell con intentos de explotación",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/php-publica-parches-de-urgencia-por-dos-fallos-criticos-php2shell-con-intentos-de-explotacion/",
-   "ts": 1792611711000,
-   "resumen": "PHP ha lanzado parches de urgencia para dos vulnerabilidades críticas agrupadas como PHP2Shell que permiten ejecución remota de código sin autenticación. Ya se han detectado intentos de explotación activa , así que la recomendación es actualizar y reiniciar servicios cuanto antes. La comunidad de PHP ha publicado actualizaciones de emergencia para corregir dos vulnerabilidades críticas, conocidas de forma conjunta como PHP2Shell , que permiten ejecución remota de código sin autenticación en servidores que ejecutan versiones vulnerables del runtime."
-  },
-  {
-   "fecha": "14 oct",
-   "texto": "Un ciberataque apaga vitrinas frigoríficas en supermercados franceses",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses/",
-   "ts": 1791974168000,
-   "resumen": "Un ciberataque permitió manipular a distancia sistemas de refrigeración en supermercados de Francia , elevó temperaturas al activar ciclos de desescarche y obligó a retirar producto. El caso vuelve a señalar un punto débil conocido: interfaces web de gestión OT expuestas a Internet, en este caso asociadas a controladores Danfoss con software desactualizado. El apagado y la descongelación remota de vitrinas frigoríficas ha golpeado a supermercados en Francia tras una manipulación a distancia de controladores de refrigeración Danfoss , con un efecto inmediato en la operación diaria."
-  },
-  {
-   "fecha": "7 oct",
-   "texto": "Atacantes aprovechan un fallo crítico en Atlassian Data Center tras publicarse una prueba de concepto",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto/",
-   "ts": 1791385378000,
-   "resumen": "La vulnerabilidad CVE-2026-21589 en productos Atlassian Data Center ya registra intentos de explotación pocas horas después de difundirse una prueba de concepto. El defecto permite leer ficheros concretos sin autenticación y, en entornos integrados con Crowd , puede facilitar una escalada hasta permisos de administrador. Los intentos de explotación contra CVE-2026-21589 han empezado a aparecer casi de inmediato tras la publicación de detalles técnicos y una prueba de concepto ."
-  },
-  {
-   "fecha": "6 oct",
-   "texto": "Dos fallos en LibreOffice y OpenOffice permiten ejecutar código al abrir hojas de cálculo sin avisos de macros",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros/",
-   "ts": 1791292109000,
-   "resumen": "Dos vulnerabilidades permiten ejecutar código al abrir documentos ofimáticos manipulados sin depender de los avisos clásicos de macros. LibreOffice Calc ya cuenta con corrección, mientras que en Apache OpenOffice la mitigación pasa por recortar superficie de ataque, especialmente desactivando Java hasta que llegue el parche estable. El riesgo no llega por una macro visible ni por un botón sospechoso: basta con abrir una hoja de cálculo preparada para forzar la ejecución de código."
-  },
-  {
-   "fecha": "5 oct",
-   "texto": "Una vulnerabilidad crítica en Rejetto HFS permite falsificar sesiones de administrador y ejecutar código",
-   "fuente": "hispasec.com",
-   "url": "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo/",
-   "ts": 1791205149000,
-   "resumen": "Se explota activamente CVE-2026-61500 en Rejetto HTTP File Server (HFS) , un fallo crítico que permite falsificar una sesión de administrador y acabar en ejecución remota de código . Afecta a HFS 3.0.0 a 3.2.0 y se corrige en 3.2.1 , por lo que la actualización resulta prioritaria si el servidor está expuesto a Internet. Administradores y equipos de seguridad vigilan estos días Rejetto HTTP File Server (HFS) por una vulnerabilidad crítica que ya se ha visto en ataques reales."
+   "resumen": "Node.js publicó el 21 de octubre de 2026 versiones de seguridad para 26.x, 24.x y 22.x. El lote corrige vulnerabilidades de severidad alta que afectan a la validación TLS y al decodificador Brotli, además de actualizar dependencias críticas como OpenSSL y Undici."
   }
  ]
 }
