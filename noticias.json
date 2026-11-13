@@ -1,89 +1,101 @@
 {
- "generado": "2026-11-12T18:59:05Z",
+ "generado": "2026-11-13T07:28:54Z",
  "noticias": [
   {
    "fecha": "12 nov",
    "texto": "Desbordamiento de búfer en EOS de Arista",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-en-eos-de-arista",
-   "ts": 1794473209000
+   "ts": 1794473209000,
+   "resumen": "Joshua Foote, de JP Morgan Chase, ha informado sobre 1 vulnerabilidad de severidad crítica en Arista EOS. Un paquete BGP manipulado podría interrumpir las sesiones de enrutamiento del equipo afectado y, en determinadas circunstancias, permitir la ejecución de código arbitrario. Identificador INCIBE-2026-859\n\nAfecta a: Productos basados en Arista EOS con BGP configurado, una sesión BGP establecida y el modelo de enrutamiento multiagente activo, que utilicen alguna de las siguientes versiones.\n\nQué hacer: Actualizar a 4.37.0F, 4.36.3M, 4.35.7M, 4.34.9M o 4.33.11M, o a una versión posterior de la rama correspondiente. Migrar las ramas fuera de soporte a una versión corregida."
   },
   {
    "fecha": "12 nov",
    "texto": "Múltiples vulnerabilidades en Apache HTTP Server",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-apache-http-server",
-   "ts": 1794473208000
+   "ts": 1794473208000,
+   "resumen": "Anthropic y los investigadores Anthony Weems y Simon Scannell, de Google Cloud Vulnerability Research, han informado sobre una vulnerabilidad que podría permitir la ejecución remota de código en Apache HTTP Server. La versión 2.4.71 corrige 3 vulnerabilidades, 1 de severidad crítica, 1 alta y 1 baja. Identificador INCIBE-2026-860\n\nAfecta a: Apache HTTP Server 2.4.55 a 2.4.70 con mod_http2. También están afectadas las versiones 2.0.8 a 2.0.42 del módulo independiente mod_h2. Apache HTTP Server 2.4.30 a 2.4.70 con mod_md.\n\nQué hacer: Actualizar Apache HTTP Server a 2.4.71 o posterior. En instalaciones que distribuyan mod_h2 por separado, aplicar una actualización del proveedor que incorpore la corrección de CVE-2026-119618."
   },
   {
    "fecha": "12 nov",
    "texto": "Múltiples vulnerabilidades en MiVoice MX-ONE de Mitel",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-mivoice-mx-one-de-mitel",
-   "ts": 1794473206000
+   "ts": 1794473206000,
+   "resumen": "Mitel ha publicado 3 vulnerabilidades, 1 de severidad crítica, 1 alta y 1 media, en MiVoice MX-ONE. Un atacante con acceso a la red local podría obtener datos de configuración, conseguir acceso administrativo o ejecutar comandos, según la vulnerabilidad explotada. Identificador INCIBE-2026-861\n\nAfecta a: MiVoice MX-ONE, desde 8.0 (8.0.0.33) hasta 8.2 SP1 (8.2.1.0.14), en los componentes Provisioning Manager y Service Node Manager.\n\nQué hacer: Actualizar a MiVoice MX-ONE 8.2 y aplicar la corrección de Provisioning Manager y Service Node Manager que corresponda a la versión instalada. 8.2 SP0: HF5 o posterior. 8.2 SP1: HF2 o posterior."
   },
   {
    "fecha": "10 nov",
    "texto": "CVE-2026-124194 en Microsoft Office se está explotando. Plazo de CISA: 2026-11-24.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-   "ts": 1794268800000
+   "ts": 1794268800000,
+   "resumen": "CISA ha añadido CVE-2026-124194 (Microsoft Office) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-10. Nombre del fallo: Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability.\n\nDescripción de CISA (en inglés): Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-24)."
   },
   {
    "fecha": "10 nov",
    "texto": "CVE-2026-111793 en Openwave Messaging Limited Webtop Media Transcoder se está explotando. Plazo de CISA: 2026-11-24.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
-   "ts": 1794268800000
+   "ts": 1794268800000,
+   "resumen": "CISA ha añadido CVE-2026-111793 (Openwave Messaging Limited Webtop Media Transcoder) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-10. Nombre del fallo: Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability.\n\nDescripción de CISA (en inglés): Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-24)."
   },
   {
    "fecha": "23 oct",
    "texto": "Node.js corrige fallos graves de TLS y Brotli en sus ramas 26, 24 y 22",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/node-js-corrige-fallos-graves-de-tls-y-brotli-en-sus-ramas-26-24-y-22/",
-   "ts": 1792742462000
+   "ts": 1792742462000,
+   "resumen": "Node.js publicó el 21 de octubre de 2026 versiones de seguridad para 26.x , 24.x y 22.x . El lote corrige vulnerabilidades de severidad alta que afectan a la validación TLS y al decodificador Brotli , además de actualizar dependencias críticas como OpenSSL y Undici . Los equipos que despliegan servicios en Node.js tienen una actualización urgente sobre la mesa: el proyecto publicó el 21 de octubre de 2026 versiones de seguridad para las ramas 26.x , 24.x y 22.x , con correcciones que tocan piezas especialmente sensibles del runtime, desde la validación TLS hasta el tratamiento de contenido comprimido con Brotli ."
   },
   {
    "fecha": "22 oct",
    "texto": "Node.js corrige un fallo en Brotli que abre la puerta a ejecución remota de código",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/node-js-corrige-un-fallo-en-brotli-que-abre-la-puerta-a-ejecucion-remota-de-codigo/",
-   "ts": 1792676227000
+   "ts": 1792676227000,
+   "resumen": "Un fallo de alta severidad en el decodificador Brotli de Node.js puede provocar una escritura fuera de límites y acabar en ejecución remota de código al procesar datos manipulados. Node.js ya ha publicado versiones corregidas para las ramas soportadas: 22.23.4 , 24.22.1 y 26.12.1 . La última tanda de parches de seguridad de Node.js , publicada el 21 de octubre de 2026 , corrige un defecto serio en el decodificador Brotli que puede desembocar en ejecución remota de código ."
   },
   {
    "fecha": "21 oct",
    "texto": "PHP publica parches de urgencia por dos fallos críticos PHP2Shell con intentos de explotación",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/php-publica-parches-de-urgencia-por-dos-fallos-criticos-php2shell-con-intentos-de-explotacion/",
-   "ts": 1792611711000
+   "ts": 1792611711000,
+   "resumen": "PHP ha lanzado parches de urgencia para dos vulnerabilidades críticas agrupadas como PHP2Shell que permiten ejecución remota de código sin autenticación. Ya se han detectado intentos de explotación activa , así que la recomendación es actualizar y reiniciar servicios cuanto antes. La comunidad de PHP ha publicado actualizaciones de emergencia para corregir dos vulnerabilidades críticas, conocidas de forma conjunta como PHP2Shell , que permiten ejecución remota de código sin autenticación en servidores que ejecutan versiones vulnerables del runtime."
   },
   {
    "fecha": "14 oct",
    "texto": "Un ciberataque apaga vitrinas frigoríficas en supermercados franceses",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses/",
-   "ts": 1791974168000
+   "ts": 1791974168000,
+   "resumen": "Un ciberataque permitió manipular a distancia sistemas de refrigeración en supermercados de Francia , elevó temperaturas al activar ciclos de desescarche y obligó a retirar producto. El caso vuelve a señalar un punto débil conocido: interfaces web de gestión OT expuestas a Internet, en este caso asociadas a controladores Danfoss con software desactualizado. El apagado y la descongelación remota de vitrinas frigoríficas ha golpeado a supermercados en Francia tras una manipulación a distancia de controladores de refrigeración Danfoss , con un efecto inmediato en la operación diaria."
   },
   {
    "fecha": "7 oct",
    "texto": "Atacantes aprovechan un fallo crítico en Atlassian Data Center tras publicarse una prueba de concepto",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto/",
-   "ts": 1791385378000
+   "ts": 1791385378000,
+   "resumen": "La vulnerabilidad CVE-2026-21589 en productos Atlassian Data Center ya registra intentos de explotación pocas horas después de difundirse una prueba de concepto. El defecto permite leer ficheros concretos sin autenticación y, en entornos integrados con Crowd , puede facilitar una escalada hasta permisos de administrador. Los intentos de explotación contra CVE-2026-21589 han empezado a aparecer casi de inmediato tras la publicación de detalles técnicos y una prueba de concepto ."
   },
   {
    "fecha": "6 oct",
    "texto": "Dos fallos en LibreOffice y OpenOffice permiten ejecutar código al abrir hojas de cálculo sin avisos de macros",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros/",
-   "ts": 1791292109000
+   "ts": 1791292109000,
+   "resumen": "Dos vulnerabilidades permiten ejecutar código al abrir documentos ofimáticos manipulados sin depender de los avisos clásicos de macros. LibreOffice Calc ya cuenta con corrección, mientras que en Apache OpenOffice la mitigación pasa por recortar superficie de ataque, especialmente desactivando Java hasta que llegue el parche estable. El riesgo no llega por una macro visible ni por un botón sospechoso: basta con abrir una hoja de cálculo preparada para forzar la ejecución de código."
   },
   {
    "fecha": "5 oct",
    "texto": "Una vulnerabilidad crítica en Rejetto HFS permite falsificar sesiones de administrador y ejecutar código",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo/",
-   "ts": 1791205149000
+   "ts": 1791205149000,
+   "resumen": "Se explota activamente CVE-2026-61500 en Rejetto HTTP File Server (HFS) , un fallo crítico que permite falsificar una sesión de administrador y acabar en ejecución remota de código . Afecta a HFS 3.0.0 a 3.2.0 y se corrige en 3.2.1 , por lo que la actualización resulta prioritaria si el servidor está expuesto a Internet. Administradores y equipos de seguridad vigilan estos días Rejetto HTTP File Server (HFS) por una vulnerabilidad crítica que ya se ha visto en ataques reales."
   }
  ]
 }
