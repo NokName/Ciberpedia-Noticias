@@ -110,6 +110,8 @@ def texto_plano(fragmento):
     s = html.unescape(s)
     s = RELLENO.sub("", s)
     lineas = [re.sub(r"[ \t\u00a0]+", " ", l).strip() for l in s.split("\n")]
+    # Las etiquetas quitadas dejan huecos antes de la puntuación («26.x , 24.x»)
+    lineas = [re.sub(r"\s+([,.;:!?)»])", r"\1", re.sub(r"([(«¿¡])\s+", r"\1", l)) for l in lineas]
     return "\n".join(l for l in lineas if l)
 
 
@@ -152,7 +154,14 @@ def resumir_rss(cuerpo, titulo):
         bloques = [b for b in bloques if len(b) > 12]
         if bloques:
             return "\n\n".join(bloques)[:MAX_RESUMEN + 200]
-    texto = re.sub(r"\s+", " ", plano_txt)
+    # Hispasec abre con una entradilla que el cuerpo repite después: basta con los primeros párrafos
+    parrafos, acumulado = [], 0
+    for par in plano_txt.split("\n"):
+        parrafos.append(par)
+        acumulado += len(par)
+        if acumulado >= 160:
+            break
+    texto = re.sub(r"\s+", " ", " ".join(parrafos))
     # No repetir el titular si el feed lo incluye al principio
     if plano(texto).startswith(plano(titulo)):
         texto = texto[len(titulo):].lstrip(" .:-–—")
