@@ -31,6 +31,7 @@ import pathlib
 import re
 import time
 import unicodedata
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
@@ -57,6 +58,11 @@ DIAS_ACTUALIDAD = 10
 FUENTES_ACTUALIDAD = ("welivesecurity.com", "segu-info.com.ar", "bleepingcomputer.com", "thehackernews.com")
 FUENTES_EN_INGLES = ("bleepingcomputer.com", "thehackernews.com")
 UA = {"User-Agent": "Mozilla/5.0 (ciberpedia-noticias; +https://github.com/NokName/Ciberpedia-Noticias)"}
+UA_NAVEGADOR = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+    "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.8",
+    "Accept-Language": "es-ES,es;q=0.9",
+}
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 
 # (nombre, direcciones del feed por orden de preferencia, fuente). Se usa la primera que responda.
@@ -65,12 +71,15 @@ FUENTES_RSS = (
     ("INCIBE-CERT", ("https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",), "incibe.es"),
     ("INCIBE bitácora", (
         "https://www.incibe.es/incibe-cert/publicaciones/bitacora-de-seguridad/feed",
-        "https://www.incibe.es/incibe-cert/bitacora-ciberseguridad/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/bitacora-ciberseguridad/feed",
+        "https://www.incibe.es/incibe-cert/publicaciones/bitacora-de-seguridad/rss",
+        "https://www.incibe.es/empresas/avisos/feed",
+        "https://www.incibe.es/ciudadania/avisos/feed",
     ), "incibe.es"),
     ("CCN-CERT", (
         "https://www.ccn-cert.cni.es/es/seguridad-al-dia/avisos-ccn-cert?format=feed&type=rss",
         "https://www.ccn-cert.cni.es/es/seguridad-al-dia/alertas-ccn-cert?format=feed&type=rss",
-        "https://www.ccn-cert.cni.es/component/obrss/rss-noticias.feed",
+        "https://www.ccn-cert.cni.es/es/?format=feed&type=rss",
     ), "ccn-cert.cni.es"),
     ("WeLiveSecurity", (
         "https://www.welivesecurity.com/es/rss/feed/",
@@ -227,8 +236,14 @@ def resumir_kev(v):
 
 
 def bajar(url):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=30) as r:
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        if e.code != 403:
+            raise
+    # Algunos servidores rechazan clientes que no parecen un navegador.
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA_NAVEGADOR), timeout=30) as r:
         return r.read()
 
 
@@ -337,8 +352,8 @@ def marcar_urgentes(noticias, ahora=None):
 
 
 def clave_cupo(n):
-    """La bitácora de INCIBE cuenta aparte de los avisos de INCIBE-CERT."""
-    if n.get("fuente") == "incibe.es" and "bitacora" in (n.get("url") or "").lower():
+    """La bitácora y los avisos generales de INCIBE cuentan aparte de los avisos técnicos de INCIBE-CERT."""
+    if n.get("fuente") == "incibe.es" and "/alerta-temprana/avisos" not in (n.get("url") or "").lower():
         return "incibe.es/bitacora"
     return n.get("fuente", "")
 
