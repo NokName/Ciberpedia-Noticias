@@ -12,13 +12,16 @@ Qué hace en cada ejecución:
   3. Limpia las URLs (quita ?utm_..., fbclid, etc.) y elimina duplicados.
   4. Ordena por fecha y marca como "urgente" solo lo más grave y reciente de Hispasec
      (día cero, explotación activa, parches de urgencia, ransomware...): como mucho 2.
-  5. Escribe un noticias.json NUEVO con un máximo de 12 noticias.
+  5. Añade a cada noticia un "resumen" automático (2-4 frases sacadas de la propia
+     fuente: entradilla del RSS o ficha de CISA), que el visor muestra en «Leer».
+  6. Escribe un noticias.json NUEVO con un máximo de 12 noticias.
      Nunca añade al archivo anterior y no incluye consejos (los pone el visor).
-  6. Si las noticias no han cambiado, no toca el archivo (así no hay commit).
+  7. Si las noticias no han cambiado, no toca el archivo (así no hay commit).
 
 Solo usa la biblioteca estándar de Python.
 """
 import calendar
+import html
 import json
 import pathlib
 import re
@@ -89,6 +92,93 @@ def limpiar_texto(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+MAX_RESUMEN = 650
+# Restos típicos de los feeds que no aportan nada al resumen
+RELLENO = re.compile(
+    r"(la entrada .{0,200}? se public[oó] primero en .*$|the post .{0,200}? appeared first on .*$"
+    r"|\[(?:…|\.\.\.)\]|(?:leer|seguir leyendo|read) m[aá]s.*$|continuar leyendo.*$)", re.I | re.S)
+# Apartados de los avisos de INCIBE-CERT
+APARTADOS = (("afectados", r"recursos afectados"), ("descripcion", r"descripci[oó]n"), ("solucion", r"soluci[oó]n"))
+
+
+def texto_plano(fragmento):
+    """HTML del feed -> texto plano, conservando los párrafos."""
+    s = html.unescape(fragmento or "")
+    s = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", s)
+    s = re.sub(r"(?i)<\s*(br|/p|/div|/li|/h\d|/ul|/ol)\s*/?>", "\n", s)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = html.unescape(s)
+    s = RELLENO.sub("", s)
+    lineas = [re.sub(r"[ \t\u00a0]+", " ", l).strip() for l in s.split("\n")]
+    return "\n".join(l for l in lineas if l)
+
+
+def frases(texto, limite):
+    """Primeras frases completas que caben en `limite` caracteres."""
+    texto = re.sub(r"\s+", " ", texto).strip()
+    trozos = re.split(r"(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿¡0-9«\"])", texto)
+    out = ""
+    for t in trozos:
+        if len(out) + len(t) + 1 > limite:
+            break
+        out = (out + " " + t).strip()
+    if not out and texto:
+        corte = texto[:limite].rsplit(" ", 1)[0]
+        out = corte.rstrip(",;:") + "…"
+    return out
+
+
+def resumir_rss(cuerpo, titulo):
+    """Resumen automático a partir de la entradilla/contenido del RSS."""
+    plano_txt = texto_plano(cuerpo)
+    if not plano_txt:
+        return ""
+    # Avisos de INCIBE: «Recursos afectados / Descripción / Solución»
+    patron = r"(?im)^\s*(" + "|".join(p for _, p in APARTADOS) + r")\s*:?\s*$"
+    partes = re.split(patron, plano_txt)
+    if len(partes) >= 3:
+        secciones = {}
+        for i in range(1, len(partes) - 1, 2):
+            for clave, p in APARTADOS:
+                if re.fullmatch(p, partes[i].strip(), re.I):
+                    secciones[clave] = partes[i + 1].strip()
+        bloques = []
+        if secciones.get("descripcion"):
+            bloques.append(frases(secciones["descripcion"], 420))
+        if secciones.get("afectados"):
+            bloques.append("Afecta a: " + frases(secciones["afectados"], 200))
+        if secciones.get("solucion"):
+            bloques.append("Qué hacer: " + frases(secciones["solucion"], 220))
+        bloques = [b for b in bloques if len(b) > 12]
+        if bloques:
+            return "\n\n".join(bloques)[:MAX_RESUMEN + 200]
+    texto = re.sub(r"\s+", " ", plano_txt)
+    # No repetir el titular si el feed lo incluye al principio
+    if plano(texto).startswith(plano(titulo)):
+        texto = texto[len(titulo):].lstrip(" .:-–—")
+    resumen = frases(texto, MAX_RESUMEN)
+    return resumen if len(resumen) >= 40 else ""
+
+
+def resumir_kev(v):
+    """Resumen en castellano de una entrada del catálogo KEV de CISA."""
+    prod = f"{v.get('vendorProject', '')} {v.get('product', '')}".strip()
+    partes = [f"CISA ha añadido {v['cveID']} ({prod}) a su catálogo de vulnerabilidades que se están explotando de verdad"
+              + (f" el {v['dateAdded']}" if v.get("dateAdded") else "") + "."]
+    if v.get("vulnerabilityName"):
+        partes.append(f"Nombre del fallo: {v['vulnerabilityName'].strip()}.".replace("..", "."))
+    if str(v.get("knownRansomwareCampaignUse", "")).lower() == "known":
+        partes.append("Se sabe que lo usan campañas de ransomware.")
+    texto = " ".join(partes)
+    if v.get("shortDescription"):
+        texto += "\n\nDescripción de CISA (en inglés): " + frases(v["shortDescription"], 360)
+    if v.get("requiredAction"):
+        accion = "Qué hacer: aplicar las correcciones o mitigaciones del fabricante"
+        accion += f" (plazo para organismos federales de EE. UU.: {v['dueDate']})." if v.get("dueDate") else "."
+        texto += "\n\n" + accion
+    return texto
+
+
 def bajar(url):
     req = urllib.request.Request(url, headers=UA)
     with urllib.request.urlopen(req, timeout=30) as r:
@@ -100,7 +190,7 @@ def fecha_corta(ts):
     return f"{t.tm_mday} {MESES[t.tm_mon - 1]}"
 
 
-def noticia(titulo, url, fuente, ts, extra=""):
+def noticia(titulo, url, fuente, ts, extra="", cuerpo=""):
     """Conserva noticias y curiosidades de fuentes especializadas; evita promociones."""
     titulo = limpiar_texto(titulo)
     if not titulo:
@@ -109,6 +199,9 @@ def noticia(titulo, url, fuente, ts, extra=""):
     if tiene(t, PROMOCIONAL):
         return None
     n = {"fecha": fecha_corta(ts), "texto": titulo, "fuente": fuente, "url": limpiar_url(url), "ts": int(ts * 1000)}
+    resumen = resumir_rss(cuerpo, titulo) if cuerpo else ""
+    if resumen:
+        n["resumen"] = resumen
     return n
 
 
@@ -145,7 +238,9 @@ def leer_rss(xml, fuente):
                 continue
         extra = hijo(it, "description", "summary", "content") + " " + " ".join(
             (c.text or "") for c in it if c.tag.rsplit("}", 1)[-1] == "category")
-        n = noticia(hijo(it, "title"), url, fuente, ts, extra)
+        # El contenido completo (content:encoded) da mejor resumen que la entradilla
+        cuerpo = max((hijo(it, "encoded", "content"), hijo(it, "description", "summary")), key=len)
+        n = noticia(hijo(it, "title"), url, fuente, ts, extra, cuerpo)
         if n:
             out.append(n)
     return out
@@ -167,6 +262,7 @@ def leer_kev(raw):
             "fuente": "cisa.gov",
             "url": "https://nvd.nist.gov/vuln/detail/" + v["cveID"],
             "ts": int(ts * 1000),
+            "resumen": resumir_kev(v),
         }
         out.append(n)
     return out
