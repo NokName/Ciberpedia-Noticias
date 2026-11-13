@@ -90,7 +90,7 @@ class GeneradorNoticiasTests(unittest.TestCase):
     def test_seleccion_reparte_entre_fuentes_y_marca_ingles(self):
         ahora = 1792600000
         mk = lambda fuente, i, dias=0, texto=None, url=None: {"fecha": "x", "texto": texto or f"{fuente} noticia {i}", "fuente": fuente, "url": url or f"https://{fuente}/{i}", "ts": (ahora - dias * 86400 - i * 60) * 1000}
-        noticias = [mk("hispasec.com", i) for i in range(30)] + [mk("incibe.es", i, 1) for i in range(10)]
+        noticias = [mk("hispasec.com", i) for i in range(30)] + [mk("incibe.es", i, 1, url=f"https://www.incibe.es/incibe-cert/alerta-temprana/avisos/{i}") for i in range(10)]
         noticias += [mk("incibe.es", i, 3, url=f"https://www.incibe.es/incibe-cert/publicaciones/bitacora-de-seguridad/{i}") for i in range(5)]
         for f in ("ccn-cert.cni.es", "welivesecurity.com", "segu-info.com.ar", "bleepingcomputer.com", "thehackernews.com", "cisa.gov"):
             noticias += [mk(f, i, 2) for i in range(6)]
