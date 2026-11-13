@@ -1,12 +1,14 @@
 """Genera noticias.json desde cero, sin intervención humana.
 
-Fuentes oficiales de ciberseguridad:
+Fuentes de ciberseguridad:
   - Hispasec "Una al día" (RSS)
-  - INCIBE-CERT, avisos de alerta temprana (RSS)
+  - INCIBE-CERT, avisos de alerta temprana, e INCIBE, avisos para empresas (RSS)
+  - WeLiveSecurity en español y Segu-Info, actualidad (RSS)
+  - BleepingComputer y The Hacker News, actualidad en inglés, marcada "[EN]" (RSS)
   - CISA KEV, vulnerabilidades explotadas activamente (JSON)
 
 Qué hace en cada ejecución:
-  1. Descarga las tres fuentes (si una falla, sigue con las demás).
+  1. Descarga todas las fuentes (si una falla, sigue con las demás).
   2. Incluye noticias, curiosidades, investigación y novedades de ciberseguridad.
      Hispasec es la fuente preferente; solo descarta contenido promocional evidente.
   3. Limpia las URLs (quita ?utm_..., fbclid, etc.) y elimina duplicados.
@@ -14,7 +16,8 @@ Qué hace en cada ejecución:
      (día cero, explotación activa, parches de urgencia, ransomware...): como mucho 2.
   5. Añade a cada noticia un "resumen" automático (2-4 frases sacadas de la propia
      fuente: entradilla del RSS o ficha de CISA), que el visor muestra en «Leer».
-  6. Escribe un noticias.json NUEVO con un máximo de 12 noticias.
+  6. Escribe un noticias.json NUEVO con un máximo de 18 noticias, con cupo por fuente
+     para que haya avisos, vulnerabilidades y actualidad del sector.
      Nunca añade al archivo anterior y no incluye consejos (los pone el visor).
   7. Si las noticias no han cambiado, no toca el archivo (así no hay commit).
 
@@ -27,6 +30,7 @@ import pathlib
 import re
 import time
 import unicodedata
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
@@ -35,16 +39,45 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 AQUI = pathlib.Path(__file__).parent
 SALIDA = AQUI / "noticias.json"
-MAX_NOTICIAS = 12
-# Hispasec tiene preferencia real en la selección; INCIBE y CISA completan el resto
-PRIORIDAD = {"hispasec.com": 0, "incibe.es": 1, "cisa.gov": 2}
-MAX_POR_FUENTE = {"hispasec.com": 7, "incibe.es": 3, "cisa.gov": 2}
+MAX_NOTICIAS = 18
+# Orden de preferencia cuando dos noticias tienen la misma fecha o cuentan lo mismo.
+PRIORIDAD = {
+    "hispasec.com": 0, "incibe.es": 1, "welivesecurity.com": 2,
+    "segu-info.com.ar": 3, "bleepingcomputer.com": 4, "thehackernews.com": 5, "cisa.gov": 6,
+}
+# Cupo por fuente: ninguna puede llenar la lista ella sola. Los avisos de INCIBE para
+# empresas tienen cupo propio para que los avisos técnicos no los desplacen.
+MAX_POR_FUENTE = {
+    "hispasec.com": 5, "incibe.es": 2, "incibe.es/empresas": 2,
+    "welivesecurity.com": 3, "segu-info.com.ar": 3, "bleepingcomputer.com": 3,
+    "thehackernews.com": 3, "cisa.gov": 2,
+}
+# La actualidad no se queda semanas en la lista; los avisos oficiales no caducan.
+DIAS_ACTUALIDAD = 10
+FUENTES_ACTUALIDAD = ("welivesecurity.com", "segu-info.com.ar", "bleepingcomputer.com", "thehackernews.com")
+FUENTES_EN_INGLES = ("bleepingcomputer.com", "thehackernews.com")
 UA = {"User-Agent": "Mozilla/5.0 (ciberpedia-noticias; +https://github.com/NokName/Ciberpedia-Noticias)"}
+UA_NAVEGADOR = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+    "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.8",
+    "Accept-Language": "es-ES,es;q=0.9",
+}
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 
+# (nombre, direcciones del feed por orden de preferencia, fuente). Se usa la primera que responda.
 FUENTES_RSS = (
-    ("Hispasec", "https://feeds.feedburner.com/hispasec/zCAd", "hispasec.com"),
-    ("INCIBE-CERT", "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed", "incibe.es"),
+    ("Hispasec", ("https://feeds.feedburner.com/hispasec/zCAd",), "hispasec.com"),
+    ("INCIBE-CERT", ("https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",), "incibe.es"),
+    ("INCIBE empresas", ("https://www.incibe.es/empresas/avisos/feed",), "incibe.es"),
+    ("WeLiveSecurity", (
+        "https://www.welivesecurity.com/es/rss/feed/",
+    ), "welivesecurity.com"),
+    ("Segu-Info", (
+        "https://blog.segu-info.com.ar/feeds/posts/default?alt=rss",
+        "https://feeds.feedburner.com/NoticiasSeguridadInformatica",
+    ), "segu-info.com.ar"),
+    ("BleepingComputer", ("https://www.bleepingcomputer.com/feed/",), "bleepingcomputer.com"),
+    ("The Hacker News", ("https://feeds.feedburner.com/TheHackersNews",), "thehackernews.com"),
 )
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
@@ -53,6 +86,7 @@ KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulner
 PROMOCIONAL = (
     "inscripciones abiertas", "inscripcion abierta", "apuntate al webinar",
     "registrate en el webinar", "plazas disponibles", "oferta de empleo",
+    "webinar", "sponsored", "deal:", "% off", "ebook", "black friday", "giveaway",
 )
 # "urgente" solo para lo más relevante: Hispasec, de los últimos 3 días y con palabras fuertes.
 # CISA KEV e INCIBE son avisos rutinarios (todo KEV "se explota"), así que nunca se marcan.
@@ -110,6 +144,8 @@ def texto_plano(fragmento):
     s = html.unescape(s)
     s = RELLENO.sub("", s)
     lineas = [re.sub(r"[ \t\u00a0]+", " ", l).strip() for l in s.split("\n")]
+    # Las etiquetas quitadas dejan huecos antes de la puntuación («26.x , 24.x»)
+    lineas = [re.sub(r"\s+([,.;:!?)»])", r"\1", re.sub(r"([(«¿¡])\s+", r"\1", l)) for l in lineas]
     return "\n".join(l for l in lineas if l)
 
 
@@ -152,7 +188,14 @@ def resumir_rss(cuerpo, titulo):
         bloques = [b for b in bloques if len(b) > 12]
         if bloques:
             return "\n\n".join(bloques)[:MAX_RESUMEN + 200]
-    texto = re.sub(r"\s+", " ", plano_txt)
+    # Hispasec abre con una entradilla que el cuerpo repite después: basta con los primeros párrafos
+    parrafos, acumulado = [], 0
+    for par in plano_txt.split("\n"):
+        parrafos.append(par)
+        acumulado += len(par)
+        if acumulado >= 160:
+            break
+    texto = re.sub(r"\s+", " ", " ".join(parrafos))
     # No repetir el titular si el feed lo incluye al principio
     if plano(texto).startswith(plano(titulo)):
         texto = texto[len(titulo):].lstrip(" .:-–—")
@@ -180,8 +223,14 @@ def resumir_kev(v):
 
 
 def bajar(url):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=30) as r:
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        if e.code != 403:
+            raise
+    # Algunos servidores rechazan clientes que no parecen un navegador.
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA_NAVEGADOR), timeout=30) as r:
         return r.read()
 
 
@@ -198,6 +247,8 @@ def noticia(titulo, url, fuente, ts, extra="", cuerpo=""):
     t = plano(titulo)
     if tiene(t, PROMOCIONAL):
         return None
+    if fuente in FUENTES_EN_INGLES:
+        titulo = "[EN] " + titulo
     n = {"fecha": fecha_corta(ts), "texto": titulo, "fuente": fuente, "url": limpiar_url(url), "ts": int(ts * 1000)}
     resumen = resumir_rss(cuerpo, titulo) if cuerpo else ""
     if resumen:
@@ -287,28 +338,76 @@ def marcar_urgentes(noticias, ahora=None):
     return noticias
 
 
-def seleccionar(noticias):
-    """Prioriza hasta 7 de Hispasec, completa con INCIBE/CISA y evita duplicados."""
-    ordenadas = sorted(noticias, key=lambda n: (-n["ts"], PRIORIDAD.get(n["fuente"], 9)))
-    vistas, por_fuente, out = set(), {}, []
+def clave_cupo(n):
+    """Los avisos de INCIBE para empresas cuentan aparte de los avisos técnicos de INCIBE-CERT."""
+    if n.get("fuente") == "incibe.es" and "/alerta-temprana/avisos" not in (n.get("url") or "").lower():
+        return "incibe.es/empresas"
+    return n.get("fuente", "")
+
+
+CVE = re.compile(r"cve-\d{4}-\d{4,}", re.I)
+
+
+def seleccionar(noticias, ahora=None):
+    """Reparte la lista entre las fuentes: primero lo más reciente de cada una y
+    después el resto por fecha, con cupo por fuente y sin repetir la misma noticia."""
+    ahora = time.time() if ahora is None else ahora
+    limite = (ahora - DIAS_ACTUALIDAD * 86400) * 1000
+    validas = [n for n in noticias if n["fuente"] not in FUENTES_ACTUALIDAD or n["ts"] >= limite]
+    ordenadas = sorted(validas, key=lambda n: (-n["ts"], PRIORIDAD.get(n["fuente"], 9)))
+    vistas, por_cupo, out = set(), {}, []
 
     def agregar(n):
+        if len(out) >= MAX_NOTICIAS:
+            return False
+        cupo = clave_cupo(n)
         claves = {plano(n["texto"])} | ({n["url"].lower()} if n["url"] else set())
-        if claves & vistas or por_fuente.get(n["fuente"], 0) >= MAX_POR_FUENTE.get(n["fuente"], 4):
-            return
+        # Dos fuentes que hablan del mismo CVE cuentan la misma noticia.
+        claves |= {c.lower() for c in CVE.findall(n["texto"])}
+        if claves & vistas or por_cupo.get(cupo, 0) >= MAX_POR_FUENTE.get(cupo, 2):
+            return False
         vistas.update(claves)
-        por_fuente[n["fuente"]] = por_fuente.get(n["fuente"], 0) + 1
+        por_cupo[cupo] = por_cupo.get(cupo, 0) + 1
         out.append(n)
+        return True
 
-    # Reservar preferentemente espacio a Hispasec, incluso si las otras
-    # fuentes publicaron entradas más recientes.
+    # 1) Variedad: la noticia más reciente de cada fuente, por orden de preferencia.
+    for cupo in sorted(MAX_POR_FUENTE, key=lambda c: PRIORIDAD.get(c.split("/")[0], 9)):
+        for n in ordenadas:
+            if clave_cupo(n) == cupo and agregar(n):
+                break
+    # 2) El resto, por fecha, hasta agotar el cupo de cada fuente o el máximo.
     for n in ordenadas:
-        if n["fuente"] == "hispasec.com" and len(out) < MAX_NOTICIAS:
+        if n not in out:
             agregar(n)
-    for n in ordenadas:
-        if n["fuente"] != "hispasec.com" and len(out) < MAX_NOTICIAS:
-            agregar(n)
-    return marcar_urgentes(sorted(out, key=lambda n: -n["ts"]))
+    return marcar_urgentes(sorted(out, key=lambda n: -n["ts"]), ahora)
+
+
+def diagnostico():
+    """Prueba cada fuente sin escribir nada: sirve para validar los feeds en CI."""
+    for nombre, urls, fuente in FUENTES_RSS:
+        for url in urls:
+            try:
+                nuevas = leer_rss(bajar(url), fuente)
+                print(f"OK    {nombre}: {len(nuevas)} entradas · {url}")
+                for n in nuevas[:2]:
+                    print(f"        {n['fecha']} · {n['texto'][:90]} · resumen {len(n.get('resumen', ''))}")
+            except Exception as e:
+                print(f"FALLO {nombre}: {e} · {url}")
+
+
+def leer_fuente(urls, fuente):
+    """Devuelve las noticias de la primera dirección que responda con entradas válidas."""
+    error = ValueError("sin direcciones")
+    for url in urls:
+        try:
+            nuevas = leer_rss(bajar(url), fuente)
+            if nuevas:
+                return nuevas
+            error = ValueError("el feed no contiene noticias válidas")
+        except Exception as e:
+            error = e
+    raise error
 
 
 def main():
@@ -319,16 +418,13 @@ def main():
     except Exception:
         anterior = []
     noticias, fallos, fuentes_fallidas, fuentes_ok = [], [], set(), 0
-    for nombre, url, fuente in FUENTES_RSS:
+    for nombre, urls, fuente in FUENTES_RSS:
         try:
-            nuevas = leer_rss(bajar(url), fuente)
-            if not nuevas:
-                raise ValueError("el feed no contiene noticias válidas")
-            noticias += nuevas
+            noticias += leer_fuente(urls, fuente)
             fuentes_ok += 1
         except Exception as e:  # una fuente caída no rompe el resto
             fallos.append(f"{nombre}: {e}")
-            fuentes_fallidas.add(fuente)
+            fuentes_fallidas.add("incibe.es/empresas" if "empresas" in nombre else fuente)
     try:
         nuevas = leer_kev(bajar(KEV_URL))
         if not nuevas:
@@ -343,7 +439,7 @@ def main():
     if not fuentes_ok:
         raise SystemExit("Todas las fuentes fallaron; se mantiene el noticias.json anterior.")
     # Si falla una fuente, mantener sus últimas entradas sin bloquear las demás.
-    noticias += [dict(n) for n in anterior if isinstance(n, dict) and n.get("fuente") in fuentes_fallidas]
+    noticias += [dict(n) for n in anterior if isinstance(n, dict) and clave_cupo(n) in fuentes_fallidas]
     elegidas = seleccionar(noticias)
     if not elegidas:
         raise SystemExit("Ninguna fuente dio noticias válidas; se mantiene el noticias.json anterior.")
@@ -358,4 +454,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    diagnostico() if "--diagnostico" in sys.argv else main()

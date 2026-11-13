@@ -45,6 +45,15 @@ class ResumenesTests(unittest.TestCase):
         n = gen.noticia("Titular", "https://e/x", "hispasec.com", 1792600000)
         self.assertNotIn("resumen", n)
 
+    def test_sin_huecos_antes_de_puntuacion_ni_cuerpo_repetido(self):
+        cuerpo = ("<p><strong>Node.js publicó versiones para 26.x</strong> , <strong>24.x</strong> y <strong>22.x</strong> . "
+                  "El lote corrige fallos de TLS y Brotli y actualiza OpenSSL, Undici y otras dependencias del proyecto en todas sus ramas.</p>"
+                  "<p>Los equipos que despliegan Node.js tienen una actualización urgente: el proyecto publicó versiones para 26.x, 24.x y 22.x.</p>")
+        r = gen.resumir_rss(cuerpo, "Node.js corrige fallos")
+        self.assertIn("26.x, 24.x y 22.x.", r)
+        self.assertNotIn(" ,", r)
+        self.assertNotIn("Los equipos", r)
+
     def test_frases_corta_en_frase_completa(self):
         self.assertEqual(gen.frases("Uno dos. Tres cuatro. Cinco seis.", 22), "Uno dos. Tres cuatro.")
 

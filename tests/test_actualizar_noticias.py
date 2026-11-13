@@ -71,7 +71,8 @@ class GeneradorNoticiasTests(unittest.TestCase):
                     raise OSError("fuente caída")
                 return url.encode()
 
-            with patch.object(gen, "SALIDA", salida), patch.object(gen, "bajar", side_effect=bajar), patch.object(gen, "leer_rss", return_value=[incibe]), patch.object(gen, "leer_kev", return_value=[cisa]):
+            fuentes = (("Hispasec", ("https://feeds.feedburner.com/hispasec/zCAd",), "hispasec.com"), ("INCIBE-CERT", ("https://example.com/incibe",), "incibe.es"))
+            with patch.object(gen, "FUENTES_RSS", fuentes), patch.object(gen, "SALIDA", salida), patch.object(gen, "bajar", side_effect=bajar), patch.object(gen, "leer_rss", return_value=[incibe]), patch.object(gen, "leer_kev", return_value=[cisa]):
                 gen.main()
             noticias = json.loads(salida.read_text(encoding="utf-8"))["noticias"]
             self.assertEqual({n["texto"] for n in noticias}, {"Hispasec guardada", "INCIBE nueva", "CISA nueva"})
@@ -85,6 +86,40 @@ class GeneradorNoticiasTests(unittest.TestCase):
                 with self.assertRaises(SystemExit):
                     gen.main()
             self.assertEqual(salida.read_text(encoding="utf-8"), original)
+
+    def test_seleccion_reparte_entre_fuentes_y_marca_ingles(self):
+        ahora = 1792600000
+        mk = lambda fuente, i, dias=0, texto=None, url=None: {"fecha": "x", "texto": texto or f"{fuente} noticia {i}", "fuente": fuente, "url": url or f"https://{fuente}/{i}", "ts": (ahora - dias * 86400 - i * 60) * 1000}
+        noticias = [mk("hispasec.com", i) for i in range(30)] + [mk("incibe.es", i, 1, url=f"https://www.incibe.es/incibe-cert/alerta-temprana/avisos/{i}") for i in range(10)]
+        noticias += [mk("incibe.es", i, 3, url=f"https://www.incibe.es/empresas/avisos/{i}") for i in range(5)]
+        for f in ("welivesecurity.com", "segu-info.com.ar", "bleepingcomputer.com", "thehackernews.com", "cisa.gov"):
+            noticias += [mk(f, i, 2) for i in range(6)]
+        noticias.append(mk("thehackernews.com", 99, 30, texto="Actualidad caducada"))
+        noticias.append(mk("bleepingcomputer.com", 98, 0, texto="Fallo CVE-2026-55555 explotado"))
+        noticias.append(mk("segu-info.com.ar", 97, 0, texto="Explotan CVE-2026-55555 en routers"))
+        elegidas = gen.seleccionar(noticias, ahora)
+        self.assertEqual(len(elegidas), gen.MAX_NOTICIAS)
+        cuenta = {}
+        for n in elegidas:
+            cuenta[gen.clave_cupo(n)] = cuenta.get(gen.clave_cupo(n), 0) + 1
+        self.assertEqual(set(cuenta), set(gen.MAX_POR_FUENTE))  # todas las fuentes presentes
+        self.assertTrue(all(cuenta[c] <= gen.MAX_POR_FUENTE[c] for c in cuenta))
+        textos = [n["texto"] for n in elegidas]
+        self.assertNotIn("Actualidad caducada", textos)
+        self.assertEqual(sum("CVE-2026-55555" in t for t in textos), 1)
+        xml = b"<rss><channel><item><title>GitHub outage</title><link>https://example.com/a</link><pubDate>Fri, 16 Oct 2026 10:00:00</pubDate></item></channel></rss>"
+        self.assertEqual(gen.leer_rss(xml, "bleepingcomputer.com")[0]["texto"], "[EN] GitHub outage")
+
+    def test_fuente_usa_la_segunda_direccion_si_la_primera_falla(self):
+        xml = b"<rss><channel><item><title>Aviso</title><link>https://example.com/a</link><pubDate>Fri, 16 Oct 2026 10:00:00</pubDate></item></channel></rss>"
+
+        def bajar(url):
+            if "mala" in url:
+                raise OSError("404")
+            return xml
+
+        with patch.object(gen, "bajar", side_effect=bajar):
+            self.assertEqual(len(gen.leer_fuente(("https://mala", "https://buena"), "incibe.es")), 1)
 
 
 if __name__ == "__main__":
