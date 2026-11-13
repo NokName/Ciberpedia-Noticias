@@ -6,10 +6,10 @@ La actualización se ejecuta automáticamente mientras GitHub Actions esté acti
 
 Cada hora, GitHub Actions (`.github/workflows/actualizar.yml`) ejecuta `actualizar_noticias.py`, que:
 
-- Lee las fuentes oficiales: **Hispasec «Una al día»**, **INCIBE-CERT** (avisos de alerta temprana) y el catálogo **CISA KEV**.
+- Lee las fuentes oficiales: **Hispasec «Una al día»**, **INCIBE-CERT** (avisos y bitácora de ciberseguridad), **CCN-CERT**, **WeLiveSecurity**, **Segu-Info**, el catálogo **CISA KEV** y, en inglés y marcadas «[EN]», **BleepingComputer** y **The Hacker News**.
 - Conserva las noticias, investigaciones y curiosidades de las fuentes especializadas; solo descarta anuncios claramente promocionales.
 - Limpia las URLs (`?utm_...`), quita duplicados y ordena por fecha (más recientes primero). No utiliza la etiqueta `urgente`. Hispasec tiene un cupo preferente de hasta 7 noticias; INCIBE y CISA aportan diversidad.
-- Genera `noticias.json` **desde cero** con un máximo de 12 noticias (nunca acumula) y sin consejos: los consejos los saca el propio visor de las fichas de la Ciberpedia, uno distinto cada día.
+- Genera `noticias.json` **desde cero** con un máximo de 18 noticias y cupo por fuente (nunca acumula) y sin consejos: los consejos los saca el propio visor de las fichas de la Ciberpedia, uno distinto cada día.
 - Solo hace commit si las noticias han cambiado de verdad. Si no cambian, el registro de Actions indica «Estás al día». Este mensaje todavía no aparece dentro de la APK: requiere una modificación posterior del visor canónico.
 - Si una fuente falla, conserva sus últimas entradas y actualiza las demás. Si fallan todas, no modifica el JSON y el workflow termina con error.
 - El horario es al minuto 17 de cada hora UTC. GitHub puede retrasar alguna ejecución programada; el historial de Actions permite comprobarlo. GitHub desactiva workflows programados en repositorios públicos tras 60 días sin actividad.
