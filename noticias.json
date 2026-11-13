@@ -1,29 +1,29 @@
 {
- "generado": "2026-11-13T07:28:54Z",
+ "generado": "2026-11-13T16:27:12Z",
  "noticias": [
   {
-   "fecha": "12 nov",
-   "texto": "Desbordamiento de búfer en EOS de Arista",
+   "fecha": "13 nov",
+   "texto": "Múltiples vulnerabilidades en productos de Check Point",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-en-eos-de-arista",
-   "ts": 1794473209000,
-   "resumen": "Joshua Foote, de JP Morgan Chase, ha informado sobre 1 vulnerabilidad de severidad crítica en Arista EOS. Un paquete BGP manipulado podría interrumpir las sesiones de enrutamiento del equipo afectado y, en determinadas circunstancias, permitir la ejecución de código arbitrario. Identificador INCIBE-2026-859\n\nAfecta a: Productos basados en Arista EOS con BGP configurado, una sesión BGP establecida y el modelo de enrutamiento multiagente activo, que utilicen alguna de las siguientes versiones.\n\nQué hacer: Actualizar a 4.37.0F, 4.36.3M, 4.35.7M, 4.34.9M o 4.33.11M, o a una versión posterior de la rama correspondiente. Migrar las ramas fuera de soporte a una versión corregida."
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-check-point-0",
+   "ts": 1794566170000,
+   "resumen": "Check Point ha publicado un boletín sobre 5 vulnerabilidades, 2 de severidad crítica, 2 altas y 1 baja, en sus productos de seguridad. Check Point Research observó ataques entre el 30 de octubre y el 4 de noviembre contra Security Gateways sin parche con el portal Mobile Access expuesto a Internet.\n\nAfecta a: PHP2Shell. Check Point Security Gateways, incluidos Force Firewalls y Cloud Firewalls, de R80 a R82.20 con interfaces web vulnerables.\n\nQué hacer: Instalar cuanto antes el Jumbo Hotfix Accumulator de noviembre en los servidores de gestión y Security Gateways afectados. Priorizar los equipos con el portal Mobile Access expuesto a Internet. R82.20 Take 14 ."
   },
   {
-   "fecha": "12 nov",
-   "texto": "Múltiples vulnerabilidades en Apache HTTP Server",
+   "fecha": "13 nov",
+   "texto": "Múltiples vulnerabilidades en productos de Citrix",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-apache-http-server",
-   "ts": 1794473208000,
-   "resumen": "Anthropic y los investigadores Anthony Weems y Simon Scannell, de Google Cloud Vulnerability Research, han informado sobre una vulnerabilidad que podría permitir la ejecución remota de código en Apache HTTP Server. La versión 2.4.71 corrige 3 vulnerabilidades, 1 de severidad crítica, 1 alta y 1 baja. Identificador INCIBE-2026-860\n\nAfecta a: Apache HTTP Server 2.4.55 a 2.4.70 con mod_http2. También están afectadas las versiones 2.0.8 a 2.0.42 del módulo independiente mod_h2. Apache HTTP Server 2.4.30 a 2.4.70 con mod_md.\n\nQué hacer: Actualizar Apache HTTP Server a 2.4.71 o posterior. En instalaciones que distribuyan mod_h2 por separado, aplicar una actualización del proveedor que incorpore la corrección de CVE-2026-119618."
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-3",
+   "ts": 1794563665000,
+   "resumen": "Citrix ha publicado 29 vulnerabilidades, de las cuales 10 son críticas. En caso de ser explotadas podrían permitir a un atacante omitir los controles de autenticación o provocar una denegación de servicio Identificador INCIBE-2026-863\n\nAfecta a: Versiones con soporte de los productos gestionados por el cliente: Citrix NetScaler ADC y Citrix NetScaler Gateway 14.1, anteriores a 14.1-73.57.\n\nQué hacer: Actualizar cuanto antes a las siguientes versiones o a una posterior de la rama correspondiente: Citrix NetScaler ADC y Citrix NetScaler Gateway 14.1 a 14.1-73.57."
   },
   {
-   "fecha": "12 nov",
-   "texto": "Múltiples vulnerabilidades en MiVoice MX-ONE de Mitel",
+   "fecha": "13 nov",
+   "texto": "Múltiples vulnerabilidades en OpenKM Community Edition de OpenKM",
    "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-mivoice-mx-one-de-mitel",
-   "ts": 1794473206000,
-   "resumen": "Mitel ha publicado 3 vulnerabilidades, 1 de severidad crítica, 1 alta y 1 media, en MiVoice MX-ONE. Un atacante con acceso a la red local podría obtener datos de configuración, conseguir acceso administrativo o ejecutar comandos, según la vulnerabilidad explotada. Identificador INCIBE-2026-861\n\nAfecta a: MiVoice MX-ONE, desde 8.0 (8.0.0.33) hasta 8.2 SP1 (8.2.1.0.14), en los componentes Provisioning Manager y Service Node Manager.\n\nQué hacer: Actualizar a MiVoice MX-ONE 8.2 y aplicar la corrección de Provisioning Manager y Service Node Manager que corresponda a la versión instalada. 8.2 SP0: HF5 o posterior. 8.2 SP1: HF2 o posterior."
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-openkm-community-edition-de-openkm",
+   "ts": 1794559373000,
+   "resumen": "INCIBE ha coordinado la publicación de 2 vulnerabilidades de severidad alta que afectan a OpenKM Community Edition de Open Knowledge Management System S.L. (OpenKM), un sistema de gestión documental. Las vulnerabilidades han sido descubiertas por Carlos Alejandro Smith Tay (Las3rs).\n\nAfecta a: OpenKM Community Edition, versiones 6.3.3 a 6.3.13 y 7.0.3; componentes FormUtils / LocalEntityResolver. OpenKM Community Edition, versiones 6.3.12 y 6.3.13; gestión de definiciones de workflow.\n\nQué hacer: Actualizar OpenKM CE 7.0.3 a 7.0.4, ya publicada."
   },
   {
    "fecha": "10 nov",
