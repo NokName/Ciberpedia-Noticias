@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-13T22:39:33Z",
+ "generado": "2026-11-14T11:30:02Z",
  "noticias": [
   {
    "fecha": "13 nov",
@@ -56,6 +56,14 @@
    "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
    "ts": 1794580138000,
    "resumen": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months."
+  },
+  {
+   "fecha": "13 nov",
+   "texto": "GTA 6 está por llegar, pero los estafadores ya aprovechan la expectativa",
+   "fuente": "welivesecurity.com",
+   "url": "https://www.welivesecurity.com/es/estafas-enganos/gta-6-estafas-descargas-maliciosas/",
+   "ts": 1794576317000,
+   "resumen": "Aprovechando la expectativa por GTA 6, los ciberdelincuentes despliegan distintas estafas que van desde descargas con malware y filtraciones falsas hasta tiendas fraudulentas y supuestas ofertas de acceso anticipado"
   },
   {
    "fecha": "13 nov",
@@ -128,14 +136,6 @@
    "url": "https://www.welivesecurity.com/es/cibercrimen/heladeras-hackeadas-en-europa-esta-america-latina-preparada/",
    "ts": 1793906953000,
    "resumen": "En menos de un mes, atacantes elevaron a distancia la temperatura de refrigeradores y cámaras frío de cientos de supermercados europeos y de un banco de sangre en Francia. El mismo tipo de tecnología ya opera en empresas latinoamericanas."
-  },
-  {
-   "fecha": "5 nov",
-   "texto": "¿Qué es el spoofing de email? Cómo funciona y cómo evitarlo",
-   "fuente": "welivesecurity.com",
-   "url": "https://www.welivesecurity.com/es/seguridad-corporativa/spoofing-email/",
-   "ts": 1793884200000,
-   "resumen": "El spoofing de email falsifica la identidad del remitente para que un mensaje parezca provenir de tu propia empresa. Descubre cómo funciona y cómo SPF, DKIM y DMARC ayudan a detectar y bloquear correos falsificados."
   },
   {
    "fecha": "23 oct",
