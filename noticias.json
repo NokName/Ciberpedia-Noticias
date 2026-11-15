@@ -1,6 +1,14 @@
 {
- "generado": "2026-11-14T18:05:42Z",
+ "generado": "2026-11-15T10:56:51Z",
  "noticias": [
+  {
+   "fecha": "15 nov",
+   "texto": "[EN] Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+   "ts": 1794730924000,
+   "resumen": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI."
+  },
   {
    "fecha": "14 nov",
    "texto": "[EN] Cursor confirms security breach led to malicious Claude Code extension",
@@ -56,14 +64,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/alphaproof-code-verificacion-formal-y.html",
    "ts": 1794585600000,
    "resumen": "Cómo los investigadores de Google DeepMind crearon un nuevo marco basado en agentes que permitió verificar formalmente el código del protocolo criptográfico de Signal, un desafío de seguridad que durante mucho tiempo se"
-  },
-  {
-   "fecha": "13 nov",
-   "texto": "[EN] New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-   "ts": 1794583625000,
-   "resumen": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out."
   },
   {
    "fecha": "13 nov",
