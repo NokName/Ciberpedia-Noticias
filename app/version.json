@@ -1,6 +1,6 @@
 {
-  "version": 18,
-  "nombre": "1.9.2",
+  "version": 19,
+  "nombre": "2.0.0",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 1.9.2: capítulo nuevo 🏭 OT (diferencias IT/OT/ICS, SCADA y PLC, modelo Purdue, IEC 62443, protocolos industriales, cómo se protege una planta) y capítulo 🔎 Forense pensado como ruta de aprendizaje (puestos previos y ruta profesional, adquisición, NTFS/ext4, artefactos de Windows y Linux, timeline, memoria, red, móvil, antiforense, triaje con KAPE/Velociraptor e informe pericial). También Sysmon, Sigma/YARA, el modelo de capacidades GRC y el tutorial «Tu primer análisis forense». 439 fichas y 21 tutoriales."
+  "notas": "Ciberpedia 2.0.0: 486 fichas. Nuevo tema 🥀 NieR con su icono y tema Pixel renovado; repaso con repetición espaciada y rutas de lectura; fichas de forense (Plaso, KAPE, Velociraptor, herramientas de Eric Zimmerman), Snort y reglas IDS/IPS separadas de las del WAF, Metasploit/Meterpreter y sqlmap en laboratorio, seguridad en Kubernetes, responsabilidad compartida en la nube, envenenamiento de datos y MITRE ATLAS; más ejemplos reales en 🚩 Flags; noticias de más fuentes con resumen automático; tipografías incluidas para usarla sin conexión y mejor contraste y accesibilidad."
 }
