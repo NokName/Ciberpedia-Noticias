@@ -1,6 +1,14 @@
 {
- "generado": "2026-11-15T17:44:03Z",
+ "generado": "2026-11-15T22:50:21Z",
  "noticias": [
+  {
+   "fecha": "15 nov",
+   "texto": "[EN] FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+   "ts": 1794767393000,
+   "resumen": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments."
+  },
   {
    "fecha": "15 nov",
    "texto": "[EN] TSMC employee data breach linked to cloud provider",
@@ -32,14 +40,6 @@
    "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
    "ts": 1794677245000,
    "resumen": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI."
-  },
-  {
-   "fecha": "14 nov",
-   "texto": "[EN] US disrupts North Korean campaign behind $400 million crypto theft",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
-   "ts": 1794669349000,
-   "resumen": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency."
   },
   {
    "fecha": "14 nov",
@@ -130,12 +130,12 @@
    "resumen": "ESET Research describe el conjunto de herramientas Cereal de Turla, un sofisticado framework para Microsoft Exchange que recopila correos electrónicos, ejecuta comandos en memoria y reutiliza el servidor comprometido como infraestructura de C&C."
   },
   {
-   "fecha": "5 nov",
-   "texto": "Ataques a sistemas de refrigeración en Europa: ¿está América Latina preparada para un incidente similar?",
-   "fuente": "welivesecurity.com",
-   "url": "https://www.welivesecurity.com/es/cibercrimen/heladeras-hackeadas-en-europa-esta-america-latina-preparada/",
-   "ts": 1793906953000,
-   "resumen": "En menos de un mes, atacantes elevaron a distancia la temperatura de refrigeradores y cámaras frío de cientos de supermercados europeos y de un banco de sangre en Francia. El mismo tipo de tecnología ya opera en empresas latinoamericanas."
+   "fecha": "3 nov",
+   "texto": "Múltiples vulnerabilidades en Veeam Management Pack para Microsoft System Center",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-veeam-management-pack-para-microsoft-system-center",
+   "ts": 1793712282000,
+   "resumen": "Veeam ha publicado 3 vulnerabilidades, 1 de severidad crítica y 2 altas, detectadas durante pruebas internas en Veeam Management Pack for Microsoft System Center. Su explotación podría permitir a un atacante ejecutar instrucciones maliciosas a distancia y comprometer los servidores afectados. Identificador INCIBE-2026-824\n\nAfecta a: Veeam Management Pack para Microsoft System Center 9.1 y todas las compilaciones anteriores de la rama 9, incluidas las que tienen instalado el parche de compatibilidad con Veeam Backup & Replication…\n\nQué hacer: Actualizar a Veeam Management Pack for Microsoft System Center 13.1, compilación 13.1.0.334."
   },
   {
    "fecha": "23 oct",
