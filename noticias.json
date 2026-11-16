@@ -1,21 +1,53 @@
 {
- "generado": "2026-11-15T22:50:21Z",
+ "generado": "2026-11-16T11:23:43Z",
  "noticias": [
   {
-   "fecha": "15 nov",
-   "texto": "[EN] FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+   "fecha": "16 nov",
+   "texto": "[EN] Australian retail giant Coles investigates cybersecurity incident",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-   "ts": 1794767393000,
-   "resumen": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments."
+   "url": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
+   "ts": 1794827889000,
+   "resumen": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores."
   },
   {
-   "fecha": "15 nov",
-   "texto": "[EN] TSMC employee data breach linked to cloud provider",
+   "fecha": "16 nov",
+   "texto": "[EN] Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
-   "ts": 1794756228000,
-   "resumen": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction."
+   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
+   "ts": 1794826800000,
+   "resumen": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some interesting cybersecurity changes."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "[EN] SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+   "ts": 1794821577000,
+   "resumen": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "[EN] New NoisyTCP vulnerability lets attackers crash Linux servers",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+   "ts": 1794821404000,
+   "resumen": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "[EN] Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+   "ts": 1794814461000,
+   "resumen": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "[EN] BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+   "ts": 1794812014000,
+   "resumen": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server."
   },
   {
    "fecha": "15 nov",
@@ -26,44 +58,12 @@
    "resumen": "Una vulnerabilidad revelada hoy probablemente ya haya sido explotada en entornos reales. El informe M-Trends 2026 de Mandiant sitúa la mediana del intervalo entre la divulgación y la explotación en"
   },
   {
-   "fecha": "15 nov",
-   "texto": "[EN] Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-   "ts": 1794730924000,
-   "resumen": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI."
-  },
-  {
-   "fecha": "14 nov",
-   "texto": "[EN] Cursor confirms security breach led to malicious Claude Code extension",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
-   "ts": 1794677245000,
-   "resumen": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI."
-  },
-  {
    "fecha": "14 nov",
    "texto": "PostgreSQL corrige 52 vulnerabilidades, incluido un fallo de 22 años que permite RCE tras la autenticación.",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/postgresql-corrige-52-vulnerabilidades.html",
    "ts": 1794668940000,
    "resumen": "Una vulnerabilidad de confusión de tipos en PostgreSQL permite que un usuario de la base de datos, con capacidad para crear objetos, ejecute código en el servidor. Las actualizaciones publicadas corrigen este fallo, junto con otras"
-  },
-  {
-   "fecha": "14 nov",
-   "texto": "[EN] Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-   "ts": 1794659915000,
-   "resumen": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation."
-  },
-  {
-   "fecha": "13 nov",
-   "texto": "[EN] PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-   "ts": 1794588788000,
-   "resumen": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server."
   },
   {
    "fecha": "13 nov",
