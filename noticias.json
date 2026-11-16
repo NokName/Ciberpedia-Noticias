@@ -1,53 +1,93 @@
 {
- "generado": "2026-11-16T11:23:43Z",
+ "generado": "2026-11-16T22:05:46Z",
  "noticias": [
   {
    "fecha": "16 nov",
-   "texto": "[EN] Australian retail giant Coles investigates cybersecurity incident",
+   "texto": "[EN] Google Project Zero cuts bug disclosures to 30 days amid AI threats",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
-   "ts": 1794827889000,
-   "resumen": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores."
+   "url": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
+   "ts": 1794864704000,
+   "resumen": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation."
   },
   {
    "fecha": "16 nov",
-   "texto": "[EN] Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
+   "texto": "[EN] California sues OpenAI over AI agents escaping sandboxes, hacking firms",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
-   "ts": 1794826800000,
-   "resumen": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some interesting cybersecurity changes."
+   "url": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
+   "ts": 1794862784000,
+   "resumen": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world organizations."
   },
   {
    "fecha": "16 nov",
-   "texto": "[EN] SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
-   "ts": 1794821577000,
-   "resumen": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "[EN] New NoisyTCP vulnerability lets attackers crash Linux servers",
+   "texto": "[EN] Barracuda links cloud breach to ARTEX AI-powered cyberattack",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
-   "ts": 1794821404000,
-   "resumen": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations."
+   "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+   "ts": 1794859033000,
+   "resumen": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework."
   },
   {
    "fecha": "16 nov",
-   "texto": "[EN] Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-   "ts": 1794814461000,
-   "resumen": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records."
+   "texto": "PHP2Shell: Historia de una vulnerabilidad crítica, un embargo roto y un investigador que decidió no jugar según las reglas",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/php2shell-historia-de-una.html",
+   "ts": 1794848700000,
+   "resumen": "El 21 de octubre de 2026 PHP publicó parches de emergencia para dos vulnerabilidades de ejecución remota de código (RCE) no autenticada en el núcleo del lenguaje. Ambas puntuadas con CVSS 9.2. El apodo que se impuso en"
   },
   {
    "fecha": "16 nov",
-   "texto": "[EN] BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+   "texto": "[EN] Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-   "ts": 1794812014000,
-   "resumen": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server."
+   "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+   "ts": 1794837600000,
+   "resumen": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "[EN] ⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+   "ts": 1794835640000,
+   "resumen": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "Vulnerabilidades de referencia directa insegura a objetos en myGESTIÓN y STEL Order",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/vulnerabilidades-de-referencia-directa-insegura-objetos-en-mygestion-y-stel",
+   "ts": 1794833171000,
+   "resumen": "INCIBE ha coordinado la publicación de dos vulnerabilidades que afectan a myGESTIÓN y STEL Order, dos aplicaciones web de gestión empresarial. Ambas tienen una severidad alta y han sido descubiertas por Manuel Gomez Argandoña.\n\nAfecta a: Aplicaciones web de myGESTIÓN (Control Horario) y STEL Order (Tempo).\n\nQué hacer: myGESTIÓN confirma la corrección en su módulo de Control Horario. STEL Order. No hay solución reportada por el momento."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "Omisión de autenticación en SmarterMail de SmarterTools",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/empresas/avisos/omision-de-autenticacion-en-smartermail-de-smartertools",
+   "ts": 1794832914000,
+   "resumen": "Shaber Tseng ha informado sobre 1 vulnerabilidad de severidad crítica en SmarterMail de SmarterTools. El fallo podría permitir a un atacante acceder al servicio de correo sin autorización. Identificador INCIBE-2026-899\n\nAfecta a: Instalaciones de SmarterMail anteriores a la compilación 9735 que utilicen contraseñas de aplicación.\n\nQué hacer: Actualizar SmarterMail a la compilación 9735 o posterior."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "Múltiples vulnerabilidades en ScreenConnect y en la extensión RMM+",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-screenconnect-y-en-la-extension-rmm",
+   "ts": 1794832912000,
+   "resumen": "ConnectWise ha publicado 2 vulnerabilidades de severidad crítica asociadas a ScreenConnect, una en el cliente y otra en la extensión de terceros RMM+. Estas podrían permitir transferir y ejecutar archivos en determinadas sesiones o enviar comandos a los equipos gestionados. Identificador INCIBE-2026-897\n\nAfecta a: Clientes de ConnectWise ScreenConnect anteriores a la versión 26.6.5, tanto en instalaciones locales como en la nube. Extensión RMM+ de DataComm para ScreenConnect.\n\nQué hacer: Actualizar cada cliente técnico de ScreenConnect a la versión 26.6.5 o posterior y comprobar la versión en cada equipo, también en despliegues en la nube. Consultar el boletín de actualización de ScreenConnect."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "[EN] Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+   "ts": 1794832461000,
+   "resumen": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "FaceStealer: DeepFake de Corea del Norte para robar millones",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/facestealer-deepfake-de-corea-del-norte.html",
+   "ts": 1794831000000,
+   "resumen": "El FBI de EE.UU. ha determinado que actores de amenazas vinculados a la República Popular Democrática de Corea (RPDC, también conocida como Corea del Norte) han robado más de 400 millones de dólares en criptomonedas en los últimos"
   },
   {
    "fecha": "15 nov",
@@ -58,44 +98,12 @@
    "resumen": "Una vulnerabilidad revelada hoy probablemente ya haya sido explotada en entornos reales. El informe M-Trends 2026 de Mandiant sitúa la mediana del intervalo entre la divulgación y la explotación en"
   },
   {
-   "fecha": "14 nov",
-   "texto": "PostgreSQL corrige 52 vulnerabilidades, incluido un fallo de 22 años que permite RCE tras la autenticación.",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/postgresql-corrige-52-vulnerabilidades.html",
-   "ts": 1794668940000,
-   "resumen": "Una vulnerabilidad de confusión de tipos en PostgreSQL permite que un usuario de la base de datos, con capacidad para crear objetos, ejecute código en el servidor. Las actualizaciones publicadas corrigen este fallo, junto con otras"
-  },
-  {
-   "fecha": "13 nov",
-   "texto": "AlphaProof Code: verificación formal y matemática de la seguridad de un software",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/alphaproof-code-verificacion-formal-y.html",
-   "ts": 1794585600000,
-   "resumen": "Cómo los investigadores de Google DeepMind crearon un nuevo marco basado en agentes que permitió verificar formalmente el código del protocolo criptográfico de Signal, un desafío de seguridad que durante mucho tiempo se"
-  },
-  {
    "fecha": "13 nov",
    "texto": "GTA 6 está por llegar, pero los estafadores ya aprovechan la expectativa",
    "fuente": "welivesecurity.com",
    "url": "https://www.welivesecurity.com/es/estafas-enganos/gta-6-estafas-descargas-maliciosas/",
    "ts": 1794576317000,
    "resumen": "Aprovechando la expectativa por GTA 6, los ciberdelincuentes despliegan distintas estafas que van desde descargas con malware y filtraciones falsas hasta tiendas fraudulentas y supuestas ofertas de acceso anticipado"
-  },
-  {
-   "fecha": "13 nov",
-   "texto": "Múltiples vulnerabilidades en productos de Check Point",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-check-point-0",
-   "ts": 1794566170000,
-   "resumen": "Check Point ha publicado un boletín sobre 5 vulnerabilidades, 2 de severidad crítica, 2 altas y 1 baja, en sus productos de seguridad. Check Point Research observó ataques entre el 30 de octubre y el 4 de noviembre contra Security Gateways sin parche con el portal Mobile Access expuesto a Internet.\n\nAfecta a: PHP2Shell. Check Point Security Gateways, incluidos Force Firewalls y Cloud Firewalls, de R80 a R82.20 con interfaces web vulnerables.\n\nQué hacer: Instalar cuanto antes el Jumbo Hotfix Accumulator de noviembre en los servidores de gestión y Security Gateways afectados. Priorizar los equipos con el portal Mobile Access expuesto a Internet. R82.20 Take 14."
-  },
-  {
-   "fecha": "13 nov",
-   "texto": "Múltiples vulnerabilidades en productos de Citrix",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-3",
-   "ts": 1794563665000,
-   "resumen": "Citrix ha publicado 29 vulnerabilidades, de las cuales 10 son críticas. En caso de ser explotadas podrían permitir a un atacante omitir los controles de autenticación o provocar una denegación de servicio Identificador INCIBE-2026-863\n\nAfecta a: Versiones con soporte de los productos gestionados por el cliente: Citrix NetScaler ADC y Citrix NetScaler Gateway 14.1, anteriores a 14.1-73.57.\n\nQué hacer: Actualizar cuanto antes a las siguientes versiones o a una posterior de la rama correspondiente: Citrix NetScaler ADC y Citrix NetScaler Gateway 14.1 a 14.1-73.57."
   },
   {
    "fecha": "13 nov",
@@ -128,14 +136,6 @@
    "url": "https://www.welivesecurity.com/es/investigaciones/turla-cereal-microsoft-exchange/",
    "ts": 1794327028000,
    "resumen": "ESET Research describe el conjunto de herramientas Cereal de Turla, un sofisticado framework para Microsoft Exchange que recopila correos electrónicos, ejecuta comandos en memoria y reutiliza el servidor comprometido como infraestructura de C&C."
-  },
-  {
-   "fecha": "3 nov",
-   "texto": "Múltiples vulnerabilidades en Veeam Management Pack para Microsoft System Center",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-veeam-management-pack-para-microsoft-system-center",
-   "ts": 1793712282000,
-   "resumen": "Veeam ha publicado 3 vulnerabilidades, 1 de severidad crítica y 2 altas, detectadas durante pruebas internas en Veeam Management Pack for Microsoft System Center. Su explotación podría permitir a un atacante ejecutar instrucciones maliciosas a distancia y comprometer los servidores afectados. Identificador INCIBE-2026-824\n\nAfecta a: Veeam Management Pack para Microsoft System Center 9.1 y todas las compilaciones anteriores de la rama 9, incluidas las que tienen instalado el parche de compatibilidad con Veeam Backup & Replication…\n\nQué hacer: Actualizar a Veeam Management Pack for Microsoft System Center 13.1, compilación 13.1.0.334."
   },
   {
    "fecha": "23 oct",
