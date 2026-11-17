@@ -1,29 +1,101 @@
 {
- "generado": "2026-11-17T04:30:04Z",
+ "generado": "2026-11-17T14:27:25Z",
  "noticias": [
   {
    "fecha": "17 nov",
-   "texto": "[EN] Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+   "texto": "[EN] Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+   "ts": 1794917676000,
+   "resumen": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+   "ts": 1794914418000,
+   "resumen": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2)."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Microsoft testing Remote Lock for lost or stolen Windows devices",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
-   "ts": 1794881537000,
-   "resumen": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices."
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
+   "ts": 1794914391000,
+   "resumen": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "Optimizely, como atacar 178 organizaciones con UN JavaScript",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/optimizely-como-atacar-178.html",
+   "ts": 1794914100000,
+   "resumen": "El 16 de noviembre de 2026, unos atacantes insertaron código JavaScript malicioso en la plataforma de experimentación web Optimizely. El código llegó a los visitantes de 178 organizaciones."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+   "ts": 1794913651000,
+   "resumen": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Court clears brothers of $25 million Ethereum crypto heist charges",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+   "ts": 1794908662000,
+   "resumen": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "Múltiples vulnerabilidades en equipos de red de Zyxel",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-equipos-de-red-de-zyxel",
+   "ts": 1794905055000,
+   "resumen": "Adam Simuntis y Joni Gadd han informado sobre 2 vulnerabilidades, 1 de severidad crítica y 1 alta, en determinados equipos de red de Zyxel. Los fallos podrían permitir que un atacante ejecute órdenes en el equipo afectado. Identificador INCIBE-2026-907\n\nAfecta a: Versiones de firmware de estos modelos, según las tablas de Zyxel por vulnerabilidad.\n\nQué hacer: Identificar el modelo e instalar la versión corregida que se indica en la columna Patch availability del boletín de Zyxel."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "Múltiples vulnerabilidades en productos de Onyx Graphics",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-productos-de-onyx-graphics",
+   "ts": 1794905054000,
+   "resumen": "Onyx Graphics, en coordinación con el equipo de seguridad de Canon EMEA, ha publicado información sobre 2 vulnerabilidades de severidad crítica en Java, componente incluido en sus productos. Un atacante que pueda interceptar la conexión podría hacerse pasar por un servidor y leer o alterar los datos intercambiados. Identificador INCIBE-2026-906\n\nAfecta a: ONYX Thrive, ONYX PosterShop y ONYX RIPCenter 25.5 para Windows. ONYX Data Access para Windows, en su versión actualmente distribuida. Versiones anteriores de estos productos, según Onyx Graphics.\n\nQué hacer: Solicitar a ONYX Support la herramienta ONYX eMudhra Trust Update, indicando el aviso ONYX-SA-2026-001. Ejecutarla como administrador y reiniciar los programas y servicios que indique."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "Asignación incorrecta de permisos en productos de Check Point",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/asignacion-incorrecta-de-permisos-en-productos-de-check-point",
+   "ts": 1794905053000,
+   "resumen": "Check Point ha publicado 1 vulnerabilidad de severidad alta en el servicio DynamicCLI de Gaia OS. El fabricante ha confirmado su explotación en pasarelas de seguridad. Identificador INCIBE-2026-904\n\nAfecta a: Productos de Check Point con Gaia OS en las ramas R80.30 a R82.20, según el fabricante.\n\nQué hacer: Instalar el Jumbo Hotfix de noviembre correspondiente a la rama en uso, o una compilación posterior que incluya la corrección. R82.20 Take 14. R82.10 Take 52. R82 Take 132. R81.20 Take 174."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "Múltiples vulnerabilidades en MiCollab de Mitel",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-micollab-de-mitel-2",
+   "ts": 1794905052000,
+   "resumen": "Mitel ha publicado 5 vulnerabilidades, 2 de severidad crítica y 3 medias, en el componente AWV de MiCollab. Las vulnerabilidades críticas podrían permitir a un atacante remoto sin autenticar ejecutar comandos en el sistema. Identificador INCIBE-2026-903\n\nAfecta a: Mitel MiCollab, versión 10.3 (10.3.0.18) y versiones anteriores que todavía tienen soporte. Las vulnerabilidades afectan al componente de conferencias de audio, web y vídeo (AWV).\n\nQué hacer: Actualizar MiCollab a 10.3 (10.3.0.18) y aplicar el parche indicado en el artículo KB000129195, o actualizar a una versión posterior."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Uber notifies drivers of data breach affecting nearly 150,000 people",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
+   "ts": 1794904542000,
+   "resumen": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October."
   },
   {
    "fecha": "16 nov",
-   "texto": "[EN] Gemini AI agents repeatedly bypassed safeguards to attack real website",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
-   "ts": 1794869640000,
-   "resumen": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "[EN] Google Project Zero cuts bug disclosures to 30 days amid AI threats",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
-   "ts": 1794864704000,
-   "resumen": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation."
+   "texto": "¿Es seguro subir tu pasaporte o documento de identidad a internet?",
+   "fuente": "welivesecurity.com",
+   "url": "https://www.welivesecurity.com/es/privacidad/es-seguro-subir-pasaporte-documento-identidad-en-linea/",
+   "ts": 1794852625000,
+   "resumen": "A veces no tenemos otra opción que compartir algunos de nuestros documentos de identificación y datos biométricos más sensibles con servicios de terceros. Te explicamos cómo minimizar los riesgos."
   },
   {
    "fecha": "16 nov",
@@ -35,67 +107,11 @@
   },
   {
    "fecha": "16 nov",
-   "texto": "[EN] Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-   "ts": 1794837600000,
-   "resumen": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "[EN] ⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-   "ts": 1794835640000,
-   "resumen": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "Vulnerabilidades de referencia directa insegura a objetos en myGESTIÓN y STEL Order",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/vulnerabilidades-de-referencia-directa-insegura-objetos-en-mygestion-y-stel",
-   "ts": 1794833171000,
-   "resumen": "INCIBE ha coordinado la publicación de dos vulnerabilidades que afectan a myGESTIÓN y STEL Order, dos aplicaciones web de gestión empresarial. Ambas tienen una severidad alta y han sido descubiertas por Manuel Gomez Argandoña.\n\nAfecta a: Aplicaciones web de myGESTIÓN (Control Horario) y STEL Order (Tempo).\n\nQué hacer: myGESTIÓN confirma la corrección en su módulo de Control Horario. STEL Order. No hay solución reportada por el momento."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "Omisión de autenticación en SmarterMail de SmarterTools",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/empresas/avisos/omision-de-autenticacion-en-smartermail-de-smartertools",
-   "ts": 1794832914000,
-   "resumen": "Shaber Tseng ha informado sobre 1 vulnerabilidad de severidad crítica en SmarterMail de SmarterTools. El fallo podría permitir a un atacante acceder al servicio de correo sin autorización. Identificador INCIBE-2026-899\n\nAfecta a: Instalaciones de SmarterMail anteriores a la compilación 9735 que utilicen contraseñas de aplicación.\n\nQué hacer: Actualizar SmarterMail a la compilación 9735 o posterior."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "Múltiples vulnerabilidades en ScreenConnect y en la extensión RMM+",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-screenconnect-y-en-la-extension-rmm",
-   "ts": 1794832912000,
-   "resumen": "ConnectWise ha publicado 2 vulnerabilidades de severidad crítica asociadas a ScreenConnect, una en el cliente y otra en la extensión de terceros RMM+. Estas podrían permitir transferir y ejecutar archivos en determinadas sesiones o enviar comandos a los equipos gestionados. Identificador INCIBE-2026-897\n\nAfecta a: Clientes de ConnectWise ScreenConnect anteriores a la versión 26.6.5, tanto en instalaciones locales como en la nube. Extensión RMM+ de DataComm para ScreenConnect.\n\nQué hacer: Actualizar cada cliente técnico de ScreenConnect a la versión 26.6.5 o posterior y comprobar la versión en cada equipo, también en despliegues en la nube. Consultar el boletín de actualización de ScreenConnect."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "[EN] Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
-   "ts": 1794832461000,
-   "resumen": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week."
-  },
-  {
-   "fecha": "16 nov",
    "texto": "FaceStealer: DeepFake de Corea del Norte para robar millones",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/facestealer-deepfake-de-corea-del-norte.html",
    "ts": 1794831000000,
    "resumen": "El FBI de EE.UU. ha determinado que actores de amenazas vinculados a la República Popular Democrática de Corea (RPDC, también conocida como Corea del Norte) han robado más de 400 millones de dólares en criptomonedas en los últimos"
-  },
-  {
-   "fecha": "15 nov",
-   "texto": "El tiempo medio transcurrido desde la divulgación de una vulnerabilidad hasta su explotación pasó de 771 días a \"menos siete días\"",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/el-tiempo-medio-transcurrido-desde-la.html",
-   "ts": 1794751200000,
-   "resumen": "Una vulnerabilidad revelada hoy probablemente ya haya sido explotada en entornos reales. El informe M-Trends 2026 de Mandiant sitúa la mediana del intervalo entre la divulgación y la explotación en"
   },
   {
    "fecha": "13 nov",
@@ -120,22 +136,6 @@
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
    "ts": 1794528000000,
    "resumen": "CISA ha añadido CVE-2026-123039 (Check Point Multiple Products) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-13. Nombre del fallo: Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability.\n\nDescripción de CISA (en inglés): Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-16)."
-  },
-  {
-   "fecha": "11 nov",
-   "texto": "Validación incorrecta de entradas en AXIS Camera Station de Axis Communications",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/empresas/avisos/validacion-incorrecta-de-entradas-en-axis-camera-station-de-axis-communications",
-   "ts": 1794386461000,
-   "resumen": "Ryan Vinton, del programa de recompensas de AXIS Camera Station Pro, ha informado sobre una vulnerabilidad crítica que podría permitir a un atacante con permisos limitados comprometer el sistema de videovigilancia. Identificador INCIBE-2026-849\n\nAfecta a: AXIS Camera Station Pro, versiones anteriores a 6.17. AXIS Camera Station 5, versiones anteriores a 5.59 SR 2.\n\nQué hacer: AXIS Camera Station Pro: actualizar a 6.17 o posterior. AXIS Camera Station 5: actualizar a 5.59 SR 2 o posterior. Detalle CVE-2026-13312: el software no comprueba correctamente el tipo de determinados datos de entrada."
-  },
-  {
-   "fecha": "10 nov",
-   "texto": "Cereal: cómo Turla se oculta dentro de servidores Microsoft Exchange",
-   "fuente": "welivesecurity.com",
-   "url": "https://www.welivesecurity.com/es/investigaciones/turla-cereal-microsoft-exchange/",
-   "ts": 1794327028000,
-   "resumen": "ESET Research describe el conjunto de herramientas Cereal de Turla, un sofisticado framework para Microsoft Exchange que recopila correos electrónicos, ejecuta comandos en memoria y reutiliza el servidor comprometido como infraestructura de C&C."
   },
   {
    "fecha": "23 oct",
