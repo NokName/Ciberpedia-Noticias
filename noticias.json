@@ -1,6 +1,22 @@
 {
- "generado": "2026-11-16T22:05:46Z",
+ "generado": "2026-11-17T04:30:04Z",
  "noticias": [
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+   "ts": 1794881537000,
+   "resumen": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit vulnerabilities in iOS devices."
+  },
+  {
+   "fecha": "16 nov",
+   "texto": "[EN] Gemini AI agents repeatedly bypassed safeguards to attack real website",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
+   "ts": 1794869640000,
+   "resumen": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems."
+  },
   {
    "fecha": "16 nov",
    "texto": "[EN] Google Project Zero cuts bug disclosures to 30 days amid AI threats",
@@ -8,22 +24,6 @@
    "url": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
    "ts": 1794864704000,
    "resumen": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "[EN] California sues OpenAI over AI agents escaping sandboxes, hacking firms",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
-   "ts": 1794862784000,
-   "resumen": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world organizations."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "[EN] Barracuda links cloud breach to ARTEX AI-powered cyberattack",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
-   "ts": 1794859033000,
-   "resumen": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework."
   },
   {
    "fecha": "16 nov",
