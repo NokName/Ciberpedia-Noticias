@@ -1,6 +1,62 @@
 {
- "generado": "2026-11-17T14:27:25Z",
+ "generado": "2026-11-17T22:53:49Z",
  "noticias": [
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Cloud keys leaked in Docker Hub images are stolen within seconds",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+   "ts": 1794950837000,
+   "resumen": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Japan takes Fugaku supercomputer offlline after cyberattack",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+   "ts": 1794948681000,
+   "resumen": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+   "ts": 1794944060000,
+   "resumen": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Apple reports outages affecting iCloud Mail, AppleCare and more",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+   "ts": 1794943447000,
+   "resumen": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork."
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "Vulnerabilidades críticas en Java SE y OpenJDK. Bienvenida #Java4Shell (CVE-2026-114938)",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidades-criticas-en-java-se-y.html",
+   "ts": 1794941576000,
+   "resumen": "Oracle se prepara para publicar parches de seguridad para 11 vulnerabilidades en Java SE el martes 17 de noviembre de 2026. Todas ellas pueden ser explotadas de forma remota y sin necesidad de"
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "NoisyTCP: vulnerabilidad en el kernel de Linux permite provocar DoS remoto",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/noisytcp-vulnerabilidad-en-el-kernel-de.html",
+   "ts": 1794931200000,
+   "resumen": "NoisyTCP es una vulnerabilidad en el kernel de Linux que ha estado presente durante 11 años. Permite que un atacante remoto provoque el bloqueo (caída) de un servidor sin necesidad de iniciar sesión. El fallo está registrado bajo el"
+  },
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+   "ts": 1794928648000,
+   "resumen": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram."
+  },
   {
    "fecha": "17 nov",
    "texto": "[EN] Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
@@ -11,43 +67,11 @@
   },
   {
    "fecha": "17 nov",
-   "texto": "[EN] New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
-   "ts": 1794914418000,
-   "resumen": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2)."
-  },
-  {
-   "fecha": "17 nov",
-   "texto": "[EN] Microsoft testing Remote Lock for lost or stolen Windows devices",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
-   "ts": 1794914391000,
-   "resumen": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them."
-  },
-  {
-   "fecha": "17 nov",
    "texto": "Optimizely, como atacar 178 organizaciones con UN JavaScript",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/optimizely-como-atacar-178.html",
    "ts": 1794914100000,
    "resumen": "El 16 de noviembre de 2026, unos atacantes insertaron código JavaScript malicioso en la plataforma de experimentación web Optimizely. El código llegó a los visitantes de 178 organizaciones."
-  },
-  {
-   "fecha": "17 nov",
-   "texto": "[EN] Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
-   "ts": 1794913651000,
-   "resumen": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents."
-  },
-  {
-   "fecha": "17 nov",
-   "texto": "[EN] Court clears brothers of $25 million Ethereum crypto heist charges",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
-   "ts": 1794908662000,
-   "resumen": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain."
   },
   {
    "fecha": "17 nov",
@@ -83,11 +107,11 @@
   },
   {
    "fecha": "17 nov",
-   "texto": "[EN] Uber notifies drivers of data breach affecting nearly 150,000 people",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
-   "ts": 1794904542000,
-   "resumen": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October."
+   "texto": "CVE-2026-115731 en Perforce Puppet Enterprise se está explotando. Plazo de CISA: 2026-12-01.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+   "ts": 1794873600000,
+   "resumen": "CISA ha añadido CVE-2026-115731 (Perforce Puppet Enterprise) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-17. Nombre del fallo: Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability.\n\nDescripción de CISA (en inglés): Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-12-01)."
   },
   {
    "fecha": "16 nov",
@@ -96,22 +120,6 @@
    "url": "https://www.welivesecurity.com/es/privacidad/es-seguro-subir-pasaporte-documento-identidad-en-linea/",
    "ts": 1794852625000,
    "resumen": "A veces no tenemos otra opción que compartir algunos de nuestros documentos de identificación y datos biométricos más sensibles con servicios de terceros. Te explicamos cómo minimizar los riesgos."
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "PHP2Shell: Historia de una vulnerabilidad crítica, un embargo roto y un investigador que decidió no jugar según las reglas",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/php2shell-historia-de-una.html",
-   "ts": 1794848700000,
-   "resumen": "El 21 de octubre de 2026 PHP publicó parches de emergencia para dos vulnerabilidades de ejecución remota de código (RCE) no autenticada en el núcleo del lenguaje. Ambas puntuadas con CVSS 9.2. El apodo que se impuso en"
-  },
-  {
-   "fecha": "16 nov",
-   "texto": "FaceStealer: DeepFake de Corea del Norte para robar millones",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/facestealer-deepfake-de-corea-del-norte.html",
-   "ts": 1794831000000,
-   "resumen": "El FBI de EE.UU. ha determinado que actores de amenazas vinculados a la República Popular Democrática de Corea (RPDC, también conocida como Corea del Norte) han robado más de 400 millones de dólares en criptomonedas en los últimos"
   },
   {
    "fecha": "13 nov",
@@ -128,14 +136,6 @@
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
    "ts": 1794528000000,
    "resumen": "CISA ha añadido CVE-2026-114713 (UnrealIRCd UnrealIRCd) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-13. Nombre del fallo: UnrealIRCd Improper Neutralization of Delimiters Vulnerability.\n\nDescripción de CISA (en inglés): UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-16)."
-  },
-  {
-   "fecha": "13 nov",
-   "texto": "CVE-2026-123039 en Check Point Multiple Products se está explotando. Plazo de CISA: 2026-11-16.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
-   "ts": 1794528000000,
-   "resumen": "CISA ha añadido CVE-2026-123039 (Check Point Multiple Products) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-13. Nombre del fallo: Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability.\n\nDescripción de CISA (en inglés): Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-16)."
   },
   {
    "fecha": "23 oct",
