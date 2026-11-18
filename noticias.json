@@ -1,6 +1,14 @@
 {
- "generado": "2026-11-17T22:53:49Z",
+ "generado": "2026-11-18T04:24:07Z",
  "noticias": [
+  {
+   "fecha": "17 nov",
+   "texto": "[EN] Critical Java4Shell flaw allows RCE attacks on major Java applications",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+   "ts": 1794956661000,
+   "resumen": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak."
+  },
   {
    "fecha": "17 nov",
    "texto": "[EN] Cloud keys leaked in Docker Hub images are stolen within seconds",
@@ -24,14 +32,6 @@
    "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
    "ts": 1794944060000,
    "resumen": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company."
-  },
-  {
-   "fecha": "17 nov",
-   "texto": "[EN] Apple reports outages affecting iCloud Mail, AppleCare and more",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
-   "ts": 1794943447000,
-   "resumen": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork."
   },
   {
    "fecha": "17 nov",
