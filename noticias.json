@@ -1,6 +1,62 @@
 {
- "generado": "2026-11-18T14:01:34Z",
+ "generado": "2026-11-18T21:58:25Z",
  "noticias": [
+  {
+   "fecha": "18 nov",
+   "texto": "[EN] Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+   "ts": 1795034972000,
+   "resumen": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers."
+  },
+  {
+   "fecha": "18 nov",
+   "texto": "[EN] Data breach impacts 40 Irish credit unions in reported IT provider hack",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+   "ts": 1795030773000,
+   "resumen": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland."
+  },
+  {
+   "fecha": "18 nov",
+   "texto": "[EN] 10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+   "ts": 1795026677000,
+   "resumen": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today."
+  },
+  {
+   "fecha": "18 nov",
+   "texto": "[EN] F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+   "ts": 1795025739000,
+   "resumen": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts."
+  },
+  {
+   "fecha": "18 nov",
+   "texto": "[EN] Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+   "ts": 1795021845000,
+   "resumen": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF)"
+  },
+  {
+   "fecha": "18 nov",
+   "texto": "[EN] Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+   "ts": 1795021122000,
+   "resumen": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems."
+  },
+  {
+   "fecha": "18 nov",
+   "texto": "Siete vulnerabilidades críticas en NGINX permiten RCE #Nginx2Root",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/siete-vulnerabilidades-criticas-en-nginx.html",
+   "ts": 1795019055000,
+   "resumen": "Wiz Research, Ikotas Labs, Metnir, y Rapid7 descubrieron, de forma independiente, dos vulnerabilidades críticas de ejecución remota de código en NGINX. Por su parte,"
+  },
   {
    "fecha": "18 nov",
    "texto": "Qué pasó con los servicios de Microsoft 365 [Informe preliminar]",
@@ -8,54 +64,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/que-paso-con-los-servicios-de-microsoft.html",
    "ts": 1795007520000,
    "resumen": "Microsoft afirma que un error de software introducido en julio provocó la interrupción de Microsoft 365 a nivel mundial la semana pasada, desencadenando un fallo en cascada que dejó inoperativos más del 80% de sus servidores de"
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "[EN] New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-   "ts": 1795004910000,
-   "resumen": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "[EN] AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-   "ts": 1795004100000,
-   "resumen": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "[EN] Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-   "ts": 1795002949000,
-   "resumen": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "[EN] Dizigom illegal streaming service with 21M monthly visits shuts down",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
-   "ts": 1795002625000,
-   "resumen": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "[EN] Apache warns of Roller RCE vulnerability exploited in attacks",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
-   "ts": 1794998105000,
-   "resumen": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "[EN] Microsoft announces Windows Server 2028 with hardened security",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
-   "ts": 1794993871000,
-   "resumen": "Microsoft has announced Windows Server 2028, the next major release of its server operating system, at the Ignite 2026 conference on Tuesday."
   },
   {
    "fecha": "18 nov",
@@ -74,20 +82,28 @@
    "resumen": "Matteo Rizzo, de Google, ha informado sobre 1 vulnerabilidad de severidad crítica en la ROM de arranque del PSP de AMD. Un atacante con acceso local a la memoria flash SPI podría ejecutar firmware sin firmar con los máximos privilegios del procesador de seguridad. Esto podría exponer información, comprometer la integridad de la cadena de arranque o dejar el sistema inoperativo de forma persistente.\n\nAfecta a: Procesadores AMD Zeppelin de las arquitecturas Zen de primera generación (Zen 1) y Zen+. La vulnerabilidad reside en la ROM de arranque del procesador de seguridad de la plataforma (PSP).\n\nQué hacer: AMD no prevé publicar una corrección ni una mitigación, ya que la ROM de arranque afectada es inmutable."
   },
   {
-   "fecha": "17 nov",
-   "texto": "NoisyTCP: vulnerabilidad en el kernel de Linux permite provocar DoS remoto",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/noisytcp-vulnerabilidad-en-el-kernel-de.html",
-   "ts": 1794931200000,
-   "resumen": "NoisyTCP es una vulnerabilidad en el kernel de Linux que ha estado presente durante 11 años. Permite que un atacante remoto provoque el bloqueo (caída) de un servidor sin necesidad de iniciar sesión. El fallo está registrado bajo el"
+   "fecha": "18 nov",
+   "texto": "CVE-2024-10441 en Synology DiskStation Manager (DSM) se está explotando. Plazo de CISA: 2026-11-21.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
+   "ts": 1794960000000,
+   "resumen": "CISA ha añadido CVE-2024-10441 (Synology DiskStation Manager (DSM)) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-18. Nombre del fallo: Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability.\n\nDescripción de CISA (en inglés): Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-21)."
+  },
+  {
+   "fecha": "18 nov",
+   "texto": "CVE-2026-40217 en BerriAI LiteLLM se está explotando. Plazo de CISA: 2026-12-02.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
+   "ts": 1794960000000,
+   "resumen": "CISA ha añadido CVE-2026-40217 (BerriAI LiteLLM) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-18. Nombre del fallo: BerriAI LiteLLM Unprotected Alternate Channel Vulnerability.\n\nDescripción de CISA (en inglés): BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-12-02)."
   },
   {
    "fecha": "17 nov",
-   "texto": "Optimizely, como atacar 178 organizaciones con UN JavaScript",
+   "texto": "Vulnerabilidades críticas en Java SE y OpenJDK. Bienvenida #Java4Shell (CVE-2026-114938)",
    "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/optimizely-como-atacar-178.html",
-   "ts": 1794914100000,
-   "resumen": "El 16 de noviembre de 2026, unos atacantes insertaron código JavaScript malicioso en la plataforma de experimentación web Optimizely. El código llegó a los visitantes de 178 organizaciones."
+   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidades-criticas-en-java-se-y.html",
+   "ts": 1794941576000,
+   "resumen": "Oracle se prepara para publicar parches de seguridad para 11 vulnerabilidades en Java SE el martes 17 de noviembre de 2026. Todas ellas pueden ser explotadas de forma remota y sin necesidad de"
   },
   {
    "fecha": "17 nov",
@@ -106,14 +122,6 @@
    "resumen": "Onyx Graphics, en coordinación con el equipo de seguridad de Canon EMEA, ha publicado información sobre 2 vulnerabilidades de severidad crítica en Java, componente incluido en sus productos. Un atacante que pueda interceptar la conexión podría hacerse pasar por un servidor y leer o alterar los datos intercambiados. Identificador INCIBE-2026-906\n\nAfecta a: ONYX Thrive, ONYX PosterShop y ONYX RIPCenter 25.5 para Windows. ONYX Data Access para Windows, en su versión actualmente distribuida. Versiones anteriores de estos productos, según Onyx Graphics.\n\nQué hacer: Solicitar a ONYX Support la herramienta ONYX eMudhra Trust Update, indicando el aviso ONYX-SA-2026-001. Ejecutarla como administrador y reiniciar los programas y servicios que indique."
   },
   {
-   "fecha": "17 nov",
-   "texto": "CVE-2026-115731 en Perforce Puppet Enterprise se está explotando. Plazo de CISA: 2026-12-01.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
-   "ts": 1794873600000,
-   "resumen": "CISA ha añadido CVE-2026-115731 (Perforce Puppet Enterprise) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-17. Nombre del fallo: Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability.\n\nDescripción de CISA (en inglés): Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-12-01)."
-  },
-  {
    "fecha": "16 nov",
    "texto": "¿Es seguro subir tu pasaporte o documento de identidad a internet?",
    "fuente": "welivesecurity.com",
@@ -128,14 +136,6 @@
    "url": "https://www.welivesecurity.com/es/estafas-enganos/gta-6-estafas-descargas-maliciosas/",
    "ts": 1794576317000,
    "resumen": "Aprovechando la expectativa por GTA 6, los ciberdelincuentes despliegan distintas estafas que van desde descargas con malware y filtraciones falsas hasta tiendas fraudulentas y supuestas ofertas de acceso anticipado"
-  },
-  {
-   "fecha": "13 nov",
-   "texto": "CVE-2026-114713 en UnrealIRCd UnrealIRCd se está explotando. Plazo de CISA: 2026-11-16.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-   "ts": 1794528000000,
-   "resumen": "CISA ha añadido CVE-2026-114713 (UnrealIRCd UnrealIRCd) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-13. Nombre del fallo: UnrealIRCd Improper Neutralization of Delimiters Vulnerability.\n\nDescripción de CISA (en inglés): UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-16)."
   },
   {
    "fecha": "23 oct",
