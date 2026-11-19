@@ -1,13 +1,61 @@
 {
- "generado": "2026-11-19T13:12:54Z",
+ "generado": "2026-11-19T21:37:51Z",
  "noticias": [
   {
    "fecha": "19 nov",
-   "texto": "[EN] Drupal patches critical RCE flaw, warns exploits may surface quickly",
+   "texto": "[EN] ASUS warns of critical hard-coded key flaw in Control Center Express",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
-   "ts": 1795093688000,
-   "resumen": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites."
+   "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+   "ts": 1795122959000,
+   "resumen": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+   "ts": 1795114078000,
+   "resumen": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] Transport for London breach exposes 265,000 Oyster card users' data",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
+   "ts": 1795112401000,
+   "resumen": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+   "ts": 1795107596000,
+   "resumen": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] PHP security updates fix 18 flaws, including critical RCE bugs",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+   "ts": 1795105703000,
+   "resumen": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "(Nuevas) vulnerabilidades en PHP permiten ejecución remota de código #phpAfterShell",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/nuevas-vulnerabilidades-en-php-permiten.html",
+   "ts": 1795102171000,
+   "resumen": "La PHP Foundation ha publicado actualizaciones de seguridad para abordar múltiples vulnerabilidades críticas que podrían ser explotadas para lograr la ejecución remota de código en los despliegues afectados, incluida la"
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+   "ts": 1795101487000,
+   "resumen": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560."
   },
   {
    "fecha": "19 nov",
@@ -16,38 +64,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/frameworks-de-ataque-con-ia-que-nunca.html",
    "ts": 1795090560000,
    "resumen": "Resumen para responsables de ciberseguridad Elastic Security Labs analizó cinco marcos ofensivos de código abierto que ponen a un modelo de lenguaje a conducir herramientas de ataque: ARTEX, CyberStrikeAI, Cairn, PentAGI y HexStrike."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "[EN] Everything Is a Web Application, Including Your Firewall",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-   "ts": 1795089143000,
-   "resumen": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "[EN] Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
-   "ts": 1795088760000,
-   "resumen": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "[EN] Microsoft confirms app installation, launch issues after hotpatch",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
-   "ts": 1795084505000,
-   "resumen": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "[EN] Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
-   "ts": 1795080686000,
-   "resumen": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs."
   },
   {
    "fecha": "19 nov",
@@ -66,28 +82,12 @@
    "resumen": "Mitel ha publicado información sobre 4 vulnerabilidades, 3 de severidad crítica en OpenScape y 1 alta en la biblioteca Brotli. Los fallos de OpenScape podrían permitir a un atacante sin autenticar acceder a información sensible o ejecutar comandos. En los productos que procesen datos con la biblioteca Brotli vulnerable, su explotación podría interrumpir el servicio, divulgar información o permitir ejecutar código.\n\nAfecta a: OpenScape 4000: V11 R0.22 a V11 R2.11 y V10 R1.68 o anteriores. OpenScape 4000 Manager: V11 R0.22 a V11 R2.11 y V10 R1.34, R1.42, R1.54 y R1.68.\n\nQué hacer: OpenScape 4000 y Manager. Actualizar a V11 R2.14 o posterior. Para V11 R1.26, aplicar PLT HF5."
   },
   {
-   "fecha": "19 nov",
-   "texto": "[EN] Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
-   "ts": 1795077731000,
-   "resumen": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine."
-  },
-  {
    "fecha": "18 nov",
    "texto": "Siete vulnerabilidades críticas en NGINX (y F5) permiten RCE #Nginx2Root",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/siete-vulnerabilidades-criticas-en-nginx.html",
    "ts": 1795019055000,
    "resumen": "Wiz Research, Ikotas Labs, Metnir, y Rapid7 descubrieron, de forma independiente, dos vulnerabilidades críticas de ejecución remota de código en NGINX. Por su parte,"
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "Qué pasó con los servicios de Microsoft 365 [Informe preliminar]",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/que-paso-con-los-servicios-de-microsoft.html",
-   "ts": 1795007520000,
-   "resumen": "Microsoft afirma que un error de software introducido en julio provocó la interrupción de Microsoft 365 a nivel mundial la semana pasada, desencadenando un fallo en cascada que dejó inoperativos más del 80% de sus servidores de"
   },
   {
    "fecha": "18 nov",
