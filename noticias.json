@@ -1,6 +1,14 @@
 {
- "generado": "2026-11-18T21:58:25Z",
+ "generado": "2026-11-19T03:31:31Z",
  "noticias": [
+  {
+   "fecha": "18 nov",
+   "texto": "[EN] Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+   "ts": 1795043313000,
+   "resumen": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide."
+  },
   {
    "fecha": "18 nov",
    "texto": "[EN] Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
@@ -43,15 +51,7 @@
   },
   {
    "fecha": "18 nov",
-   "texto": "[EN] Microsoft’s Agent Framework PyPI package compromised to steal credentials",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
-   "ts": 1795021122000,
-   "resumen": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "Siete vulnerabilidades críticas en NGINX permiten RCE #Nginx2Root",
+   "texto": "Siete vulnerabilidades críticas en NGINX (y F5) permiten RCE #Nginx2Root",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/siete-vulnerabilidades-criticas-en-nginx.html",
    "ts": 1795019055000,
