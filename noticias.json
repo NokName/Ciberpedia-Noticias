@@ -1,53 +1,77 @@
 {
- "generado": "2026-11-19T03:31:31Z",
+ "generado": "2026-11-19T13:12:54Z",
  "noticias": [
   {
-   "fecha": "18 nov",
-   "texto": "[EN] Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+   "fecha": "19 nov",
+   "texto": "[EN] Drupal patches critical RCE flaw, warns exploits may surface quickly",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
-   "ts": 1795043313000,
-   "resumen": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide."
+   "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
+   "ts": 1795093688000,
+   "resumen": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites."
   },
   {
-   "fecha": "18 nov",
-   "texto": "[EN] Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+   "fecha": "19 nov",
+   "texto": "Frameworks de ataque con IA que nunca piden permiso",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/frameworks-de-ataque-con-ia-que-nunca.html",
+   "ts": 1795090560000,
+   "resumen": "Resumen para responsables de ciberseguridad Elastic Security Labs analizó cinco marcos ofensivos de código abierto que ponen a un modelo de lenguaje a conducir herramientas de ataque: ARTEX, CyberStrikeAI, Cairn, PentAGI y HexStrike."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] Everything Is a Web Application, Including Your Firewall",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+   "ts": 1795089143000,
+   "resumen": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
-   "ts": 1795034972000,
-   "resumen": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers."
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+   "ts": 1795088760000,
+   "resumen": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs."
   },
   {
-   "fecha": "18 nov",
-   "texto": "[EN] Data breach impacts 40 Irish credit unions in reported IT provider hack",
+   "fecha": "19 nov",
+   "texto": "[EN] Microsoft confirms app installation, launch issues after hotpatch",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
-   "ts": 1795030773000,
-   "resumen": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland."
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
+   "ts": 1795084505000,
+   "resumen": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch."
   },
   {
-   "fecha": "18 nov",
-   "texto": "[EN] 10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+   "fecha": "19 nov",
+   "texto": "[EN] Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-   "ts": 1795026677000,
-   "resumen": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today."
+   "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+   "ts": 1795080686000,
+   "resumen": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs."
   },
   {
-   "fecha": "18 nov",
-   "texto": "[EN] F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
-   "ts": 1795025739000,
-   "resumen": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts."
+   "fecha": "19 nov",
+   "texto": "Múltiples vulnerabilidades en productos de HPE Networking",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-hpe-networking",
+   "ts": 1795079996000,
+   "resumen": "HPE Networking ha revisado su boletín de AOS-8 y AOS-10, que comprende 76 vulnerabilidades, 33 de severidad crítica, 33 altas, 9 medias y 1 baja. Su explotación podría permitir ejecutar código sin autenticación, obtener acceso administrativo, leer o modificar datos o interrumpir el servicio. HPE también ha anticipado un fallo independiente en Aruba AirWave que podría permitir eludir la autenticación de forma remota.\n\nAfecta a: Mobility Conductors, Mobility Controllers, Mobility Gateways administrados por HPE Networking Central, puntos de acceso AOS-10 (AOS-AP) y puntos de acceso Instant AOS-8 (AOS-IAP).\n\nQué hacer: AOS-10. Actualizar como mínimo a 10.8.1.2, 10.7.2.7 o 10.4.1.14, según la rama. AOS-8. Actualizar como mínimo a 8.13.3.1 o 8.10.0.24, según la rama."
   },
   {
-   "fecha": "18 nov",
-   "texto": "[EN] Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+   "fecha": "19 nov",
+   "texto": "Múltiples vulnerabilidades en productos de Mitel",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-mitel",
+   "ts": 1795079995000,
+   "resumen": "Mitel ha publicado información sobre 4 vulnerabilidades, 3 de severidad crítica en OpenScape y 1 alta en la biblioteca Brotli. Los fallos de OpenScape podrían permitir a un atacante sin autenticar acceder a información sensible o ejecutar comandos. En los productos que procesen datos con la biblioteca Brotli vulnerable, su explotación podría interrumpir el servicio, divulgar información o permitir ejecutar código.\n\nAfecta a: OpenScape 4000: V11 R0.22 a V11 R2.11 y V10 R1.68 o anteriores. OpenScape 4000 Manager: V11 R0.22 a V11 R2.11 y V10 R1.34, R1.42, R1.54 y R1.68.\n\nQué hacer: OpenScape 4000 y Manager. Actualizar a V11 R2.14 o posterior. Para V11 R1.26, aplicar PLT HF5."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-   "ts": 1795021845000,
-   "resumen": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF)"
+   "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+   "ts": 1795077731000,
+   "resumen": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine."
   },
   {
    "fecha": "18 nov",
@@ -67,22 +91,6 @@
   },
   {
    "fecha": "18 nov",
-   "texto": "Lectura fuera de límites en Leptonica de Dan Bloomberg",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/lectura-fuera-de-limites-en-leptonica-de-dan-bloomberg",
-   "ts": 1794992594000,
-   "resumen": "INCIBE ha coordinado la publicación de una vulnerabilidad de severidad media que afecta a Leptonica de Dan Bloomberg, una biblioteca de código abierto para el procesamiento y análisis de imágenes. La vulnerabilidad ha sido descubierta por Daniel Fernandez Bleda del equipo de Internet Security Auditors.\n\nAfecta a: Leptonica 1.87.0 (commit 13275a2), en compilaciones con soporte JPEG 2000 habilitado mediante HAVE_LIBJP2K / OpenJPEG.\n\nQué hacer: El fabricante ha confirmado la corrección en el archivo jp2kio.c de la rama principal master del repositorio oficial de Leptonica. Se recomienda incorporar la corrección y recompilar la biblioteca."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "Verificación incorrecta de la firma criptográfica en procesadores Zen y Zen+ de AMD",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/verificacion-incorrecta-de-la-firma-criptografica-en-procesadores-zen-y-zen-de",
-   "ts": 1794992313000,
-   "resumen": "Matteo Rizzo, de Google, ha informado sobre 1 vulnerabilidad de severidad crítica en la ROM de arranque del PSP de AMD. Un atacante con acceso local a la memoria flash SPI podría ejecutar firmware sin firmar con los máximos privilegios del procesador de seguridad. Esto podría exponer información, comprometer la integridad de la cadena de arranque o dejar el sistema inoperativo de forma persistente.\n\nAfecta a: Procesadores AMD Zeppelin de las arquitecturas Zen de primera generación (Zen 1) y Zen+. La vulnerabilidad reside en la ROM de arranque del procesador de seguridad de la plataforma (PSP).\n\nQué hacer: AMD no prevé publicar una corrección ni una mitigación, ya que la ROM de arranque afectada es inmutable."
-  },
-  {
-   "fecha": "18 nov",
    "texto": "CVE-2024-10441 en Synology DiskStation Manager (DSM) se está explotando. Plazo de CISA: 2026-11-21.",
    "fuente": "cisa.gov",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
@@ -96,14 +104,6 @@
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
    "ts": 1794960000000,
    "resumen": "CISA ha añadido CVE-2026-40217 (BerriAI LiteLLM) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-18. Nombre del fallo: BerriAI LiteLLM Unprotected Alternate Channel Vulnerability.\n\nDescripción de CISA (en inglés): BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-12-02)."
-  },
-  {
-   "fecha": "17 nov",
-   "texto": "Vulnerabilidades críticas en Java SE y OpenJDK. Bienvenida #Java4Shell (CVE-2026-114938)",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidades-criticas-en-java-se-y.html",
-   "ts": 1794941576000,
-   "resumen": "Oracle se prepara para publicar parches de seguridad para 11 vulnerabilidades en Java SE el martes 17 de noviembre de 2026. Todas ellas pueden ser explotadas de forma remota y sin necesidad de"
   },
   {
    "fecha": "17 nov",
