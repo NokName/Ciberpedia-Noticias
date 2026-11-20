@@ -1,53 +1,85 @@
 {
- "generado": "2026-11-20T03:20:20Z",
+ "generado": "2026-11-20T12:56:32Z",
  "noticias": [
   {
    "fecha": "20 nov",
-   "texto": "[EN] VMware patches vCenter zero-day exploited in attacks since September",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-   "ts": 1795134385000,
-   "resumen": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026."
+   "texto": "Vulnerabilidad crítica de omisión de autenticación en VMware vCenter Server",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidad-critica-de-omision-de.html",
+   "ts": 1795179360000,
+   "resumen": "Broadcom ha publicado actualizaciones de seguridad para corregir una vulnerabilidad crítica de omisión de autenticación en VMware vCenter Server, la cual ha sido explotada por atacantes vinculados a China en ataques de"
   },
   {
-   "fecha": "19 nov",
-   "texto": "[EN] Hackers steal data of 1.6 million SBC Medical Group customers",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
-   "ts": 1795127142000,
-   "resumen": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "[EN] ASUS warns of critical hard-coded key flaw in Control Center Express",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
-   "ts": 1795122959000,
-   "resumen": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "[EN] ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+   "fecha": "20 nov",
+   "texto": "[EN] Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
-   "ts": 1795114078000,
-   "resumen": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access."
+   "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+   "ts": 1795177200000,
+   "resumen": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean."
   },
   {
-   "fecha": "19 nov",
-   "texto": "[EN] phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
-   "ts": 1795107596000,
-   "resumen": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server."
+   "fecha": "20 nov",
+   "texto": "[EN] Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
+   "ts": 1795176868000,
+   "resumen": "Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2."
   },
   {
-   "fecha": "19 nov",
-   "texto": "[EN] PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+   "fecha": "20 nov",
+   "texto": "[EN] The Path to AI Autonomy in the SOC",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
-   "ts": 1795101487000,
-   "resumen": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560."
+   "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+   "ts": 1795176000000,
+   "resumen": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027."
+  },
+  {
+   "fecha": "20 nov",
+   "texto": "[EN] F5 releases emergency patches for critical BIG-IP RCE flaws",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+   "ts": 1795172263000,
+   "resumen": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution."
+  },
+  {
+   "fecha": "20 nov",
+   "texto": "[EN] SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+   "ts": 1795171102000,
+   "resumen": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks."
+  },
+  {
+   "fecha": "20 nov",
+   "texto": "[EN] Windows 11 KB5132057 update released with 28 changes and fixes",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+   "ts": 1795166735000,
+   "resumen": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog."
+  },
+  {
+   "fecha": "20 nov",
+   "texto": "Múltiples vulnerabilidades en XOneManager de XOne",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-xonemanager-de-xone",
+   "ts": 1795165092000,
+   "resumen": "INCIBE ha coordinado la publicación de 6 vulnerabilidades que afectan a XOneManager 3.8.3.0 de XOne, una herramienta para gestionar dispositivos y aplicaciones empresariales. Dos se han valorado provisionalmente como críticas y dos como altas. Las otras dos son de severidad media. Las vulnerabilidades han sido descubiertas por Arnau Vila Blanquer.\n\nAfecta a: XOneManager de XOne, versión 3.8.3.0.\n\nQué hacer: XOne ha corregido las vulnerabilidades en XOneManager 4.0.7.6. El servidor comprueba ahora el rol y los permisos del usuario en todas las operaciones de la API. Se recomienda actualizar a la versión 4.0.7.6 o posterior."
+  },
+  {
+   "fecha": "20 nov",
+   "texto": "Múltiples vulnerabilidades en Security Center de Tenable",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-security-center-de-tenable",
+   "ts": 1795165032000,
+   "resumen": "Tenable ha publicado correcciones para 21 vulnerabilidades propias de Security Center, 2 de severidad crítica, 9 altas, 8 medias y 2 bajas. La explotación de los fallos críticos podría permitir a usuarios autenticados manipular la base de datos o ejecutar comandos en el sistema, según sus privilegios. Identificador INCIBE-2026-928\n\nAfecta a: Tenable Security Center 6.9.1 y versiones anteriores.\n\nQué hacer: Actualizar Tenable Security Center a la versión 6.10.0. El portal de descargas de Tenable ofrece los paquetes correspondientes a cada sistema operativo compatible."
+  },
+  {
+   "fecha": "20 nov",
+   "texto": "Ejecución de instrucciones no autorizadas en Spring Security",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/empresas/avisos/ejecucion-de-instrucciones-no-autorizadas-en-spring-security",
+   "ts": 1795165027000,
+   "resumen": "Spring ha publicado 1 vulnerabilidad de severidad crítica en Spring Security, un componente que muchas aplicaciones utilizan para gestionar el acceso. Si una aplicación emplea la función afectada para interpretar datos enviados desde el exterior, un atacante podría darle instrucciones y ejecutarlas con los permisos de la propia aplicación.\n\nAfecta a: Aplicaciones que utilizan alguna de estas versiones de Spring Security: 7.1.0 a 7.1.2 y 7.0.0 a 7.0.8. 6.5.0 a 6.5.12 y 6.4.0 a 6.4.19. 5.8.0 a 5.8.28, así como 5.7.26 y anteriores.\n\nQué hacer: Identifica las aplicaciones que utilizan Spring Security. Pide al proveedor o al equipo que las mantiene que confirme la versión instalada y si alguna regla de acceso de tipo ELRequestMatcher recibe datos del exterior."
   },
   {
    "fecha": "19 nov",
@@ -64,30 +96,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/nuevas-vulnerabilidades-en-php-permiten.html",
    "ts": 1795089060000,
    "resumen": "La PHP Foundation ha publicado actualizaciones de seguridad para abordar múltiples vulnerabilidades críticas que podrían ser explotadas para lograr la ejecución remota de código en los despliegues afectados, incluida la"
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "Múltiples vulnerabilidades en productos de HPE Networking",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-hpe-networking",
-   "ts": 1795079996000,
-   "resumen": "HPE Networking ha revisado su boletín de AOS-8 y AOS-10, que comprende 76 vulnerabilidades, 33 de severidad crítica, 33 altas, 9 medias y 1 baja. Su explotación podría permitir ejecutar código sin autenticación, obtener acceso administrativo, leer o modificar datos o interrumpir el servicio. HPE también ha anticipado un fallo independiente en Aruba AirWave que podría permitir eludir la autenticación de forma remota.\n\nAfecta a: Mobility Conductors, Mobility Controllers, Mobility Gateways administrados por HPE Networking Central, puntos de acceso AOS-10 (AOS-AP) y puntos de acceso Instant AOS-8 (AOS-IAP).\n\nQué hacer: AOS-10. Actualizar como mínimo a 10.8.1.2, 10.7.2.7 o 10.4.1.14, según la rama. AOS-8. Actualizar como mínimo a 8.13.3.1 o 8.10.0.24, según la rama."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "Múltiples vulnerabilidades en productos de Mitel",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-mitel",
-   "ts": 1795079995000,
-   "resumen": "Mitel ha publicado información sobre 4 vulnerabilidades, 3 de severidad crítica en OpenScape y 1 alta en la biblioteca Brotli. Los fallos de OpenScape podrían permitir a un atacante sin autenticar acceder a información sensible o ejecutar comandos. En los productos que procesen datos con la biblioteca Brotli vulnerable, su explotación podría interrumpir el servicio, divulgar información o permitir ejecutar código.\n\nAfecta a: OpenScape 4000: V11 R0.22 a V11 R2.11 y V10 R1.68 o anteriores. OpenScape 4000 Manager: V11 R0.22 a V11 R2.11 y V10 R1.34, R1.42, R1.54 y R1.68.\n\nQué hacer: OpenScape 4000 y Manager. Actualizar a V11 R2.14 o posterior. Para V11 R1.26, aplicar PLT HF5."
-  },
-  {
-   "fecha": "18 nov",
-   "texto": "Siete vulnerabilidades críticas en NGINX (y F5) permiten RCE #Nginx2Root",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/siete-vulnerabilidades-criticas-en-nginx.html",
-   "ts": 1795019055000,
-   "resumen": "Wiz Research, Ikotas Labs, Metnir, y Rapid7 descubrieron, de forma independiente, dos vulnerabilidades críticas de ejecución remota de código en NGINX. Por su parte,"
   },
   {
    "fecha": "18 nov",
@@ -112,14 +120,6 @@
    "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-equipos-de-red-de-zyxel",
    "ts": 1794905055000,
    "resumen": "Adam Simuntis y Joni Gadd han informado sobre 2 vulnerabilidades, 1 de severidad crítica y 1 alta, en determinados equipos de red de Zyxel. Los fallos podrían permitir que un atacante ejecute órdenes en el equipo afectado. Identificador INCIBE-2026-907\n\nAfecta a: Versiones de firmware de estos modelos, según las tablas de Zyxel por vulnerabilidad.\n\nQué hacer: Identificar el modelo e instalar la versión corregida que se indica en la columna Patch availability del boletín de Zyxel."
-  },
-  {
-   "fecha": "17 nov",
-   "texto": "Múltiples vulnerabilidades en productos de Onyx Graphics",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-productos-de-onyx-graphics",
-   "ts": 1794905054000,
-   "resumen": "Onyx Graphics, en coordinación con el equipo de seguridad de Canon EMEA, ha publicado información sobre 2 vulnerabilidades de severidad crítica en Java, componente incluido en sus productos. Un atacante que pueda interceptar la conexión podría hacerse pasar por un servidor y leer o alterar los datos intercambiados. Identificador INCIBE-2026-906\n\nAfecta a: ONYX Thrive, ONYX PosterShop y ONYX RIPCenter 25.5 para Windows. ONYX Data Access para Windows, en su versión actualmente distribuida. Versiones anteriores de estos productos, según Onyx Graphics.\n\nQué hacer: Solicitar a ONYX Support la herramienta ONYX eMudhra Trust Update, indicando el aviso ONYX-SA-2026-001. Ejecutarla como administrador y reiniciar los programas y servicios que indique."
   },
   {
    "fecha": "16 nov",
