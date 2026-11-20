@@ -1,6 +1,6 @@
 {
-  "version": 19,
-  "nombre": "2.0.0",
+  "version": 20,
+  "nombre": "2.0.1",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "Ciberpedia 2.0.0: 486 fichas. Nuevo tema 🥀 NieR con su icono y tema Pixel renovado; repaso con repetición espaciada y rutas de lectura; fichas de forense (Plaso, KAPE, Velociraptor, herramientas de Eric Zimmerman), Snort y reglas IDS/IPS separadas de las del WAF, Metasploit/Meterpreter y sqlmap en laboratorio, seguridad en Kubernetes, responsabilidad compartida en la nube, envenenamiento de datos y MITRE ATLAS; más ejemplos reales en 🚩 Flags; noticias de más fuentes con resumen automático; tipografías incluidas para usarla sin conexión y mejor contraste y accesibilidad."
+  "notas": "2.0.1: 19 fichas nuevas (WinRM, Evil-WinRM, NetExec, ProxyChains, túneles SSH, Mimikatz y DCSync en clave defensiva, Windows LAPS, gMSA, Credential Guard, Protected Users, eventos de Windows, AppLocker, SOC, triaje de alertas...), LDAP/SMB/Proxy más precisos y el visor muestra 18 noticias."
 }
