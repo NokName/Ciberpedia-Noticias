@@ -1,6 +1,22 @@
 {
- "generado": "2026-11-19T21:37:51Z",
+ "generado": "2026-11-20T03:20:20Z",
  "noticias": [
+  {
+   "fecha": "20 nov",
+   "texto": "[EN] VMware patches vCenter zero-day exploited in attacks since September",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+   "ts": 1795134385000,
+   "resumen": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "[EN] Hackers steal data of 1.6 million SBC Medical Group customers",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+   "ts": 1795127142000,
+   "resumen": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people."
+  },
   {
    "fecha": "19 nov",
    "texto": "[EN] ASUS warns of critical hard-coded key flaw in Control Center Express",
@@ -19,35 +35,11 @@
   },
   {
    "fecha": "19 nov",
-   "texto": "[EN] Transport for London breach exposes 265,000 Oyster card users' data",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
-   "ts": 1795112401000,
-   "resumen": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach."
-  },
-  {
-   "fecha": "19 nov",
    "texto": "[EN] phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
    "fuente": "thehackernews.com",
    "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
    "ts": 1795107596000,
    "resumen": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "[EN] PHP security updates fix 18 flaws, including critical RCE bugs",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
-   "ts": 1795105703000,
-   "resumen": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers."
-  },
-  {
-   "fecha": "19 nov",
-   "texto": "(Nuevas) vulnerabilidades en PHP permiten ejecución remota de código #phpAfterShell",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/nuevas-vulnerabilidades-en-php-permiten.html",
-   "ts": 1795102171000,
-   "resumen": "La PHP Foundation ha publicado actualizaciones de seguridad para abordar múltiples vulnerabilidades críticas que podrían ser explotadas para lograr la ejecución remota de código en los despliegues afectados, incluida la"
   },
   {
    "fecha": "19 nov",
@@ -64,6 +56,14 @@
    "url": "http://blog.segu-info.com.ar/2026/11/frameworks-de-ataque-con-ia-que-nunca.html",
    "ts": 1795090560000,
    "resumen": "Resumen para responsables de ciberseguridad Elastic Security Labs analizó cinco marcos ofensivos de código abierto que ponen a un modelo de lenguaje a conducir herramientas de ataque: ARTEX, CyberStrikeAI, Cairn, PentAGI y HexStrike."
+  },
+  {
+   "fecha": "19 nov",
+   "texto": "(Nuevas) vulnerabilidades en PHP permiten ejecución remota de código #phpAfterShell",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/nuevas-vulnerabilidades-en-php-permiten.html",
+   "ts": 1795089060000,
+   "resumen": "La PHP Foundation ha publicado actualizaciones de seguridad para abordar múltiples vulnerabilidades críticas que podrían ser explotadas para lograr la ejecución remota de código en los despliegues afectados, incluida la"
   },
   {
    "fecha": "19 nov",
