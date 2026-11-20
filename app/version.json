@@ -1,6 +1,6 @@
 {
-  "version": 20,
-  "nombre": "2.0.1",
+  "version": 21,
+  "nombre": "2.0.2",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "2.0.1: 19 fichas nuevas (WinRM, Evil-WinRM, NetExec, ProxyChains, túneles SSH, Mimikatz y DCSync en clave defensiva, Windows LAPS, gMSA, Credential Guard, Protected Users, eventos de Windows, AppLocker, SOC, triaje de alertas...), LDAP/SMB/Proxy más precisos y el visor muestra 18 noticias."
+  "notas": "2.0.2: nuevo botón «💻 Llevar al PC» en Ajustes. Guarda en Descargas/Ciberpedia un ZIP con esta misma versión para abrirla en el ordenador (doble clic en el .bat). Incluye todo lo de la 2.0.1."
 }
