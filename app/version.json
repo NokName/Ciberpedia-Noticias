@@ -1,6 +1,6 @@
 {
-  "version": 21,
-  "nombre": "2.0.2",
+  "version": 22,
+  "nombre": "2.0.3",
   "apk": "https://github.com/NokName/Ciberpedia-Noticias/raw/main/app/Ciberpedia.apk",
-  "notas": "2.0.2: nuevo botón «💻 Llevar al PC» en Ajustes. Guarda en Descargas/Ciberpedia un ZIP con esta misma versión para abrirla en el ordenador (doble clic en el .bat). Incluye todo lo de la 2.0.1."
+  "notas": "2.0.3: «💻 Llevar al PC» más sencillo. Ahora crea un solo archivo (Ciberpedia.html) y abre el menú Compartir para mandártelo al ordenador; allí se abre con doble clic. Instrucciones paso a paso dentro de la app."
 }
