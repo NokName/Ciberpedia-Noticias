@@ -1,6 +1,22 @@
 {
- "generado": "2026-11-20T21:07:30Z",
+ "generado": "2026-11-21T11:05:53Z",
  "noticias": [
+  {
+   "fecha": "21 nov",
+   "texto": "[EN] Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+   "ts": 1795250960000,
+   "resumen": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\""
+  },
+  {
+   "fecha": "21 nov",
+   "texto": "[EN] Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+   "ts": 1795250953000,
+   "resumen": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation."
+  },
   {
    "fecha": "20 nov",
    "texto": "[EN] Bell Canada says 'agentic' hacker stole enterprise customer data",
@@ -27,14 +43,6 @@
   },
   {
    "fecha": "20 nov",
-   "texto": "[EN] Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-   "ts": 1795193896000,
-   "resumen": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale."
-  },
-  {
-   "fecha": "20 nov",
    "texto": "Tres brechas y fugas sin fin: la cadena de suministro de IA necesita señuelos",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/tres-brechas-y-fugas-sin-fin-la-cadena.html",
@@ -56,14 +64,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidad-critica-de-omision-de.html",
    "ts": 1795179360000,
    "resumen": "Broadcom ha publicado actualizaciones de seguridad para corregir una vulnerabilidad crítica de omisión de autenticación en VMware vCenter Server, la cual ha sido explotada por atacantes vinculados a China en ataques de"
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "[EN] Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-   "ts": 1795177200000,
-   "resumen": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean."
   },
   {
    "fecha": "20 nov",
