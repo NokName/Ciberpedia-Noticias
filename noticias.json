@@ -1,6 +1,22 @@
 {
- "generado": "2026-11-21T17:58:50Z",
+ "generado": "2026-11-21T23:19:46Z",
  "noticias": [
+  {
+   "fecha": "21 nov",
+   "texto": "[EN] Rackspace Spot breach let hackers access customer Kubernetes secrets",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+   "ts": 1795301998000,
+   "resumen": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters."
+  },
+  {
+   "fecha": "21 nov",
+   "texto": "[EN] Microsoft Entra Connect Health flaw exploited to steal tenant data",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "ts": 1795284118000,
+   "resumen": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information."
+  },
   {
    "fecha": "21 nov",
    "texto": "[EN] BADBOX botnet returns with record-breaking 40 billion daily ad requests",
@@ -8,14 +24,6 @@
    "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
    "ts": 1795274247000,
    "resumen": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions."
-  },
-  {
-   "fecha": "21 nov",
-   "texto": "[EN] FBI reportedly hacked again, this time targeting nationwide police database",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-   "ts": 1795271164000,
-   "resumen": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies."
   },
   {
    "fecha": "21 nov",
@@ -48,14 +56,6 @@
    "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
    "ts": 1795258997000,
    "resumen": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week."
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "[EN] Bell Canada says 'agentic' hacker stole enterprise customer data",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-   "ts": 1795200703000,
-   "resumen": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits."
   },
   {
    "fecha": "20 nov",
