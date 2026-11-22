@@ -1,6 +1,22 @@
 {
- "generado": "2026-11-22T06:53:19Z",
+ "generado": "2026-11-22T15:22:10Z",
  "noticias": [
+  {
+   "fecha": "22 nov",
+   "texto": "[EN] Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+   "ts": 1795360525000,
+   "resumen": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices."
+  },
+  {
+   "fecha": "22 nov",
+   "texto": "FastUnlock: Zero-Day en Bitlocker",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/fastunlock-zero-day-en-bitlocker.html",
+   "ts": 1795354200000,
+   "resumen": "Se ha descubierto una vulnerabilidad Zero-Day en la pantalla de bloqueo de Windows 11 (y posiblemente en Windows 10) que permite saltarse la seguridad mediante un truco de teclado. Al tener acceso físico al equipo, un atacante"
+  },
   {
    "fecha": "22 nov",
    "texto": "[EN] OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
@@ -35,14 +51,6 @@
   },
   {
    "fecha": "21 nov",
-   "texto": "[EN] BADBOX botnet returns with record-breaking 40 billion daily ad requests",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
-   "ts": 1795274247000,
-   "resumen": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions."
-  },
-  {
-   "fecha": "21 nov",
    "texto": "Inside the loop: cinco AI attack frameworks que no piden permiso",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/inside-loop-cinco-ai-attack-frameworks.html",
@@ -64,14 +72,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/tres-brechas-y-fugas-sin-fin-la-cadena.html",
    "ts": 1795193445000,
    "resumen": "Cuando una organización envía un prompt a un servicio de inteligencia artificial, suele imaginar un único destinatario: el proveedor del modelo. Una investigación de Dragos, publicada el 19 de noviembre de 2026, muestra que la realidad es bastante menos prolija. Durante cuatro meses, el equipo de HD Moore sembró señuelos en unos dos millones de prompts y esperó a ver quién los usaba. Aparecieron tres brechas en proveedores de alojamiento, revendedores que guardaban las solicitudes de sus clientes y servicios que no respetaban la promesa de no retener datos."
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "Vulnerabilidad crítica de omisión de autenticación en VMware vCenter Server",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidad-critica-de-omision-de.html",
-   "ts": 1795179360000,
-   "resumen": "Broadcom ha publicado actualizaciones de seguridad para corregir una vulnerabilidad crítica de omisión de autenticación en VMware vCenter Server, la cual ha sido explotada por atacantes vinculados a China en ataques de"
   },
   {
    "fecha": "20 nov",
