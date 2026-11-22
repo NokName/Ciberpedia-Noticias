@@ -1,6 +1,22 @@
 {
- "generado": "2026-11-22T15:22:10Z",
+ "generado": "2026-11-22T21:48:55Z",
  "noticias": [
+  {
+   "fecha": "22 nov",
+   "texto": "[EN] Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+   "ts": 1795373137000,
+   "resumen": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices."
+  },
+  {
+   "fecha": "22 nov",
+   "texto": "[EN] Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+   "ts": 1795362184000,
+   "resumen": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes."
+  },
   {
    "fecha": "22 nov",
    "texto": "[EN] Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
@@ -32,22 +48,6 @@
    "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
    "ts": 1795323821000,
    "resumen": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly."
-  },
-  {
-   "fecha": "21 nov",
-   "texto": "[EN] Rackspace Spot breach let hackers access customer Kubernetes secrets",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-   "ts": 1795301998000,
-   "resumen": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters."
-  },
-  {
-   "fecha": "21 nov",
-   "texto": "[EN] Microsoft Entra Connect Health flaw exploited to steal tenant data",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-   "ts": 1795284118000,
-   "resumen": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information."
   },
   {
    "fecha": "21 nov",
