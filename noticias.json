@@ -1,6 +1,22 @@
 {
- "generado": "2026-11-21T23:19:46Z",
+ "generado": "2026-11-22T06:53:19Z",
  "noticias": [
+  {
+   "fecha": "22 nov",
+   "texto": "[EN] OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+   "ts": 1795324015000,
+   "resumen": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week."
+  },
+  {
+   "fecha": "22 nov",
+   "texto": "[EN] Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+   "ts": 1795323821000,
+   "resumen": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly."
+  },
   {
    "fecha": "21 nov",
    "texto": "[EN] Rackspace Spot breach let hackers access customer Kubernetes secrets",
@@ -40,22 +56,6 @@
    "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
    "ts": 1795261987000,
    "resumen": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown."
-  },
-  {
-   "fecha": "21 nov",
-   "texto": "[EN] GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
-   "ts": 1795259153000,
-   "resumen": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions."
-  },
-  {
-   "fecha": "21 nov",
-   "texto": "[EN] Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-   "ts": 1795258997000,
-   "resumen": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week."
   },
   {
    "fecha": "20 nov",
