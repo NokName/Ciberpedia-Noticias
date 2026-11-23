@@ -1,29 +1,77 @@
 {
- "generado": "2026-11-22T21:48:55Z",
+ "generado": "2026-11-23T12:49:48Z",
  "noticias": [
   {
-   "fecha": "22 nov",
-   "texto": "[EN] Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-   "ts": 1795373137000,
-   "resumen": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices."
+   "fecha": "23 nov",
+   "texto": "[EN] Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+   "ts": 1795437664000,
+   "resumen": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host."
   },
   {
-   "fecha": "22 nov",
-   "texto": "[EN] Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-   "ts": 1795362184000,
-   "resumen": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes."
+   "fecha": "23 nov",
+   "texto": "[EN] N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+   "ts": 1795436889000,
+   "resumen": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers."
   },
   {
-   "fecha": "22 nov",
-   "texto": "[EN] Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+   "fecha": "23 nov",
+   "texto": "Vulnerabilidad en la API de Microsoft Entra Connect Health, ya corregida",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidad-en-la-api-de-microsoft.html",
+   "ts": 1795435800000,
+   "resumen": "Microsoft está advirtiendo a las organizaciones sobre una brecha de seguridad, tras detectarse que atacantes explotaron una vulnerabilidad en su servicio Entra Connect Health para obtener acceso no"
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] Call center operator gets 8 years for helping scam 30,000 Americans",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
-   "ts": 1795360525000,
-   "resumen": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices."
+   "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+   "ts": 1795435343000,
+   "resumen": "A Peruvian call center operator was sentenced to eight years in prison for stealing millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "Escritura fuera de límites en Synchronet BBS de synchro.net",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-synchronet-bbs-de-synchronet",
+   "ts": 1795425195000,
+   "resumen": "INCIBE ha coordinado la publicación de una vulnerabilidad de severidad alta que afecta a Synchronet BBS de synchro.net, software para gestionar sistemas de tablones de anuncios electrónicos (BBS). La vulnerabilidad ha sido descubierta por Antonio Rodríguez.\n\nAfecta a: Synchronet BBS, versiones 3.20b a 3.21e, con el servicio SSH habilitado.\n\nQué hacer: La vulnerabilidad ha sido solucionada por el equipo de synchro.net en la rama principal (master) de Synchronet mediante el commit cb6d77dbca (https://gitlab.synchro.net/main/sbbs/-/commit/cb6d77dbca)."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+   "ts": 1795425116000,
+   "resumen": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+   "ts": 1795425075000,
+   "resumen": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "Múltiples vulnerabilidades en productos de Synology",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-synology-0",
+   "ts": 1795423603000,
+   "resumen": "Nguyễn Bá Nam Dũng y Hà Thế Long, de Viettel Cyber Security Research Lab, y Warisse Valentin han informado sobre los fallos recogidos en el boletín SA-26:19. En conjunto, los 3 boletines de Synology abordan 4 vulnerabilidades, 3 de severidad crítica y 1 alta al priorizar CVSS 4.0 cuando está disponible.\n\nAfecta a: Servicio OAuth: BeeStation OS 1.5 y DiskStation Manager (DSM) 7.1, 7.2.1, 7.2.2, 7.3 y 7.4. La descripción técnica también identifica DSM 6.2.4 anterior a 6.2.4-25556-9.\n\nQué hacer: DSM 7.4 y 7.3: actualizar a 7.4.1-90080 Update 2 o 7.3.2-86009 Update 6, respectivamente, o a una versión posterior de la misma rama."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "ts": 1795419859000,
+   "resumen": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild."
   },
   {
    "fecha": "22 nov",
@@ -34,60 +82,12 @@
    "resumen": "Se ha descubierto una vulnerabilidad Zero-Day en la pantalla de bloqueo de Windows 11 (y posiblemente en Windows 10) que permite saltarse la seguridad mediante un truco de teclado. Al tener acceso físico al equipo, un atacante"
   },
   {
-   "fecha": "22 nov",
-   "texto": "[EN] OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-   "ts": 1795324015000,
-   "resumen": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week."
-  },
-  {
-   "fecha": "22 nov",
-   "texto": "[EN] Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-   "ts": 1795323821000,
-   "resumen": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly."
-  },
-  {
    "fecha": "21 nov",
    "texto": "Inside the loop: cinco AI attack frameworks que no piden permiso",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/inside-loop-cinco-ai-attack-frameworks.html",
    "ts": 1795265158000,
    "resumen": "La nueva era del hacking autónomo: cómo detectar los cinco frameworks de IA que nunca piden permiso. Durante años, las operaciones de red team y los ataques informáticos dependieron de una persona detrás de un teclado. Esa"
-  },
-  {
-   "fecha": "21 nov",
-   "texto": "[EN] A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-   "ts": 1795261987000,
-   "resumen": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown."
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "Tres brechas y fugas sin fin: la cadena de suministro de IA necesita señuelos",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/tres-brechas-y-fugas-sin-fin-la-cadena.html",
-   "ts": 1795193445000,
-   "resumen": "Cuando una organización envía un prompt a un servicio de inteligencia artificial, suele imaginar un único destinatario: el proveedor del modelo. Una investigación de Dragos, publicada el 19 de noviembre de 2026, muestra que la realidad es bastante menos prolija. Durante cuatro meses, el equipo de HD Moore sembró señuelos en unos dos millones de prompts y esperó a ver quién los usaba. Aparecieron tres brechas en proveedores de alojamiento, revendedores que guardaban las solicitudes de sus clientes y servicios que no respetaban la promesa de no retener datos."
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "Múltiples vulnerabilidades en XOneManager de XOne",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-xonemanager-de-xone",
-   "ts": 1795165092000,
-   "resumen": "INCIBE ha coordinado la publicación de 6 vulnerabilidades que afectan a XOneManager 3.8.3.0 de XOne, una herramienta para gestionar dispositivos y aplicaciones empresariales. Dos se han valorado provisionalmente como críticas y dos como altas. Las otras dos son de severidad media. Las vulnerabilidades han sido descubiertas por Arnau Vila Blanquer.\n\nAfecta a: XOneManager de XOne, versión 3.8.3.0.\n\nQué hacer: XOne ha corregido las vulnerabilidades en XOneManager 4.0.7.6. El servidor comprueba ahora el rol y los permisos del usuario en todas las operaciones de la API. Se recomienda actualizar a la versión 4.0.7.6 o posterior."
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "Múltiples vulnerabilidades en Security Center de Tenable",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-security-center-de-tenable",
-   "ts": 1795165032000,
-   "resumen": "Tenable ha publicado correcciones para 21 vulnerabilidades propias de Security Center, 2 de severidad crítica, 9 altas, 8 medias y 2 bajas. La explotación de los fallos críticos podría permitir a usuarios autenticados manipular la base de datos o ejecutar comandos en el sistema, según sus privilegios. Identificador INCIBE-2026-928\n\nAfecta a: Tenable Security Center 6.9.1 y versiones anteriores.\n\nQué hacer: Actualizar Tenable Security Center a la versión 6.10.0. El portal de descargas de Tenable ofrece los paquetes correspondientes a cada sistema operativo compatible."
   },
   {
    "fecha": "20 nov",
