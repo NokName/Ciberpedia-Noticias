@@ -1,6 +1,30 @@
 {
- "generado": "2026-11-24T00:53:47Z",
+ "generado": "2026-11-24T10:58:31Z",
  "noticias": [
+  {
+   "fecha": "24 nov",
+   "texto": "[EN] Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+   "ts": 1795517089000,
+   "resumen": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi."
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "[EN] WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+   "ts": 1795509260000,
+   "resumen": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed."
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "[EN] OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+   "ts": 1795500177000,
+   "resumen": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime."
+  },
   {
    "fecha": "23 nov",
    "texto": "[EN] South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
@@ -27,35 +51,11 @@
   },
   {
    "fecha": "23 nov",
-   "texto": "[EN] Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-   "ts": 1795455915000,
-   "resumen": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks."
-  },
-  {
-   "fecha": "23 nov",
    "texto": "La botnet BADBOX regresa con una cifra récord de 40.000 millones de solicitudes publicitarias diarias",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/la-botnet-badbox-regresa-con-una-cifra.html",
    "ts": 1795446660000,
    "resumen": "La botnet de malware BADBOX ha regresado tras las interrupciones sufridas el año pasado, generando la cifra récord de 40.000 millones de solicitudes publicitarias fraudulentas al día a través de dispositivos Android"
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "[EN] ⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-   "ts": 1795446648000,
-   "resumen": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open."
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "[EN] Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
-   "ts": 1795440140000,
-   "resumen": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code."
   },
   {
    "fecha": "23 nov",
