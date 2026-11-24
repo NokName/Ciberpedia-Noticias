@@ -1,53 +1,101 @@
 {
- "generado": "2026-11-24T10:58:31Z",
+ "generado": "2026-11-24T21:13:52Z",
  "noticias": [
   {
    "fecha": "24 nov",
-   "texto": "[EN] Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
-   "ts": 1795517089000,
-   "resumen": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi."
+   "texto": "[EN] New Inception extortion gang launches large-scale vishing campaign",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+   "ts": 1795551680000,
+   "resumen": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms."
   },
   {
    "fecha": "24 nov",
-   "texto": "[EN] WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
-   "ts": 1795509260000,
-   "resumen": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed."
+   "texto": "[EN] Turnitin discloses cyberattack affecting customer-facing systems",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+   "ts": 1795546792000,
+   "resumen": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems."
   },
   {
    "fecha": "24 nov",
-   "texto": "[EN] OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+   "texto": "[EN] Radware discloses breach exposing customer cloud access keys",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+   "ts": 1795542545000,
+   "resumen": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online."
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "Shirudo: herramienta para bloquear exploits específicos en servidores Linux",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/shirudo-herramienta-para-bloquear.html",
+   "ts": 1795541340000,
+   "resumen": "OpenAI y Cisco lanzaron el 23 de noviembre de 2026 Shirudo, una herramienta de seguridad de código abierto creada para bloquear exploits específicos en servidores Linux activos. Esta solución permite"
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "[EN] Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
-   "ts": 1795500177000,
-   "resumen": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime."
+   "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+   "ts": 1795539247000,
+   "resumen": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus."
   },
   {
-   "fecha": "23 nov",
-   "texto": "[EN] South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
-   "ts": 1795467291000,
-   "resumen": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data."
+   "fecha": "24 nov",
+   "texto": "[EN] VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+   "ts": 1795526906000,
+   "resumen": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication."
   },
   {
-   "fecha": "23 nov",
-   "texto": "[EN] OpenRouter drops AI providers over leaked prompts and secrets",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
-   "ts": 1795464020000,
-   "resumen": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data."
+   "fecha": "24 nov",
+   "texto": "[EN] Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+   "ts": 1795526901000,
+   "resumen": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team."
   },
   {
-   "fecha": "23 nov",
-   "texto": "[EN] Microsoft Azure flaw exploited to steal customers' API credentials",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
-   "ts": 1795462940000,
-   "resumen": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies."
+   "fecha": "24 nov",
+   "texto": "Explotan una vulnerabilidad crítica en biblioteca Anti-CSRF de ASP.NET, permite RCE sin autenticación",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/explotan-una-vulnerabilidad-critica-en.html",
+   "ts": 1795525560000,
+   "resumen": "Investigadores instan a los usuarios a dejar de utilizar una biblioteca ASP.NET obsoleta de protección contra ataques CSRF, denominada Idunno.AntiCsrf (Idunno.AntiCsrf.dll), tras el descubrimiento de"
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "Inyección SQL en CabinPaq de Don Hierro",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-cabinpaq-de-don-hierro",
+   "ts": 1795514048000,
+   "resumen": "INCIBE ha coordinado la publicación de una vulnerabilidad de severidad alta que afecta a CabinPaq de Don Hierro, una cabina multifunción con taquillas para la gestión de paquetes. La vulnerabilidad ha sido descubierta por Marco Cerdá Cisma (cM4rko).\n\nAfecta a: CabinPaq de Don Hierro, versiones v.1.2.94 y v.1.2.136. El fallo afecta al módulo de introducción manual de códigos del terminal.\n\nQué hacer: El fabricante ha sustituido la construcción dinámica insegura de consultas por consultas parametrizadas y ha reforzado la validación de las entradas de PIN y QR."
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "Múltiples vulnerabilidades en productos VMware Tanzu de Broadcom",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-vmware-tanzu-de-broadcom",
+   "ts": 1795509866000,
+   "resumen": "Broadcom ha publicado 2 boletines que reúnen 19 vulnerabilidades en componentes PHP y Brotli incorporados a VMware Tanzu: 8 de severidad crítica, 4 altas, 6 medias y 1 sin puntuación en el boletín. Su explotación podría permitir ejecutar código en el proceso que atiende la aplicación o descomprime los datos.\n\nAfecta a: PHP: PHP Buildpack v2 anterior a 5.0.18, PHP cloud native buildpack v3 hasta 6.4.2, Extended App Support hasta 1.2.14 y Decoupled Stack 1.0.10.\n\nQué hacer: Productos que incorporan PHP: Actualizar PHP Buildpack v2 a 5.0.18. Para PHP cloud native buildpack v3, Broadcom identifica 6.4.3 y 6.4.4 como versiones corregidas. Actualizar Extended App Support a 1.2.15 o 1.2.16."
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "CVE-2026-132224 en Optimizely Web Experimentation se está explotando. Plazo de CISA: 2026-11-27.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+   "ts": 1795478400000,
+   "resumen": "CISA ha añadido CVE-2026-132224 (Optimizely Web Experimentation) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-24. Nombre del fallo: Optimizely Web Experimentation External Control of Critical State Data Vulnerability.\n\nDescripción de CISA (en inglés): Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-27)."
+  },
+  {
+   "fecha": "24 nov",
+   "texto": "CVE-2026-131914 en Idunno AntiCsrf se está explotando. Plazo de CISA: 2026-11-27.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+   "ts": 1795478400000,
+   "resumen": "CISA ha añadido CVE-2026-131914 (Idunno AntiCsrf) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-24. Nombre del fallo: Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability.\n\nDescripción de CISA (en inglés): Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-27)."
   },
   {
    "fecha": "23 nov",
@@ -59,59 +107,11 @@
   },
   {
    "fecha": "23 nov",
-   "texto": "Vulnerabilidad en la API de Microsoft Entra Connect Health, ya corregida",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidad-en-la-api-de-microsoft.html",
-   "ts": 1795435800000,
-   "resumen": "Microsoft está advirtiendo a las organizaciones sobre una brecha de seguridad, tras detectarse que atacantes explotaron una vulnerabilidad en su servicio Entra Connect Health para obtener acceso no"
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "Escritura fuera de límites en Synchronet BBS de synchro.net",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-synchronet-bbs-de-synchronet",
-   "ts": 1795425195000,
-   "resumen": "INCIBE ha coordinado la publicación de una vulnerabilidad de severidad alta que afecta a Synchronet BBS de synchro.net, software para gestionar sistemas de tablones de anuncios electrónicos (BBS). La vulnerabilidad ha sido descubierta por Antonio Rodríguez.\n\nAfecta a: Synchronet BBS, versiones 3.20b a 3.21e, con el servicio SSH habilitado.\n\nQué hacer: La vulnerabilidad ha sido solucionada por el equipo de synchro.net en la rama principal (master) de Synchronet mediante el commit cb6d77dbca (https://gitlab.synchro.net/main/sbbs/-/commit/cb6d77dbca)."
-  },
-  {
-   "fecha": "23 nov",
    "texto": "Múltiples vulnerabilidades en productos de Veeam",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-productos-de-veeam-0",
    "ts": 1795423604000,
    "resumen": "Xint.io, junto con otros investigadores, ha informado sobre 5 vulnerabilidades de severidad crítica en NGINX, un componente que Veeam utiliza para atender conexiones de red. Según el producto y su configuración, un atacante podría interrumpir el acceso a los servicios de copia de seguridad o hacer que el servidor ejecute instrucciones no autorizadas.\n\nAfecta a: Veeam Software Appliance 13.1 y Veeam Infrastructure Appliance 13.1.\n\nQué hacer: Identificar el producto en la consola de administración o en el inventario del proveedor de TI. Comprobar el nombre completo, la versión y quién administra el equipo."
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "Múltiples vulnerabilidades en productos de Synology",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-synology-0",
-   "ts": 1795423603000,
-   "resumen": "Nguyễn Bá Nam Dũng y Hà Thế Long, de Viettel Cyber Security Research Lab, y Warisse Valentin han informado sobre los fallos recogidos en el boletín SA-26:19. En conjunto, los 3 boletines de Synology abordan 4 vulnerabilidades, 3 de severidad crítica y 1 alta al priorizar CVSS 4.0 cuando está disponible.\n\nAfecta a: Servicio OAuth: BeeStation OS 1.5 y DiskStation Manager (DSM) 7.1, 7.2.1, 7.2.2, 7.3 y 7.4. La descripción técnica también identifica DSM 6.2.4 anterior a 6.2.4-25556-9.\n\nQué hacer: DSM 7.4 y 7.3: actualizar a 7.4.1-90080 Update 2 o 7.3.2-86009 Update 6, respectivamente, o a una versión posterior de la misma rama."
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "CVE-2026-133968 en Project MONAI MONAI Label se está explotando. Plazo de CISA: 2026-11-26.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
-   "ts": 1795392000000,
-   "resumen": "CISA ha añadido CVE-2026-133968 (Project MONAI MONAI Label) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-23. Nombre del fallo: Project MONAI MONAI Label Path Traversal Vulnerability.\n\nDescripción de CISA (en inglés): Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-26)."
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "CVE-2026-134624 en N-able MailAssure se está explotando. Plazo de CISA: 2026-11-26.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
-   "ts": 1795392000000,
-   "resumen": "CISA ha añadido CVE-2026-134624 (N-able MailAssure) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-23. Nombre del fallo: N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability.\n\nDescripción de CISA (en inglés): N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-26)."
-  },
-  {
-   "fecha": "22 nov",
-   "texto": "FastUnlock: Zero-Day en Bitlocker",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/fastunlock-zero-day-en-bitlocker.html",
-   "ts": 1795354200000,
-   "resumen": "Se ha descubierto una vulnerabilidad Zero-Day en la pantalla de bloqueo de Windows 11 (y posiblemente en Windows 10) que permite saltarse la seguridad mediante un truco de teclado. Al tener acceso físico al equipo, un atacante"
   },
   {
    "fecha": "20 nov",
