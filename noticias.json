@@ -1,21 +1,61 @@
 {
- "generado": "2026-11-23T12:49:48Z",
+ "generado": "2026-11-24T00:53:47Z",
  "noticias": [
   {
    "fecha": "23 nov",
-   "texto": "[EN] Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
-   "ts": 1795437664000,
-   "resumen": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host."
+   "texto": "[EN] South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+   "ts": 1795467291000,
+   "resumen": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data."
   },
   {
    "fecha": "23 nov",
-   "texto": "[EN] N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+   "texto": "[EN] OpenRouter drops AI providers over leaked prompts and secrets",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+   "ts": 1795464020000,
+   "resumen": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] Microsoft Azure flaw exploited to steal customers' API credentials",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+   "ts": 1795462940000,
+   "resumen": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-   "ts": 1795436889000,
-   "resumen": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers."
+   "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+   "ts": 1795455915000,
+   "resumen": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "La botnet BADBOX regresa con una cifra récord de 40.000 millones de solicitudes publicitarias diarias",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/la-botnet-badbox-regresa-con-una-cifra.html",
+   "ts": 1795446660000,
+   "resumen": "La botnet de malware BADBOX ha regresado tras las interrupciones sufridas el año pasado, generando la cifra récord de 40.000 millones de solicitudes publicitarias fraudulentas al día a través de dispositivos Android"
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] ⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+   "ts": 1795446648000,
+   "resumen": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "[EN] Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+   "ts": 1795440140000,
+   "resumen": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code."
   },
   {
    "fecha": "23 nov",
@@ -27,14 +67,6 @@
   },
   {
    "fecha": "23 nov",
-   "texto": "[EN] Call center operator gets 8 years for helping scam 30,000 Americans",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
-   "ts": 1795435343000,
-   "resumen": "A Peruvian call center operator was sentenced to eight years in prison for stealing millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme."
-  },
-  {
-   "fecha": "23 nov",
    "texto": "Escritura fuera de límites en Synchronet BBS de synchro.net",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-synchronet-bbs-de-synchronet",
@@ -43,19 +75,11 @@
   },
   {
    "fecha": "23 nov",
-   "texto": "[EN] Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-   "ts": 1795425116000,
-   "resumen": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild."
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "[EN] Microsoft confirms Windows printing issues affecting Forcepoint users",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
-   "ts": 1795425075000,
-   "resumen": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch."
+   "texto": "Múltiples vulnerabilidades en productos de Veeam",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-productos-de-veeam-0",
+   "ts": 1795423604000,
+   "resumen": "Xint.io, junto con otros investigadores, ha informado sobre 5 vulnerabilidades de severidad crítica en NGINX, un componente que Veeam utiliza para atender conexiones de red. Según el producto y su configuración, un atacante podría interrumpir el acceso a los servicios de copia de seguridad o hacer que el servidor ejecute instrucciones no autorizadas.\n\nAfecta a: Veeam Software Appliance 13.1 y Veeam Infrastructure Appliance 13.1.\n\nQué hacer: Identificar el producto en la consola de administración o en el inventario del proveedor de TI. Comprobar el nombre completo, la versión y quién administra el equipo."
   },
   {
    "fecha": "23 nov",
@@ -67,11 +91,19 @@
   },
   {
    "fecha": "23 nov",
-   "texto": "[EN] CISA flags critical Cisco RCE flaw as actively exploited in attacks",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
-   "ts": 1795419859000,
-   "resumen": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild."
+   "texto": "CVE-2026-133968 en Project MONAI MONAI Label se está explotando. Plazo de CISA: 2026-11-26.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+   "ts": 1795392000000,
+   "resumen": "CISA ha añadido CVE-2026-133968 (Project MONAI MONAI Label) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-23. Nombre del fallo: Project MONAI MONAI Label Path Traversal Vulnerability.\n\nDescripción de CISA (en inglés): Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-26)."
+  },
+  {
+   "fecha": "23 nov",
+   "texto": "CVE-2026-134624 en N-able MailAssure se está explotando. Plazo de CISA: 2026-11-26.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+   "ts": 1795392000000,
+   "resumen": "CISA ha añadido CVE-2026-134624 (N-able MailAssure) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-23. Nombre del fallo: N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability.\n\nDescripción de CISA (en inglés): N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-26)."
   },
   {
    "fecha": "22 nov",
@@ -82,44 +114,12 @@
    "resumen": "Se ha descubierto una vulnerabilidad Zero-Day en la pantalla de bloqueo de Windows 11 (y posiblemente en Windows 10) que permite saltarse la seguridad mediante un truco de teclado. Al tener acceso físico al equipo, un atacante"
   },
   {
-   "fecha": "21 nov",
-   "texto": "Inside the loop: cinco AI attack frameworks que no piden permiso",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/inside-loop-cinco-ai-attack-frameworks.html",
-   "ts": 1795265158000,
-   "resumen": "La nueva era del hacking autónomo: cómo detectar los cinco frameworks de IA que nunca piden permiso. Durante años, las operaciones de red team y los ataques informáticos dependieron de una persona detrás de un teclado. Esa"
-  },
-  {
    "fecha": "20 nov",
    "texto": "Ejecución de instrucciones no autorizadas en Spring Security",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/empresas/avisos/ejecucion-de-instrucciones-no-autorizadas-en-spring-security",
    "ts": 1795165027000,
    "resumen": "Spring ha publicado 1 vulnerabilidad de severidad crítica en Spring Security, un componente que muchas aplicaciones utilizan para gestionar el acceso. Si una aplicación emplea la función afectada para interpretar datos enviados desde el exterior, un atacante podría darle instrucciones y ejecutarlas con los permisos de la propia aplicación.\n\nAfecta a: Aplicaciones que utilizan alguna de estas versiones de Spring Security: 7.1.0 a 7.1.2 y 7.0.0 a 7.0.8. 6.5.0 a 6.5.12 y 6.4.0 a 6.4.19. 5.8.0 a 5.8.28, así como 5.7.26 y anteriores.\n\nQué hacer: Identifica las aplicaciones que utilizan Spring Security. Pide al proveedor o al equipo que las mantiene que confirme la versión instalada y si alguna regla de acceso de tipo ELRequestMatcher recibe datos del exterior."
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "CVE-2026-129448 en Apache Roller se está explotando. Plazo de CISA: 2026-11-23.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-   "ts": 1795132800000,
-   "resumen": "CISA ha añadido CVE-2026-129448 (Apache Roller) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-20. Nombre del fallo: Apache Roller Deserialization of Untrusted Data Vulnerability.\n\nDescripción de CISA (en inglés): Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-23)."
-  },
-  {
-   "fecha": "20 nov",
-   "texto": "CVE-2026-123890 en Broadcom VMware vCenter se está explotando. Plazo de CISA: 2026-11-23.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-   "ts": 1795132800000,
-   "resumen": "CISA ha añadido CVE-2026-123890 (Broadcom VMware vCenter) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-20. Nombre del fallo: VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability.\n\nDescripción de CISA (en inglés): Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-23)."
-  },
-  {
-   "fecha": "17 nov",
-   "texto": "Múltiples vulnerabilidades en equipos de red de Zyxel",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/empresas/avisos/multiples-vulnerabilidades-en-equipos-de-red-de-zyxel",
-   "ts": 1794905055000,
-   "resumen": "Adam Simuntis y Joni Gadd han informado sobre 2 vulnerabilidades, 1 de severidad crítica y 1 alta, en determinados equipos de red de Zyxel. Los fallos podrían permitir que un atacante ejecute órdenes en el equipo afectado. Identificador INCIBE-2026-907\n\nAfecta a: Versiones de firmware de estos modelos, según las tablas de Zyxel por vulnerabilidad.\n\nQué hacer: Identificar el modelo e instalar la versión corregida que se indica en la columna Patch availability del boletín de Zyxel."
   },
   {
    "fecha": "16 nov",
@@ -130,20 +130,20 @@
    "resumen": "A veces no tenemos otra opción que compartir algunos de nuestros documentos de identificación y datos biométricos más sensibles con servicios de terceros. Te explicamos cómo minimizar los riesgos."
   },
   {
-   "fecha": "13 nov",
-   "texto": "GTA 6 está por llegar, pero los estafadores ya aprovechan la expectativa",
-   "fuente": "welivesecurity.com",
-   "url": "https://www.welivesecurity.com/es/estafas-enganos/gta-6-estafas-descargas-maliciosas/",
-   "ts": 1794576317000,
-   "resumen": "Aprovechando la expectativa por GTA 6, los ciberdelincuentes despliegan distintas estafas que van desde descargas con malware y filtraciones falsas hasta tiendas fraudulentas y supuestas ofertas de acceso anticipado"
-  },
-  {
    "fecha": "23 oct",
    "texto": "Node.js corrige fallos graves de TLS y Brotli en sus ramas 26, 24 y 22",
    "fuente": "hispasec.com",
    "url": "https://unaaldia.hispasec.com/node-js-corrige-fallos-graves-de-tls-y-brotli-en-sus-ramas-26-24-y-22/",
    "ts": 1792742462000,
    "resumen": "Node.js publicó el 21 de octubre de 2026 versiones de seguridad para 26.x, 24.x y 22.x. El lote corrige vulnerabilidades de severidad alta que afectan a la validación TLS y al decodificador Brotli, además de actualizar dependencias críticas como OpenSSL y Undici."
+  },
+  {
+   "fecha": "22 oct",
+   "texto": "Node.js corrige un fallo en Brotli que abre la puerta a ejecución remota de código",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/node-js-corrige-un-fallo-en-brotli-que-abre-la-puerta-a-ejecucion-remota-de-codigo/",
+   "ts": 1792676227000,
+   "resumen": "Un fallo de alta severidad en el decodificador Brotli de Node.js puede provocar una escritura fuera de límites y acabar en ejecución remota de código al procesar datos manipulados. Node.js ya ha publicado versiones corregidas para las ramas soportadas: 22.23.4, 24.22.1 y 26.12.1."
   }
  ]
 }
