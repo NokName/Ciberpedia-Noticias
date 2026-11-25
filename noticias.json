@@ -1,6 +1,14 @@
 {
- "generado": "2026-11-24T21:13:52Z",
+ "generado": "2026-11-25T04:16:23Z",
  "noticias": [
+  {
+   "fecha": "24 nov",
+   "texto": "[EN] Rackspace shuts down Spot cloud platform after security breach",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+   "ts": 1795556250000,
+   "resumen": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data."
+  },
   {
    "fecha": "24 nov",
    "texto": "[EN] New Inception extortion gang launches large-scale vishing campaign",
@@ -16,14 +24,6 @@
    "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
    "ts": 1795546792000,
    "resumen": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems."
-  },
-  {
-   "fecha": "24 nov",
-   "texto": "[EN] Radware discloses breach exposing customer cloud access keys",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
-   "ts": 1795542545000,
-   "resumen": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online."
   },
   {
    "fecha": "24 nov",
