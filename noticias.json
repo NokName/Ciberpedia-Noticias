@@ -1,6 +1,38 @@
 {
- "generado": "2026-11-25T14:34:38Z",
+ "generado": "2026-11-25T23:38:34Z",
  "noticias": [
+  {
+   "fecha": "25 nov",
+   "texto": "[EN] Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+   "ts": 1795644309000,
+   "resumen": "Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet."
+  },
+  {
+   "fecha": "25 nov",
+   "texto": "[EN] 1Password customer data stolen after employee GitHub account breach",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+   "ts": 1795642413000,
+   "resumen": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data."
+  },
+  {
+   "fecha": "25 nov",
+   "texto": "[EN] Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+   "ts": 1795635571000,
+   "resumen": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector."
+  },
+  {
+   "fecha": "25 nov",
+   "texto": "Base de datos abierta deja expuestos 2.000 millones de registros de credenciales, incluidos tokens de sesión",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/base-de-datos-abierta-deja-expuestos.html",
+   "ts": 1795630548000,
+   "resumen": "Una base de datos que contenía aproximadamente 2.000 millones de credenciales estaba accesible en línea sin contraseña ni cifrado, lo que permitía a cualquiera que la encontrara acceder fácilmente a un enorme volumen de datos."
+  },
   {
    "fecha": "25 nov",
    "texto": "[EN] Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
@@ -27,22 +59,6 @@
   },
   {
    "fecha": "25 nov",
-   "texto": "[EN] Microsoft fixes Microsoft 365 bug blocking access to Office apps",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
-   "ts": 1795605392000,
-   "resumen": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications."
-  },
-  {
-   "fecha": "25 nov",
-   "texto": "[EN] Hackers now exploit critical Drupal RCE flaw to hijack sites",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
-   "ts": 1795601420000,
-   "resumen": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday."
-  },
-  {
-   "fecha": "25 nov",
    "texto": "Múltiples vulnerabilidades en la plataforma web de Vorecol",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-la-plataforma-web-de-vorecol",
@@ -51,19 +67,27 @@
   },
   {
    "fecha": "25 nov",
-   "texto": "[EN] Microsoft confirms authentication issues after November updates",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
-   "ts": 1795597377000,
-   "resumen": "Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability."
-  },
-  {
-   "fecha": "25 nov",
    "texto": "Múltiples vulnerabilidades en Serv-U de SolarWinds",
    "fuente": "incibe.es",
    "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-serv-u-de-solarwinds-0",
    "ts": 1795596413000,
    "resumen": "SolarWinds ha publicado 2 vulnerabilidades de severidad crítica en Serv-U para Linux. Un atacante remoto que ya disponga de privilegios elevados en Serv-U podría obtener los del usuario root y tomar el control del servidor Linux. SolarWinds también identifica afectación en Windows, con un impacto menor. Identificador INCIBE-2026-950\n\nAfecta a: SolarWinds Serv-U 2026.3 y versiones anteriores, en Linux y Windows. El impacto máximo corresponde a las instalaciones en Linux.\n\nQué hacer: Actualizar las instalaciones de Serv-U 2026.3 y anteriores a Serv-U 2026.4. Esta versión corrige ambas vulnerabilidades en Linux y Windows. Comprobar la versión instalada después de aplicar la actualización."
+  },
+  {
+   "fecha": "25 nov",
+   "texto": "CVE-2026-103406 en Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router se está explotando. Plazo de CISA: 2026-11-28.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+   "ts": 1795564800000,
+   "resumen": "CISA ha añadido CVE-2026-103406 (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-25. Nombre del fallo: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability.\n\nDescripción de CISA (en inglés): Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-28)."
+  },
+  {
+   "fecha": "25 nov",
+   "texto": "CVE-2026-133469 en Vates Xen Orchestra se está explotando. Plazo de CISA: 2026-11-28.",
+   "fuente": "cisa.gov",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+   "ts": 1795564800000,
+   "resumen": "CISA ha añadido CVE-2026-133469 (Vates Xen Orchestra) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-25. Nombre del fallo: Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability.\n\nDescripción de CISA (en inglés): Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted authentication token containing an empty JSON object.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-28)."
   },
   {
    "fecha": "24 nov",
@@ -80,30 +104,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/explotan-una-vulnerabilidad-critica-en.html",
    "ts": 1795525560000,
    "resumen": "Investigadores instan a los usuarios a dejar de utilizar una biblioteca ASP.NET obsoleta de protección contra ataques CSRF, denominada Idunno.AntiCsrf (Idunno.AntiCsrf.dll), tras el descubrimiento de"
-  },
-  {
-   "fecha": "24 nov",
-   "texto": "CVE-2026-132224 en Optimizely Web Experimentation se está explotando. Plazo de CISA: 2026-11-27.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
-   "ts": 1795478400000,
-   "resumen": "CISA ha añadido CVE-2026-132224 (Optimizely Web Experimentation) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-24. Nombre del fallo: Optimizely Web Experimentation External Control of Critical State Data Vulnerability.\n\nDescripción de CISA (en inglés): Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-27)."
-  },
-  {
-   "fecha": "24 nov",
-   "texto": "CVE-2026-131914 en Idunno AntiCsrf se está explotando. Plazo de CISA: 2026-11-27.",
-   "fuente": "cisa.gov",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
-   "ts": 1795478400000,
-   "resumen": "CISA ha añadido CVE-2026-131914 (Idunno AntiCsrf) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-24. Nombre del fallo: Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability.\n\nDescripción de CISA (en inglés): Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-27)."
-  },
-  {
-   "fecha": "23 nov",
-   "texto": "La botnet BADBOX regresa con una cifra récord de 40.000 millones de solicitudes publicitarias diarias",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/la-botnet-badbox-regresa-con-una-cifra.html",
-   "ts": 1795446660000,
-   "resumen": "La botnet de malware BADBOX ha regresado tras las interrupciones sufridas el año pasado, generando la cifra récord de 40.000 millones de solicitudes publicitarias fraudulentas al día a través de dispositivos Android"
   },
   {
    "fecha": "23 nov",
