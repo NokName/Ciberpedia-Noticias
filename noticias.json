@@ -1,53 +1,85 @@
 {
- "generado": "2026-11-26T08:23:43Z",
+ "generado": "2026-11-26T19:02:20Z",
  "noticias": [
   {
    "fecha": "26 nov",
-   "texto": "[EN] Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
-   "ts": 1795676554000,
-   "resumen": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states"
+   "texto": "[EN] Fake paid expert interviews impersonate brands to steal Google logins",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+   "ts": 1795713327000,
+   "resumen": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars."
   },
   {
    "fecha": "26 nov",
-   "texto": "[EN] Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+   "texto": "NFS2ROOT: vulnerabilidad de 12 años en Linux permite obtener acceso root remoto sin autenticación en el servidor NFS",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/nfs2root-vulnerabilidad-de-hace-12-anos.html",
+   "ts": 1795712340000,
+   "resumen": "Una vulnerabilidad crítica en el servidor NFS del kernel de Linux, denominada NFS2ROOT (CVE-2026-99362), permite a un atacante remoto ejecutar código con privilegios de root sin"
+  },
+  {
+   "fecha": "26 nov",
+   "texto": "[EN] Remus malware steals Gmail messages via fake Google Sheets extension",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+   "ts": 1795706608000,
+   "resumen": "The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service."
+  },
+  {
+   "fecha": "26 nov",
+   "texto": "[EN] North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
    "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
-   "ts": 1795675486000,
-   "resumen": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week."
+   "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+   "ts": 1795706021000,
+   "resumen": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025."
+  },
+  {
+   "fecha": "26 nov",
+   "texto": "Windows Server 2028: Microsoft anuncia el fin de WSUS, SMBv1, VBScript y Windows PowerShell 5.1",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/windows-server-2028-microsoft-anuncia.html",
+   "ts": 1795695240000,
+   "resumen": "El anuncio de Microsoft, actualizado el 17 de noviembre de 2026, anticipa cambios importantes para Windows Server 2028. Los de mayor impacto empresarial son la eliminación de"
+  },
+  {
+   "fecha": "26 nov",
+   "texto": "[EN] SYS010 malware abuses browser management to spy on Gmail, Outlook",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
+   "ts": 1795693817000,
+   "resumen": "A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails."
+  },
+  {
+   "fecha": "26 nov",
+   "texto": "[EN] Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+   "ts": 1795690675000,
+   "resumen": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about."
   },
   {
    "fecha": "26 nov",
    "texto": "[EN] 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
    "fuente": "thehackernews.com",
    "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
-   "ts": 1795666822000,
+   "ts": 1795690645000,
    "resumen": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed."
   },
   {
-   "fecha": "25 nov",
-   "texto": "[EN] Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
-   "ts": 1795644309000,
-   "resumen": "Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet."
+   "fecha": "26 nov",
+   "texto": "Múltiples vulnerabilidades en Poly PrivateConnect de HP",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-poly-privateconnect-de-hp",
+   "ts": 1795688900000,
+   "resumen": "Pexip ha informado sobre 2 vulnerabilidades de severidad crítica en el componente NGINX que utiliza Poly PrivateConnect de HP. Un atacante remoto sin autenticar podría corromper la memoria del proceso que atiende las conexiones HTTP/2, interrumpir el servicio y, bajo determinadas condiciones, ejecutar código en el sistema afectado. Identificador INCIBE-2026-954\n\nAfecta a: Poly PrivateConnect de HP basado en Pexip Infinity que incorpore una versión vulnerable de NGINX. HP identifica la versión 42.1 como la versión corregida de Poly PrivateConnect.\n\nQué hacer: Actualizar Poly PrivateConnect a la versión 42.1 indicada por HP. Obtener la actualización en el portal de descargas de Pexip y verificar la versión instalada después del despliegue."
   },
   {
-   "fecha": "25 nov",
-   "texto": "[EN] 1Password customer data stolen after employee GitHub account breach",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
-   "ts": 1795642413000,
-   "resumen": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data."
-  },
-  {
-   "fecha": "25 nov",
-   "texto": "[EN] Italy and Switzerland warn of autonomous AI-driven cyberattacks",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
-   "ts": 1795635571000,
-   "resumen": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector."
+   "fecha": "26 nov",
+   "texto": "Omisión del control de acceso en Drupal",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-del-control-de-acceso-en-drupal",
+   "ts": 1795688044000,
+   "resumen": "Andrew Berry, Tim Hestenes Lehnen, Dave Long, James Sherwin y Cathy Theys han informado sobre 1 vulnerabilidad en el instalador de Drupal. Un atacante sin autenticar podría tomar el control de un sitio con el instalador accesible de forma remota si la instalación se encuentra en determinados estados incompletos o inusuales. Drupal confirma que la vulnerabilidad se está explotando. Identificador INCIBE-2026-953\n\nAfecta a: Drupal en versiones anteriores a 10.6.23. Drupal desde 11.0.0 hasta antes de 11.3.23. Drupal 11.4.x en versiones anteriores a 11.4.14.\n\nQué hacer: Actualizar a Drupal 10.6.23, 11.3.23 o 11.4.14, según la rama instalada. Si se utiliza una rama sin soporte de seguridad, migrar a una rama mantenida. Ejecutar update.php después de instalar la actualización."
   },
   {
    "fecha": "25 nov",
@@ -56,22 +88,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/base-de-datos-abierta-deja-expuestos.html",
    "ts": 1795630548000,
    "resumen": "Una base de datos que contenía aproximadamente 2.000 millones de credenciales estaba accesible en línea sin contraseña ni cifrado, lo que permitía a cualquiera que la encontrara acceder fácilmente a un enorme volumen de datos."
-  },
-  {
-   "fecha": "25 nov",
-   "texto": "Múltiples vulnerabilidades en la plataforma web de Vorecol",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-la-plataforma-web-de-vorecol",
-   "ts": 1795598021000,
-   "resumen": "INCIBE ha coordinado la publicación de 3 vulnerabilidades, 1 de severidad alta y 2 de severidad media, que afectan a la plataforma web de Vorecol, solución en la nube para la gestión de recursos humanos. Las vulnerabilidades han sido descubiertas por Miguel Jiménez Cámara.\n\nAfecta a: Plataforma web Vorecol (HRMS/ERP SaaS).\n\nQué hacer: No hay solución reportada por el momento. Detalle CVE-2026-133737: vulnerabilidad de Cross-Site Scripting (XSS) reflejado en el parámetro usuario[nombre] de la función actualizar_cuenta del endpoint 'functions.php'."
-  },
-  {
-   "fecha": "25 nov",
-   "texto": "Múltiples vulnerabilidades en Serv-U de SolarWinds",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-serv-u-de-solarwinds-0",
-   "ts": 1795596413000,
-   "resumen": "SolarWinds ha publicado 2 vulnerabilidades de severidad crítica en Serv-U para Linux. Un atacante remoto que ya disponga de privilegios elevados en Serv-U podría obtener los del usuario root y tomar el control del servidor Linux. SolarWinds también identifica afectación en Windows, con un impacto menor. Identificador INCIBE-2026-950\n\nAfecta a: SolarWinds Serv-U 2026.3 y versiones anteriores, en Linux y Windows. El impacto máximo corresponde a las instalaciones en Linux.\n\nQué hacer: Actualizar las instalaciones de Serv-U 2026.3 y anteriores a Serv-U 2026.4. Esta versión corrige ambas vulnerabilidades en Linux y Windows. Comprobar la versión instalada después de aplicar la actualización."
   },
   {
    "fecha": "25 nov",
@@ -90,22 +106,6 @@
    "resumen": "CISA ha añadido CVE-2026-133469 (Vates Xen Orchestra) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-25. Nombre del fallo: Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability.\n\nDescripción de CISA (en inglés): Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted authentication token containing an empty JSON object.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-28)."
   },
   {
-   "fecha": "24 nov",
-   "texto": "Shirudo: herramienta para bloquear exploits específicos en servidores Linux",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/shirudo-herramienta-para-bloquear.html",
-   "ts": 1795541340000,
-   "resumen": "OpenAI y Cisco lanzaron el 23 de noviembre de 2026 Shirudo, una herramienta de seguridad de código abierto creada para bloquear exploits específicos en servidores Linux activos. Esta solución permite"
-  },
-  {
-   "fecha": "24 nov",
-   "texto": "Explotan una vulnerabilidad crítica en biblioteca Anti-CSRF de ASP.NET, permite RCE sin autenticación",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/explotan-una-vulnerabilidad-critica-en.html",
-   "ts": 1795525560000,
-   "resumen": "Investigadores instan a los usuarios a dejar de utilizar una biblioteca ASP.NET obsoleta de protección contra ataques CSRF, denominada Idunno.AntiCsrf (Idunno.AntiCsrf.dll), tras el descubrimiento de"
-  },
-  {
    "fecha": "23 nov",
    "texto": "Múltiples vulnerabilidades en productos de Veeam",
    "fuente": "incibe.es",
@@ -122,14 +122,6 @@
    "resumen": "Spring ha publicado 1 vulnerabilidad de severidad crítica en Spring Security, un componente que muchas aplicaciones utilizan para gestionar el acceso. Si una aplicación emplea la función afectada para interpretar datos enviados desde el exterior, un atacante podría darle instrucciones y ejecutarlas con los permisos de la propia aplicación.\n\nAfecta a: Aplicaciones que utilizan alguna de estas versiones de Spring Security: 7.1.0 a 7.1.2 y 7.0.0 a 7.0.8. 6.5.0 a 6.5.12 y 6.4.0 a 6.4.19. 5.8.0 a 5.8.28, así como 5.7.26 y anteriores.\n\nQué hacer: Identifica las aplicaciones que utilizan Spring Security. Pide al proveedor o al equipo que las mantiene que confirme la versión instalada y si alguna regla de acceso de tipo ELRequestMatcher recibe datos del exterior."
   },
   {
-   "fecha": "16 nov",
-   "texto": "¿Es seguro subir tu pasaporte o documento de identidad a internet?",
-   "fuente": "welivesecurity.com",
-   "url": "https://www.welivesecurity.com/es/privacidad/es-seguro-subir-pasaporte-documento-identidad-en-linea/",
-   "ts": 1794852625000,
-   "resumen": "A veces no tenemos otra opción que compartir algunos de nuestros documentos de identificación y datos biométricos más sensibles con servicios de terceros. Te explicamos cómo minimizar los riesgos."
-  },
-  {
    "fecha": "23 oct",
    "texto": "Node.js corrige fallos graves de TLS y Brotli en sus ramas 26, 24 y 22",
    "fuente": "hispasec.com",
@@ -144,6 +136,14 @@
    "url": "https://unaaldia.hispasec.com/node-js-corrige-un-fallo-en-brotli-que-abre-la-puerta-a-ejecucion-remota-de-codigo/",
    "ts": 1792676227000,
    "resumen": "Un fallo de alta severidad en el decodificador Brotli de Node.js puede provocar una escritura fuera de límites y acabar en ejecución remota de código al procesar datos manipulados. Node.js ya ha publicado versiones corregidas para las ramas soportadas: 22.23.4, 24.22.1 y 26.12.1."
+  },
+  {
+   "fecha": "21 oct",
+   "texto": "PHP publica parches de urgencia por dos fallos críticos PHP2Shell con intentos de explotación",
+   "fuente": "hispasec.com",
+   "url": "https://unaaldia.hispasec.com/php-publica-parches-de-urgencia-por-dos-fallos-criticos-php2shell-con-intentos-de-explotacion/",
+   "ts": 1792611711000,
+   "resumen": "PHP ha lanzado parches de urgencia para dos vulnerabilidades críticas agrupadas como PHP2Shell que permiten ejecución remota de código sin autenticación. Ya se han detectado intentos de explotación activa, así que la recomendación es actualizar y reiniciar servicios cuanto antes."
   }
  ]
 }
