@@ -1,6 +1,30 @@
 {
- "generado": "2026-11-25T23:38:34Z",
+ "generado": "2026-11-26T08:23:43Z",
  "noticias": [
+  {
+   "fecha": "26 nov",
+   "texto": "[EN] Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+   "ts": 1795676554000,
+   "resumen": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states"
+  },
+  {
+   "fecha": "26 nov",
+   "texto": "[EN] Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+   "ts": 1795675486000,
+   "resumen": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week."
+  },
+  {
+   "fecha": "26 nov",
+   "texto": "[EN] 1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+   "ts": 1795666822000,
+   "resumen": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed."
+  },
   {
    "fecha": "25 nov",
    "texto": "[EN] Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
@@ -32,30 +56,6 @@
    "url": "http://blog.segu-info.com.ar/2026/11/base-de-datos-abierta-deja-expuestos.html",
    "ts": 1795630548000,
    "resumen": "Una base de datos que contenía aproximadamente 2.000 millones de credenciales estaba accesible en línea sin contraseña ni cifrado, lo que permitía a cualquiera que la encontrara acceder fácilmente a un enorme volumen de datos."
-  },
-  {
-   "fecha": "25 nov",
-   "texto": "[EN] Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
-   "ts": 1795610934000,
-   "resumen": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -"
-  },
-  {
-   "fecha": "25 nov",
-   "texto": "[EN] U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
-   "ts": 1795609808000,
-   "resumen": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline."
-  },
-  {
-   "fecha": "25 nov",
-   "texto": "[EN] Credential Remediation Is Slow When You Don’t Know What Will Break",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
-   "ts": 1795607508000,
-   "resumen": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break."
   },
   {
    "fecha": "25 nov",
