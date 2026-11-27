@@ -1,13 +1,61 @@
 {
- "generado": "2026-11-27T02:13:25Z",
+ "generado": "2026-11-27T10:54:46Z",
  "noticias": [
   {
-   "fecha": "26 nov",
-   "texto": "[EN] OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+   "fecha": "27 nov",
+   "texto": "[EN] Drupal warns of new site takeover flaw exploited in attacks",
    "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
-   "ts": 1795727182000,
-   "resumen": "OpenAI confirmed that it fixed a 'bug' that incorrectly discounted GPT-6.2 usage, which means you'll now hit GPT usage limits 40% faster than before."
+   "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+   "ts": 1795774215000,
+   "resumen": "The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites."
+  },
+  {
+   "fecha": "27 nov",
+   "texto": "[EN] SAP confirms security incident after suspicious GitHub activity",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+   "ts": 1795773396000,
+   "resumen": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment."
+  },
+  {
+   "fecha": "27 nov",
+   "texto": "[EN] Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+   "ts": 1795770496000,
+   "resumen": "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077)."
+  },
+  {
+   "fecha": "27 nov",
+   "texto": "Escritura parcial de archivos de sesión de PHP en Carbon Black App Control Server de Broadcom",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-parcial-de-archivos-de-sesion-de-php-en-carbon-black-app-control",
+   "ts": 1795767250000,
+   "resumen": "El investigador zplinn ha informado al proyecto PHP sobre 1 vulnerabilidad de severidad crítica, conocida como PHPAfterShell. Broadcom ha confirmado que afecta a Carbon Black App Control Server. Una escritura interrumpida podría corromper los datos de sesión y, si se cumplen determinadas condiciones en la aplicación, permitir a un atacante remoto ejecutar código con los permisos del proceso PHP.\n\nAfecta a: Carbon Black App Control Server. El boletín público 39673 confirma la afectación del servidor y clasifica Carbon Black App Control Agent como no afectado.\n\nQué hacer: Actualizar Carbon Black App Control Server a la compilación del producto que incorpora la corrección de PHP. Broadcom remite al aviso específico 39845, cuyo acceso requiere una cuenta de soporte."
+  },
+  {
+   "fecha": "27 nov",
+   "texto": "Path Traversal en Medusa de MedusaJS",
+   "fuente": "incibe.es",
+   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/path-traversal-en-medusa-de-medusajs",
+   "ts": 1795766739000,
+   "resumen": "INCIBE ha coordinado la publicación de una vulnerabilidad de severidad media que afecta a Medusa de MedusaJS, una plataforma de comercio electrónico. La vulnerabilidad ha sido descubierta por Miguel Marín Sebastián.\n\nAfecta a: Medusa (MedusaJS), versión 2.14.2; funcionalidad de importación de productos.\n\nQué hacer: No hay solución reportada por el momento."
+  },
+  {
+   "fecha": "27 nov",
+   "texto": "[EN] Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+   "ts": 1795759460000,
+   "resumen": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday."
+  },
+  {
+   "fecha": "27 nov",
+   "texto": "[EN] Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+   "ts": 1795758500000,
+   "resumen": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution."
   },
   {
    "fecha": "26 nov",
@@ -19,14 +67,6 @@
   },
   {
    "fecha": "26 nov",
-   "texto": "[EN] Fake paid expert interviews impersonate brands to steal Google logins",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
-   "ts": 1795713327000,
-   "resumen": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars."
-  },
-  {
-   "fecha": "26 nov",
    "texto": "NFS2ROOT: vulnerabilidad de 12 años en Linux permite obtener acceso root remoto sin autenticación en el servidor NFS",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/nfs2root-vulnerabilidad-de-hace-12-anos.html",
@@ -35,51 +75,11 @@
   },
   {
    "fecha": "26 nov",
-   "texto": "[EN] Remus malware steals Gmail messages via fake Google Sheets extension",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
-   "ts": 1795706608000,
-   "resumen": "The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service."
-  },
-  {
-   "fecha": "26 nov",
-   "texto": "[EN] North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
-   "ts": 1795706021000,
-   "resumen": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025."
-  },
-  {
-   "fecha": "26 nov",
    "texto": "Windows Server 2028: Microsoft anuncia el fin de WSUS, SMBv1, VBScript y Windows PowerShell 5.1",
    "fuente": "segu-info.com.ar",
    "url": "http://blog.segu-info.com.ar/2026/11/windows-server-2028-microsoft-anuncia.html",
    "ts": 1795695240000,
    "resumen": "El anuncio de Microsoft, actualizado el 17 de noviembre de 2026, anticipa cambios importantes para Windows Server 2028. Los de mayor impacto empresarial son la eliminación de"
-  },
-  {
-   "fecha": "26 nov",
-   "texto": "[EN] Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
-   "ts": 1795690675000,
-   "resumen": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about."
-  },
-  {
-   "fecha": "26 nov",
-   "texto": "Múltiples vulnerabilidades en Poly PrivateConnect de HP",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-poly-privateconnect-de-hp",
-   "ts": 1795688900000,
-   "resumen": "Pexip ha informado sobre 2 vulnerabilidades de severidad crítica en el componente NGINX que utiliza Poly PrivateConnect de HP. Un atacante remoto sin autenticar podría corromper la memoria del proceso que atiende las conexiones HTTP/2, interrumpir el servicio y, bajo determinadas condiciones, ejecutar código en el sistema afectado. Identificador INCIBE-2026-954\n\nAfecta a: Poly PrivateConnect de HP basado en Pexip Infinity que incorpore una versión vulnerable de NGINX. HP identifica la versión 42.1 como la versión corregida de Poly PrivateConnect.\n\nQué hacer: Actualizar Poly PrivateConnect a la versión 42.1 indicada por HP. Obtener la actualización en el portal de descargas de Pexip y verificar la versión instalada después del despliegue."
-  },
-  {
-   "fecha": "26 nov",
-   "texto": "Omisión del control de acceso en Drupal",
-   "fuente": "incibe.es",
-   "url": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-del-control-de-acceso-en-drupal",
-   "ts": 1795688044000,
-   "resumen": "Andrew Berry, Tim Hestenes Lehnen, Dave Long, James Sherwin y Cathy Theys han informado sobre 1 vulnerabilidad en el instalador de Drupal. Un atacante sin autenticar podría tomar el control de un sitio con el instalador accesible de forma remota si la instalación se encuentra en determinados estados incompletos o inusuales. Drupal confirma que la vulnerabilidad se está explotando. Identificador INCIBE-2026-953\n\nAfecta a: Drupal en versiones anteriores a 10.6.23. Drupal desde 11.0.0 hasta antes de 11.3.23. Drupal 11.4.x en versiones anteriores a 11.4.14.\n\nQué hacer: Actualizar a Drupal 10.6.23, 11.3.23 o 11.4.14, según la rama instalada. Si se utiliza una rama sin soporte de seguridad, migrar a una rama mantenida. Ejecutar update.php después de instalar la actualización."
   },
   {
    "fecha": "25 nov",
