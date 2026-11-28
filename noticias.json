@@ -1,6 +1,14 @@
 {
- "generado": "2026-11-27T20:00:19Z",
+ "generado": "2026-11-28T11:49:30Z",
  "noticias": [
+  {
+   "fecha": "28 nov",
+   "texto": "[EN] pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+   "fuente": "thehackernews.com",
+   "url": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+   "ts": 1795853291000,
+   "resumen": "Cross-platform password manager pCloud Pass has confirmed it was targeted by a cyber attack after users reported seeing unknown devices being connected to their accounts."
+  },
   {
    "fecha": "27 nov",
    "texto": "[EN] pCloud confirms password manager hack after suspicious login alerts",
@@ -48,14 +56,6 @@
    "url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
    "ts": 1795780174000,
    "resumen": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT."
-  },
-  {
-   "fecha": "27 nov",
-   "texto": "[EN] How to Keep Your Security Picture Current When Attackers Move at AI Speed",
-   "fuente": "thehackernews.com",
-   "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
-   "ts": 1795775538000,
-   "resumen": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together the week before, cleans them up, and presents a picture of a program that is,"
   },
   {
    "fecha": "27 nov",
