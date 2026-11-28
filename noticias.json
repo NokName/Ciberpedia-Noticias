@@ -1,6 +1,38 @@
 {
- "generado": "2026-11-28T11:49:30Z",
+ "generado": "2026-11-28T20:07:12Z",
  "noticias": [
+  {
+   "fecha": "28 nov",
+   "texto": "[EN] College Board confirms data breach after unauthorized password changes",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/college-board-confirms-data-breach-after-unauthorized-password-changes/",
+   "ts": 1795887959000,
+   "resumen": "College Board has confirmed it suffered a data breach after students reported unexpected password changes on Thanksgiving, and the organization said threat actors gained access to its account registration and financial aid application systems."
+  },
+  {
+   "fecha": "28 nov",
+   "texto": "Vulnerabilidades críticas en Drupal activamente explotadas (PARCHEA!)",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/vulnerabilidades-criticas-en-drupal.html",
+   "ts": 1795887780000,
+   "resumen": "Los atacantes están explotando activamente dos vulnerabilidades graves en el instalador de Drupal; la principal es una nueva vulnerabilidad de elusión de control de acceso en"
+  },
+  {
+   "fecha": "28 nov",
+   "texto": "[EN] Q-Dir and DesktopOK Windows utilities compromised to push Python RAT",
+   "fuente": "bleepingcomputer.com",
+   "url": "https://www.bleepingcomputer.com/news/security/q-dir-and-desktopok-windows-utilities-compromised-to-push-python-rat/",
+   "ts": 1795879969000,
+   "resumen": "Official distribution channels for the Q-Dir and DesktopOK Windows utilities were compromised to deliver trojanized installers containing Python-based remote access malware."
+  },
+  {
+   "fecha": "28 nov",
+   "texto": "SAP y 1Password, hackeados: código fuente sustraídos tras brecha en cuentas GitHub",
+   "fuente": "segu-info.com.ar",
+   "url": "http://blog.segu-info.com.ar/2026/11/1password-hackeado-datos-de-clientes-y.html",
+   "ts": 1795870800000,
+   "resumen": "El miércoles, 1Password informó sobre un incidente de seguridad que afectó a sus sistemas internos (backend) y permitió el acceso no autorizado a cierta información de sus clientes. No obstante, la empresa"
+  },
   {
    "fecha": "28 nov",
    "texto": "[EN] pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
@@ -16,22 +48,6 @@
    "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
    "ts": 1795807564000,
    "resumen": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled."
-  },
-  {
-   "fecha": "27 nov",
-   "texto": "[EN] New Boston Scientific data breach exposes personal, medical info",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
-   "ts": 1795805862000,
-   "resumen": "Medical technology company Boston Scientific is sending data breach notices to individuals affected by a cyberattack on the firm."
-  },
-  {
-   "fecha": "27 nov",
-   "texto": "[EN] Unpatched Cacti zero-day with public PoC gives remote code execution",
-   "fuente": "bleepingcomputer.com",
-   "url": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
-   "ts": 1795799173000,
-   "resumen": "A zero-day vulnerability in the Cacti network monitoring platform has been publicly disclosed, along with a proof-of-concept exploit that lets unauthenticated attackers execute commands on vulnerable servers."
   },
   {
    "fecha": "27 nov",
@@ -88,22 +104,6 @@
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243",
    "ts": 1795737600000,
    "resumen": "CISA ha añadido CVE-2026-129243 (OSGeo GeoServer) a su catálogo de vulnerabilidades que se están explotando de verdad el 2026-11-27. Nombre del fallo: OSGeo GeoServer Incorrect Authorization Vulnerability.\n\nDescripción de CISA (en inglés): GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter.\n\nQué hacer: aplicar las correcciones o mitigaciones del fabricante (plazo para organismos federales de EE. UU.: 2026-11-30)."
-  },
-  {
-   "fecha": "26 nov",
-   "texto": "NFS2ROOT: vulnerabilidad de 12 años en Linux permite obtener acceso root remoto sin autenticación en el servidor NFS",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/nfs2root-vulnerabilidad-de-hace-12-anos.html",
-   "ts": 1795712340000,
-   "resumen": "Una vulnerabilidad crítica en el servidor NFS del kernel de Linux, denominada NFS2ROOT (CVE-2026-99362), permite a un atacante remoto ejecutar código con privilegios de root sin"
-  },
-  {
-   "fecha": "26 nov",
-   "texto": "Windows Server 2028: Microsoft anuncia el fin de WSUS, SMBv1, VBScript y Windows PowerShell 5.1",
-   "fuente": "segu-info.com.ar",
-   "url": "http://blog.segu-info.com.ar/2026/11/windows-server-2028-microsoft-anuncia.html",
-   "ts": 1795695240000,
-   "resumen": "El anuncio de Microsoft, actualizado el 17 de noviembre de 2026, anticipa cambios importantes para Windows Server 2028. Los de mayor impacto empresarial son la eliminación de"
   },
   {
    "fecha": "23 nov",
